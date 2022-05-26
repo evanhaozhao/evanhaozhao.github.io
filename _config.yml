@@ -191,6 +191,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  chineseposts:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -248,6 +251,24 @@ defaults:
       layout: talk
       author_profile: true
       share: false
+  # _chineseposts
+  - scope:
+      path: ""
+      type: chineseposts
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      comment: false
+    # _research
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      comment: false
 
 # Sass/SCSS
 sass:
