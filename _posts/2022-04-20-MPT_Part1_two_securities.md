@@ -3,7 +3,7 @@ title: 'MPT Part 1: Two Securities Portfolio'
 date: 2022-04-20
 permalink: /posts/2022/04/MPT_Part1_two_securities/
 author: "Hao Zhao"
-excerpt: "<img src='/images/2022_04_20_post1/output_6_1.png'>"
+excerpt: "<img src='/images/2022_04_20_post1/output_6_1.png' width='600' height='315'>"
 tags:
   - Finance
   - Python

@@ -3,7 +3,7 @@ title: 'MPT Part 2: Several Securities: Risk and Expected Return'
 date: 2022-05-10
 permalink: /posts/2022/05/MPT_Part2_several_securities/
 author: "Hao Zhao"
-excerpt: "<img src='/images/2022_05_10_post1/output_12_16.png'>"
+excerpt: "<img src='/images/2022_05_10_post1/output_12_16.png' width='600' height='315'>"
 tags:
   - Finance
   - Python
