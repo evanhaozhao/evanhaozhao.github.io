@@ -16,10 +16,9 @@ Check the Jupyter Notebook in my Github repository [Python-for-mathematical-fina
 ](https://colab.research.google.com/drive/1zCSZWT7dTZ59gg85yVucxqb2XMD_IzdP?usp=sharing).
 
 <h1>Table of Contents<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#Two-Securities-Portfolio" data-toc-modified-id="Two-Securities-Portfolio-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Two Securities Portfolio</a></span><ul class="toc-item"><li><span><a href="#Theorems-for-the-feasible-set" data-toc-modified-id="Theorems-for-the-feasible-set-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>Theorems for the feasible set</a></span></li><li><span><a href="#Simulation-with-predefined-returns-and-variances" data-toc-modified-id="Simulation-with-predefined-returns-and-variances-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>Simulation with predefined returns and variances</a></span></li><li><span><a href="#Example-with-financial-data" data-toc-modified-id="Example-with-financial-data-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>Example with financial data</a></span></li></ul></li></ul></div>
+<ul class="toc-item"><li><span><a href="#two-securities-portfolio" data-toc-modified-id="Two-Securities-Portfolio-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Two Securities Portfolio</a></span><ul class="toc-item"><li><span><a href="#theorems-for-the-feasible-set" data-toc-modified-id="Theorems-for-the-feasible-set-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>Theorems for the feasible set</a></span></li><li><span><a href="#simulation-with-predefined-returns-and-variances" data-toc-modified-id="Simulation-with-predefined-returns-and-variances-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>Simulation with predefined returns and variances</a></span></li><li><span><a href="#example-with-financial-data" data-toc-modified-id="Example-with-financial-data-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>Example with financial data</a></span></li></ul></li></ul>
 
 # Two Securities Portfolio
-
 
 ```python
 import numpy as np
