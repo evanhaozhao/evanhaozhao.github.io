@@ -4,10 +4,11 @@ Hao Zhao:
   name        : "Hao Zhao"
   uri         : # "http://name.com"
   email       : # "name@name.com"
-  bio         : "PhD student at DUBS"
+  bio         : "PhD candidate at DUBS"
   avatar      : "profile.png"
   twitter     : # "name"
   google_plus : # "Name"
+  github      : "evanhaozhao"
 
 Name2 Name2:
   name        : "Name2 Name2"

@@ -108,7 +108,7 @@ $$
 \end{equation}
 $$
 
-*begin{proof}*
+<i>Proof</i>
 
 $$
 \begin{equation*}
@@ -124,7 +124,7 @@ $$
     \end{align*}
 $$
 
-*end{proof}*
+<p style="text-align:right;"><span class="qed-square"></span></p>
 
 ### Function for calculating the portfolio return and variance
 
@@ -235,7 +235,7 @@ calPortRetVar(weightList, eRetList, stdList, corrList, printResults=False)
 
 Assume the stocks in the portfolio are equal-weighted, which means $w_i=\frac{1}{n}$. If the portfolio is diversified enough ($n \to \infty$), the unsystematic risk of individual security will be eliminated. The systematic risk will remain. This statement under such assumption can be proved as follow:
 
-*begin{proof}*
+<i>Proof</i>
 
 $$
 \begin{align*}
@@ -247,7 +247,7 @@ $$
 
 In a well-diversified portfolio, when $n \to \infty$, $\frac{1}{n} \to 0$ and $\frac{n^2-n}{n^2} \to 1$. Therefore, only the covariance contributes to the volatility ($\sigma_V$) of such well-diversified portfolio.
 
-*end{proof}*
+<p style="text-align:right;"><span class="qed-square"></span></p>
 
 **Description** of `plot_corr_matrix(n_sample, dataframe, plotHeat=True)`:
 
@@ -613,7 +613,7 @@ $$
 \end{equation}
 $$
 
-*begin{proof}*
+<i>Proof</i>
 
 We need to find the minimum of the portfolio variance $\sigma_V^2 = \mathrm{w}\mathrm{C}\mathrm{w}^T$ subject to the constraint $\mathrm{w}\mathrm{u}^T=1$. To this end we can use the method of Lagrange multipliers:
 
@@ -641,7 +641,7 @@ $$
 
 where we use the fact that $\mathrm{C}^{−1}$ is a symmetric matrix because $C$ is. Solving this for $\lambda$ and substituting the result into the expression for $\mathrm{w}$ will give the asserted formula.
 
-*end{proof}*
+<p style="text-align:right;"><span class="qed-square"></span></p>
 
 ### Function for calculating the weights of MVP
 
