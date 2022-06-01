@@ -3,7 +3,7 @@ title: 'MPT Part 2: Several Securities: Risk and Expected Return'
 date: 2022-05-10
 permalink: /posts/2022/05/MPT_Part2_several_securities/
 author: "Hao Zhao"
-excerpt: "<img src='/images/2022_05_10_post1/output_12_16.png' width='600' height='315'>"
+excerpt: "<img src='/images/2022_05_10_post1/output_12_10.pdf' width='600' height='315'>"
 tags:
   - Finance
   - Python
@@ -326,7 +326,7 @@ for n_sample in tqdm(numList):
 
 
     
-![png](/images/2022_05_10_post1/output_12_2.png)
+![pdf](/images/2022_05_10_post1/output_12_2.pdf)
     
 
 
@@ -338,7 +338,7 @@ for n_sample in tqdm(numList):
 
 
     
-![png](/images/2022_05_10_post1/output_12_4.png)
+![pdf](/images/2022_05_10_post1/output_12_4.pdf)
     
 
 
@@ -350,7 +350,7 @@ for n_sample in tqdm(numList):
 
 
     
-![png](/images/2022_05_10_post1/output_12_6.png)
+![pdf](/images/2022_05_10_post1/output_12_6.pdf)
     
 
 
@@ -362,7 +362,7 @@ for n_sample in tqdm(numList):
 
 
     
-![png](/images/2022_05_10_post1/output_12_8.png)
+![pdf](/images/2022_05_10_post1/output_12_8.pdf)
     
 
 
@@ -374,7 +374,7 @@ for n_sample in tqdm(numList):
 
 
     
-![png](/images/2022_05_10_post1/output_12_10.png)
+![pdf](/images/2022_05_10_post1/output_12_10.pdf)
     
 
 
@@ -583,19 +583,19 @@ for k, v in colDict.items():
 
 
     
-![png](/images/2022_05_10_post1/output_18_0.png)
+![pdf](/images/2022_05_10_post1/output_18_0.pdf)
     
 
 
 
     
-![png](/images/2022_05_10_post1/output_18_1.png)
+![pdf](/images/2022_05_10_post1/output_18_1.pdf)
     
 
 
 
     
-![png](/images/2022_05_10_post1/output_18_2.png)
+![pdf](/images/2022_05_10_post1/output_18_2.pdf)
     
 
 
@@ -879,6 +879,6 @@ plt.show()
 
 
     
-![png](/images/2022_05_10_post1/output_27_0.png)
+![pdf](/images/2022_05_10_post1/output_27_0.pdf)
     
 

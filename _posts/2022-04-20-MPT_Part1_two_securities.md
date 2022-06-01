@@ -3,7 +3,7 @@ title: 'MPT Part 1: Two Securities Portfolio'
 date: 2022-04-20
 permalink: /posts/2022/04/MPT_Part1_two_securities/
 author: "Hao Zhao"
-excerpt: "<img src='/images/2022_04_20_post1/output_6_1.png' width='600' height='315'>"
+excerpt: "<img src='/images/2022_04_20_post1/output_6_1.pdf' width='600' height='315'>"
 tags:
   - Finance
   - Python
@@ -313,7 +313,7 @@ twoAssetPlot(mu1, mu2, var1, var2, corr12)
     Minimum variance: 0.0142
     Covariance: 0.0178
 
-![png](/images/2022_04_20_post1/output_6_1.png)
+![pdf](/images/2022_04_20_post1/output_6_1.pdf)
 
 Assume $\sigma_1 \leq \sigma_2$, the plausible situations are:
 
@@ -356,7 +356,7 @@ else:
 
 
     
-![png](/images/2022_04_20_post1/output_8_1.png)
+![pdf](/images/2022_04_20_post1/output_8_1.pdf)
     
 
 
@@ -369,7 +369,7 @@ else:
 
 
     
-![png](/images/2022_04_20_post1/output_8_3.png)
+![pdf](/images/2022_04_20_post1/output_8_3.pdf)
     
 
 
@@ -382,7 +382,7 @@ else:
 
 
     
-![png](/images/2022_04_20_post1/output_8_5.png)
+![pdf](/images/2022_04_20_post1/output_8_5.pdf)
     
 
 
@@ -395,7 +395,7 @@ else:
 
 
     
-![png](/images/2022_04_20_post1/output_8_7.png)
+![pdf](/images/2022_04_20_post1/output_8_7.pdf)
     
 
 
@@ -408,7 +408,7 @@ else:
 
 
     
-![png](/images/2022_04_20_post1/output_8_9.png)
+![pdf](/images/2022_04_20_post1/output_8_9.pdf)
     
 
 
@@ -438,7 +438,7 @@ twoAssetPlot(mu1, mu2, var1, var2, corr12, separatePlot=False)
 
 
     
-![png](/images/2022_04_20_post1/output_9_1.png)
+![pdf](/images/2022_04_20_post1/output_9_1.pdf)
     
 
 
@@ -471,7 +471,7 @@ twoAssetPlot(mu1_rrf, mu2_rrf, var1_rrf, var2_rrf, corr12_rrf)
 
 
     
-![png](/images/2022_04_20_post1/output_11_1.png)
+![pdf](/images/2022_04_20_post1/output_11_1.pdf)
     
 
 
@@ -765,6 +765,6 @@ twoFinancePlot(df_vwr, "Dec 2", "Dec 7")
 
 
     
-![png](/images/2022_04_20_post1/output_16_1.png)
+![pdf](/images/2022_04_20_post1/output_16_1.pdf)
     
 
