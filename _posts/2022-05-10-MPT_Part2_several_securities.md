@@ -3,7 +3,7 @@ title: 'MPT Part 2: Several Securities: Risk and Expected Return'
 date: 2022-05-10
 permalink: /posts/2022/05/MPT_Part2_several_securities/
 author: "Hao Zhao"
-excerpt: "<img src='/images/2022_05_10_post1/output_12_10.pdf' width='600' height='315'>"
+excerpt: "<img src='/images/2022_05_10_post1/excerpt_image.png' width='600' height='315'>"
 tags:
   - Finance
   - Python
@@ -193,9 +193,11 @@ def calPortRetVar(weightList, eRetList, stdList, corrList, printResults=True, pr
 4. The correlation list should follow the combination order from smaller distance between $i$ and $j$ to larger, for example, if $n = 4$:
 
 $$
+\begin{equation*}
 \begin{bmatrix}
     \rho_{12} & \rho_{23} & \rho_{34} & \rho_{13} & \rho_{24} & \rho_{14}
 \end{bmatrix}
+\end{equation*}
 $$
 
 Then, the code will build the covariance matrix using $C_{ij} = \rho_{ij}\sigma_{i}\sigma_{j}$ to calculate the covariance for each $i$ and $j$ pair ($i\neq j$). Assuming the index for correlation list starts from 1 instead of 0. For the $n\times n$ covariance matrix, the following equation is used in the above function to identify the index correlation list for the pair $i,j$:
@@ -219,10 +221,6 @@ calPortRetVar(weightList, eRetList, stdList, corrList, printResults=False)
     The portfolio's expected return is: 0.06
     The portfolio's standard deviation is 0.1013
     The idiosyncratic variances account for 42.7% of the portfolio variance
-
-
-
-
 
     {'return': 0.06,
      'variance': 0.010252,
@@ -316,8 +314,6 @@ for n_sample in tqdm(numList):
     
 ```
 
-
-
     Number of stocks in the EW portfolio: 2
     The portfolio's expected return is: 0.0112
     The portfolio's standard deviation is 0.1054
@@ -325,9 +321,9 @@ for n_sample in tqdm(numList):
 
 
 
-    
-![pdf](/images/2022_05_10_post1/output_12_2.pdf)
-    
+<p align="center">    
+<img src='/images/2022_05_10_post1/output_12_2.png' width='600' height='315'>
+</p>    
 
 
     Number of stocks in the EW portfolio: 3
@@ -337,9 +333,9 @@ for n_sample in tqdm(numList):
 
 
 
-    
-![pdf](/images/2022_05_10_post1/output_12_4.pdf)
-    
+<p align="center">    
+<img src='/images/2022_05_10_post1/output_12_4.png' width='600' height='315'>
+</p>    
 
 
     Number of stocks in the EW portfolio: 5
@@ -349,9 +345,9 @@ for n_sample in tqdm(numList):
 
 
 
-    
-![pdf](/images/2022_05_10_post1/output_12_6.pdf)
-    
+<p align="center">    
+<img src='/images/2022_05_10_post1/output_12_6.png' width='600' height='315'>
+</p>    
 
 
     Number of stocks in the EW portfolio: 12
@@ -361,9 +357,9 @@ for n_sample in tqdm(numList):
 
 
 
-    
-![pdf](/images/2022_05_10_post1/output_12_8.pdf)
-    
+<p align="center">    
+<img src='/images/2022_05_10_post1/output_12_8.png' width='600' height='315'>
+</p>    
 
 
     Number of stocks in the EW portfolio: 30
@@ -373,9 +369,9 @@ for n_sample in tqdm(numList):
 
 
 
-    
-![pdf](/images/2022_05_10_post1/output_12_10.pdf)
-    
+<p align="center">    
+<img src='/images/2022_05_10_post1/output_12_10.png' width='600' height='315'>
+</p>    
 
 
     Number of stocks in the EW portfolio: 100
@@ -385,9 +381,9 @@ for n_sample in tqdm(numList):
 
 
 
-    
-![png](/images/2022_05_10_post1/output_12_12.png)
-    
+<p align="center">     
+<img src='/images/2022_05_10_post1/output_12_12.png' width='600' height='315'>
+</p>    
 
 
     Number of stocks in the EW portfolio: 300
@@ -397,9 +393,9 @@ for n_sample in tqdm(numList):
 
 
 
-    
-![png](/images/2022_05_10_post1/output_12_14.png)
-    
+<p align="center">     
+<img src='/images/2022_05_10_post1/output_12_14.png' width='600' height='315'>
+</p>    
 
 
     Number of stocks in the EW portfolio: 900
@@ -409,9 +405,9 @@ for n_sample in tqdm(numList):
 
 
 
-    
-![png](/images/2022_05_10_post1/output_12_16.png)
-    
+<p align="center">     
+<img src='/images/2022_05_10_post1/output_12_16.png' width='600' height='315'>
+</p>    
 
 
 **Random selection for number of stocks**
@@ -582,21 +578,21 @@ for k, v in colDict.items():
 ```
 
 
-    
-![pdf](/images/2022_05_10_post1/output_18_0.pdf)
-    
+<p align="center">    
+<img src='/images/2022_05_10_post1/output_18_0.png' width='600' height='315'>
+</p>    
 
 
 
-    
-![pdf](/images/2022_05_10_post1/output_18_1.pdf)
-    
+<p align="center">    
+<img src='/images/2022_05_10_post1/output_18_1.png' width='600' height='315'>
+</p>    
 
 
 
-    
-![pdf](/images/2022_05_10_post1/output_18_2.pdf)
-    
+<p align="center">    
+<img src='/images/2022_05_10_post1/output_18_2.png' width='600' height='315'>
+</p>    
 
 
 ## Minimum variance portfolio
@@ -878,7 +874,7 @@ plt.show()
 ```
 
 
-    
-![pdf](/images/2022_05_10_post1/output_27_0.pdf)
-    
+<p align="center">    
+<img src='/images/2022_05_10_post1/output_27_0.png' width='600' height='315'>
+</p>    
 

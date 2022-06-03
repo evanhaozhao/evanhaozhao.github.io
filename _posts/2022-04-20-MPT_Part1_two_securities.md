@@ -3,7 +3,7 @@ title: 'MPT Part 1: Two Securities Portfolio'
 date: 2022-04-20
 permalink: /posts/2022/04/MPT_Part1_two_securities/
 author: "Hao Zhao"
-excerpt: "<img src='/images/2022_04_20_post1/output_6_1.pdf' width='600' height='315'>"
+excerpt: "<img src='/images/2022_04_20_post1/excerpt_image.png' width='600' height='315'>"
 tags:
   - Finance
   - Python
@@ -58,15 +58,15 @@ Here, $w_1, w_2 \in \mathbb{R}$, and $1 = w_1 + w_2$.
 We use $s$ to represent the $w_1$, then the $w_2 = 1 - s$. The above equation would be:
 
 $$
-\begin{equation}
+\begin{equation*}
     \mu_{v} = s \mu_1 + (1-s) \mu_2,
-\end{equation}
+\end{equation*}
 $$
 
 $$
-\begin{equation}
+\begin{equation*}
     \sigma^2_V = s^2 \sigma^2_1 + (1-s)^2 \sigma^2_2 + 2s(1-s)c_{12}.
-\end{equation}
+\end{equation*}
 $$
 
 Here $s \in \mathbb{R}$.
@@ -104,17 +104,17 @@ $$
 where
 
 $$
-\begin{equation}
+\begin{equation*}
     A^2 = \frac{\sigma_1^2+\sigma_2^2-2c_{12}}{(\mu_1-\mu_2)^2}>0,
-\end{equation}
+\end{equation*}
 $$
 
 whose asymptotes are:
 
 $$
-\begin{equation}
+\begin{equation*}
     y=\mu_0 \pm \frac{1}{A}x.
-\end{equation}
+\end{equation*}
 $$
 
 ```python
@@ -313,7 +313,9 @@ twoAssetPlot(mu1, mu2, var1, var2, corr12)
     Minimum variance: 0.0142
     Covariance: 0.0178
 
-![pdf](/images/2022_04_20_post1/output_6_1.pdf)
+<p align="center">
+<img src='/images/2022_04_20_post1/output_6_1.png' width='600' height='315'>
+</p>
 
 Assume $\sigma_1 \leq \sigma_2$, the plausible situations are:
 
@@ -355,9 +357,9 @@ else:
 
 
 
-    
-![pdf](/images/2022_04_20_post1/output_8_1.pdf)
-    
+<p align="center">    
+<img src='/images/2022_04_20_post1/output_8_1.png' width='600' height='315'>
+</p>    
 
 
     [Situation 2]: correlation between STD1/STD2 (0.7071) and 1
@@ -368,9 +370,9 @@ else:
 
 
 
-    
-![pdf](/images/2022_04_20_post1/output_8_3.pdf)
-    
+<p align="center">    
+<img src='/images/2022_04_20_post1/output_8_3.png' width='600' height='315'>
+</p>    
 
 
     [Situation 3]: correlation equals STD1/STD2 (0.7071)
@@ -381,9 +383,9 @@ else:
 
 
 
-    
-![pdf](/images/2022_04_20_post1/output_8_5.pdf)
-    
+<p align="center">    
+<img src='/images/2022_04_20_post1/output_8_5.png' width='600' height='315'>
+</p>    
 
 
     [Situation 4]: correlation between -1 and STD1/STD2 (0.7071)
@@ -394,9 +396,9 @@ else:
 
 
 
-    
-![pdf](/images/2022_04_20_post1/output_8_7.pdf)
-    
+<p align="center">    
+<img src='/images/2022_04_20_post1/output_8_7.png' width='600' height='315'>
+</p>    
 
 
     [Situation 5]: correlation equals -1
@@ -407,9 +409,9 @@ else:
 
 
 
-    
-![pdf](/images/2022_04_20_post1/output_8_9.pdf)
-    
+<p align="center">    
+<img src='/images/2022_04_20_post1/output_8_9.png' width='600' height='315'>
+</p>    
 
 
 
@@ -437,9 +439,9 @@ twoAssetPlot(mu1, mu2, var1, var2, corr12, separatePlot=False)
 
 
 
-    
-![pdf](/images/2022_04_20_post1/output_9_1.pdf)
-    
+<p align="center">    
+<img src='/images/2022_04_20_post1/output_9_1.png' width='600' height='315'>
+</p>    
 
 
 If the portfolio is constructed by one risky asset (expected return: $\mu_1$, variance: $\sigma_1 > 0$) and one risk-free asset (expected return: $R$, variance: 0), the variance of the portfolio would be:
@@ -470,9 +472,9 @@ twoAssetPlot(mu1_rrf, mu2_rrf, var1_rrf, var2_rrf, corr12_rrf)
 
 
 
-    
-![pdf](/images/2022_04_20_post1/output_11_1.pdf)
-    
+<p align="center">    
+<img src='/images/2022_04_20_post1/output_11_1.png' width='600' height='315'>
+</p>    
 
 
 ##  Example with financial data
@@ -764,7 +766,7 @@ twoFinancePlot(df_vwr, "Dec 2", "Dec 7")
 
 
 
-    
-![pdf](/images/2022_04_20_post1/output_16_1.pdf)
-    
+<p align="center">    
+<img src='/images/2022_04_20_post1/output_16_1.png' width='600' height='315'>
+</p>    
 
