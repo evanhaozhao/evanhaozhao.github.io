@@ -678,7 +678,7 @@ def calMVP(eRetList, stdList, corrList, returnType="weightList"):
         return weightList
     elif returnType == "fullPrint":
         weightRound = list(np.round(weightArray,3))
-        print("Weights for the minimum variance portfolio are: %s, sum to %s" %(weightRound, int(np.sum(weightArray))))
+        print("Weights for the minimum variance portfolio are: %s, sum to %s" %(weightRound, round(np.sum(weightArray),0)))
         print("The portfolio's expected return is: %s" % round(portERet, 4))
         print("The portfolio's variance is %s" % round(portVar,4))
         try:

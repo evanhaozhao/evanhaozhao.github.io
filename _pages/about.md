@@ -9,4 +9,3 @@ redirect_from:
 ---
 
 **Welcome to my website!**
-
