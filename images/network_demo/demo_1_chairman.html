@@ -1,0 +1,123 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 750px;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+        #config {
+            float: left;
+            width: 400px;
+            height: 600px;
+        }
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<div id = "config"></div>
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#ffee65", "id": "Xu Jin Guang", "label": "Xu Jin Guang", "shape": "dot", "size": 13, "title": "Xu Jin Guang (Chairman)\nConnections:\nFu Zheng Hua\nYe Xuan Ping\nZhu Sen Lin\nLi Yi Long\nYang Yi Wen\nLu Hao\nDeng Nan\nXie Fei\nShi Tai Feng\nLi Xi Ming\nHu Qi Sheng\nQiu Shui Ping\nSui Zhen Jiang\nLin Ruo\nWei Jian Xing\nZhou Guang Zhao\nZhao Shi Hong\nLi Ke Qiang\nChen Xi Tong\nJi Guo Qiang\nZhi Sheng Hua\nLi Qi Yan"}, {"color": "#bd7ebe", "id": "Hu Qi Sheng", "label": "Hu Qi Sheng", "shape": "dot", "size": 15.380572041353537, "title": "Hu Qi Sheng (Politician)\nThrough education (alumni)\nRank: division head\nConnections:\nXu Jin Guang"}, {"color": "#ffb55a", "id": "Ji Guo Qiang", "label": "Ji Guo Qiang", "shape": "dot", "size": 16.785266909588593, "title": "Ji Guo Qiang (Politician)\nThrough education (alumni)\nRank: deputy bureau director\nConnections:\nXu Jin Guang"}, {"color": "#E0D8B0", "id": "Yang Yi Wen", "label": "Yang Yi Wen", "shape": "dot", "size": 17.954645502230758, "title": "Yang Yi Wen (Politician)\nThrough education (classmate)\nRank: bureau director\nConnections:\nXu Jin Guang"}, {"color": "#E0D8B0", "id": "Qiu Shui Ping", "label": "Qiu Shui Ping", "shape": "dot", "size": 17.954645502230758, "title": "Qiu Shui Ping (Politician)\nThrough education (classmate)\nRank: bureau director\nConnections:\nXu Jin Guang"}, {"color": "#E0D8B0", "id": "Sui Zhen Jiang", "label": "Sui Zhen Jiang", "shape": "dot", "size": 17.954645502230758, "title": "Sui Zhen Jiang (Politician)\nThrough education (classmate)\nRank: bureau director\nConnections:\nXu Jin Guang"}, {"color": "#E0D8B0", "id": "Zhao Shi Hong", "label": "Zhao Shi Hong", "shape": "dot", "size": 17.954645502230758, "title": "Zhao Shi Hong (Politician)\nThrough education (classmate)\nRank: bureau director\nConnections:\nXu Jin Guang"}, {"color": "#E0D8B0", "id": "Li Yi Long", "label": "Li Yi Long", "shape": "dot", "size": 17.954645502230758, "title": "Li Yi Long (Politician)\nThrough education (alumni)\nRank: bureau director\nConnections:\nXu Jin Guang"}, {"color": "#a7d5ed", "id": "Shi Tai Feng", "label": "Shi Tai Feng", "shape": "dot", "size": 18.95635140771547, "title": "Shi Tai Feng (Politician)\nThrough education (classmate)\nRank: subprovincial\nConnections:\nXu Jin Guang"}, {"color": "#a7d5ed", "id": "Zhi Sheng Hua", "label": "Zhi Sheng Hua", "shape": "dot", "size": 18.95635140771547, "title": "Zhi Sheng Hua (Politician)\nThrough education (classmate)\nRank: subprovincial\nConnections:\nXu Jin Guang"}, {"color": "#a7d5ed", "id": "Fu Zheng Hua", "label": "Fu Zheng Hua", "shape": "dot", "size": 18.95635140771547, "title": "Fu Zheng Hua (Politician)\nThrough education (alumni)\nRank: subprovincial\nConnections:\nXu Jin Guang"}, {"color": "#beb9db", "id": "Zhou Guang Zhao", "label": "Zhou Guang Zhao", "shape": "dot", "size": 19.832493408393514, "title": "Zhou Guang Zhao (Politician)\nThrough education (classmate)\nRank: provincial minister\nConnections:\nXu Jin Guang"}, {"color": "#beb9db", "id": "Lu Hao", "label": "Lu Hao", "shape": "dot", "size": 19.832493408393514, "title": "Lu Hao (Politician)\nThrough education (classmate)\nRank: provincial minister\nConnections:\nXu Jin Guang"}, {"color": "#beb9db", "id": "Deng Nan", "label": "Deng Nan", "shape": "dot", "size": 19.832493408393514, "title": "Deng Nan (Politician)\nThrough education (alumni)\nRank: provincial minister\nConnections:\nXu Jin Guang"}, {"color": "#beb9db", "id": "Lin Ruo", "label": "Lin Ruo", "shape": "dot", "size": 19.832493408393514, "title": "Lin Ruo (Politician)\nThrough work\nRank: provincial minister\nConnections:\nXu Jin Guang"}, {"color": "#beb9db", "id": "Zhu Sen Lin", "label": "Zhu Sen Lin", "shape": "dot", "size": 19.832493408393514, "title": "Zhu Sen Lin (Politician)\nThrough work\nRank: provincial minister\nConnections:\nXu Jin Guang"}, {"color": "#beb9db", "id": "Li Qi Yan", "label": "Li Qi Yan", "shape": "dot", "size": 19.832493408393514, "title": "Li Qi Yan (Politician)\nThrough work\nRank: provincial minister\nConnections:\nXu Jin Guang"}, {"color": "#fdcce5", "id": "Xie Fei", "label": "Xie Fei", "shape": "dot", "size": 20.61107285416508, "title": "Xie Fei (Politician)\nThrough work\nRank: subnational leader\nConnections:\nXu Jin Guang"}, {"color": "#fdcce5", "id": "Ye Xuan Ping", "label": "Ye Xuan Ping", "shape": "dot", "size": 20.61107285416508, "title": "Ye Xuan Ping (Politician)\nThrough work\nRank: subnational leader\nConnections:\nXu Jin Guang"}, {"color": "#fdcce5", "id": "Chen Xi Tong", "label": "Chen Xi Tong", "shape": "dot", "size": 20.61107285416508, "title": "Chen Xi Tong (Politician)\nThrough work\nRank: subnational leader\nConnections:\nXu Jin Guang"}, {"color": "#fdcce5", "id": "Li Xi Ming", "label": "Li Xi Ming", "shape": "dot", "size": 20.61107285416508, "title": "Li Xi Ming (Politician)\nThrough work\nRank: subnational leader\nConnections:\nXu Jin Guang"}, {"color": "#8bd3c7", "id": "Wei Jian Xing", "label": "Wei Jian Xing", "shape": "dot", "size": 21.31165706406396, "title": "Wei Jian Xing (Politician)\nThrough work\nRank: national leader\nConnections:\nXu Jin Guang"}, {"color": "#8bd3c7", "id": "Li Ke Qiang", "label": "Li Ke Qiang", "shape": "dot", "size": 21.31165706406396, "title": "Li Ke Qiang (Politician)\nThrough education (alumni)\nRank: national leader\nConnections:\nXu Jin Guang"}]);
+        edges = new vis.DataSet([{"color": "#1CD6CE", "from": "Xu Jin Guang", "to": "Hu Qi Sheng", "width": 1}, {"color": "#1CD6CE", "from": "Xu Jin Guang", "to": "Ji Guo Qiang", "width": 1}, {"color": "#1363DF", "from": "Xu Jin Guang", "to": "Yang Yi Wen", "width": 1}, {"color": "#1363DF", "from": "Xu Jin Guang", "to": "Qiu Shui Ping", "width": 1}, {"color": "#1363DF", "from": "Xu Jin Guang", "to": "Sui Zhen Jiang", "width": 1}, {"color": "#1363DF", "from": "Xu Jin Guang", "to": "Zhao Shi Hong", "width": 1}, {"color": "#1CD6CE", "from": "Xu Jin Guang", "to": "Li Yi Long", "width": 1}, {"color": "#1363DF", "from": "Xu Jin Guang", "to": "Shi Tai Feng", "width": 1}, {"color": "#1363DF", "from": "Xu Jin Guang", "to": "Zhi Sheng Hua", "width": 1}, {"color": "#1CD6CE", "from": "Xu Jin Guang", "to": "Fu Zheng Hua", "width": 1}, {"color": "#1363DF", "from": "Xu Jin Guang", "to": "Zhou Guang Zhao", "width": 1}, {"color": "#1363DF", "from": "Xu Jin Guang", "to": "Lu Hao", "width": 1}, {"color": "#1CD6CE", "from": "Xu Jin Guang", "to": "Deng Nan", "width": 1}, {"color": "#C21010", "from": "Xu Jin Guang", "to": "Lin Ruo", "width": 1}, {"color": "#C21010", "from": "Xu Jin Guang", "to": "Zhu Sen Lin", "width": 1}, {"color": "#C21010", "from": "Xu Jin Guang", "to": "Li Qi Yan", "width": 1}, {"color": "#C21010", "from": "Xu Jin Guang", "to": "Xie Fei", "width": 1}, {"color": "#C21010", "from": "Xu Jin Guang", "to": "Ye Xuan Ping", "width": 1}, {"color": "#C21010", "from": "Xu Jin Guang", "to": "Chen Xi Tong", "width": 1}, {"color": "#C21010", "from": "Xu Jin Guang", "to": "Li Xi Ming", "width": 1}, {"color": "#C21010", "from": "Xu Jin Guang", "to": "Wei Jian Xing", "width": 1}, {"color": "#1CD6CE", "from": "Xu Jin Guang", "to": "Li Ke Qiang", "width": 1}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+        // if this network requires displaying the configure window,
+        // put it in its div
+        options.configure["container"] = document.getElementById("config");
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
