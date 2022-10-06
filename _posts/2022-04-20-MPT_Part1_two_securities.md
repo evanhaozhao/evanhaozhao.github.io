@@ -500,7 +500,7 @@ df_vwr.head(10)
 
 
 
-<div>
+<div style="height:400px;overflow:auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;

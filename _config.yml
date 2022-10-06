@@ -83,12 +83,12 @@ analytics:
 author:
   name             : "Hao Zhao "
   avatar           : "profile.png"
-  bio              : "PhD candidate in Finance at Durham University Business School"
-  location         : "Durham, UK"
+  bio              : "PhD Candidate in Finance"
+  location         : "United Kingdom"
   employer         : 
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
-  email            :
+  email            : 
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -260,10 +260,20 @@ defaults:
       author_profile: true
       share: false
       comment: false
-    # _research
+  # _research
   - scope:
       path: ""
       type: research
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      comment: false
+
+  # _contact
+  - scope:
+      path: ""
+      type: contact
     values:
       layout: single
       author_profile: true
