@@ -9,3 +9,5 @@ redirect_from:
 ---
 
 **Welcome to my website!**
+
+I am a PhD candidate in Finance at Durham Universiy.
