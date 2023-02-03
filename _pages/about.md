@@ -12,17 +12,22 @@ redirect_from:
 
 I'm Hao Zhao, a PhD candidate in Finance. 
 
-> **Research interests**
-> - Corporate finance
-> - Empirical asset pricing
+***
+***Interests***
+- Corporate finance
+- Empirical asset pricing
+- Data science
 
-> **Supervisor**
-> - [Xian Gu](http://ameliaxiangu.weebly.com/), Associate Professor of Finance, Durham University Business School
+***
+***Current affiliations***
+- [Department of Finance](https://www.durham.ac.uk/business/about/departments/finance/), Durham University Business School, UK
+- [The Northern Ireland and North East Doctoral Training Partnership](https://www.ninedtp.ac.uk/) (NINE DTP), Economic and Social Research Council (ESRC), UK
 
-> **Current affiliations**
-> - [Department of Finance](https://www.durham.ac.uk/business/about/departments/finance/), Durham University Business School
-> - [The Northern Ireland and North East Doctoral Training Partnership](https://www.ninedtp.ac.uk/) (NINE DTP), Economic and Social Research Council (ESRC)
+***
+***Supervisor***
+- [Xian Gu](http://ameliaxiangu.weebly.com/), Associate Professor of Finance, Durham University Business School
 
-> **Contact**
-> - Email: [hao.zhao@durham.ac.uk](mailto:hao.zhao@durham.ac.uk)
+***
+***Contact***
+- Email: [hao.zhao@durham.ac.uk](mailto:hao.zhao@durham.ac.uk)
 
