@@ -10,4 +10,12 @@ redirect_from:
 
 **Welcome to my website!**
 
-My name is Hao Zhao. I am a PhD candidate in Finance at Durham Universiy.
+I'm Hao Zhao, a PhD candidate in Finance. 
+
+> **Research interests**
+> - Corporate finance
+> - Empirical asset pricing
+
+> **Current affiliations**
+> - [Department of Finance](https://www.durham.ac.uk/business/about/departments/finance/), Durham University Business School.
+> - [The Northern Ireland and North East Doctoral Training Partnership](https://www.ninedtp.ac.uk/) (NINE DTP), Economic and Social Research Council (ESRC).
