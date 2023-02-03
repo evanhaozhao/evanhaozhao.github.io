@@ -25,7 +25,7 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
 
 ***
 ***Supervisors***
-- [Xian Gu](http://ameliaxiangu.weebly.com/), Associate Professor of Finance at Durham University Business School
+- [Xian Gu](https://www.durham.ac.uk/business/our-people/xian-gu/), Associate Professor of Finance at Durham University Business School
 
 ***
 ***Contact***
