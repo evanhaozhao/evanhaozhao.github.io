@@ -10,7 +10,7 @@ redirect_from:
 
 **Welcome to my website!**
 
-I'm Hao Zhao, a PhD candidate in Finance. 
+I'm Hao Zhao, a first-year PhD candidate in Finance. 
 
 ***
 ***Interests***
@@ -19,12 +19,12 @@ I'm Hao Zhao, a PhD candidate in Finance.
 - Data science
 
 ***
-***Current affiliations***
+***Affiliations***
 - [Department of Finance](https://www.durham.ac.uk/business/about/departments/finance/), Durham University Business School, UK
 - [The Northern Ireland and North East Doctoral Training Partnership](https://www.ninedtp.ac.uk/) (NINE DTP), Economic and Social Research Council (ESRC), UK
 
 ***
-***Supervisor***
+***Supervisors***
 - [Xian Gu](http://ameliaxiangu.weebly.com/), Associate Professor of Finance, Durham University Business School
 
 ***
