@@ -81,14 +81,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Hao Zhao "
+  name             : "Hao Zhao"
   avatar           : "profile.png"
   bio              : "PhD Candidate in Finance"
   location         : "Durham, UK"
   employer         : 
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
-  email            : 
+  email            : "hao.zhao@durham.ac.uk"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -110,7 +110,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : # "replacethistwitterhandle"
+  twitter          :
   vine             :
   weibo            :
   xing             :
