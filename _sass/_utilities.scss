@@ -468,3 +468,42 @@ a.reversefootnote {
   color: $danger-color;
   font-weight: bold;
 }
+
+.durham_logo_icon {
+  background: url('/images/durham_logo.svg');
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 1;
+  position: relative;
+  top: -0.1em;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.ukri_logo_icon {
+  background: url('/images/ukri_logo.svg');
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 1;
+  position: relative;
+  top: -0.1em;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.ssrn_logo_icon {
+  background: url('/images/ssrn_logo.svg');
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 1;
+  position: relative;
+  top: -0.1em;
+  vertical-align: middle;
+  text-align: center;
+}

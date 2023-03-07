@@ -86,10 +86,10 @@ author:
   bio              : "PhD Candidate in Finance"
   location         : "Durham, UK"
   employer         : 
-  pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : # "http://yourfullgooglescholarurl.com"
+  pubmed           : 
+  googlescholar    : # "https://scholar.google.com/citations?user=DFvdmC8AAAAJ&hl=en"
   email            : "hao.zhao@durham.ac.uk"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     :  
   uri              :
   bitbucket        :
   codepen          :
@@ -101,23 +101,24 @@ author:
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  impactstory      : 
   lastfm           :
   linkedin         : "evan-hao-zhao"
-  orcid            : # "http://orcid.org/yourorcidurl"
+  orcid            : # "https://orcid.org/0000-0002-7061-6412"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : 
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : # "https://twitter.com/ehaozh"
   vine             :
   weibo            :
   xing             :
   youtube          :
   wikipedia        :
-  durhampage       : "haozhao"
-
+  durhampage       : "https://www.durham.ac.uk/business/about/departments/"
+  ukripage         : # "https://gtr.ukri.org/person/22D6B5FA-203E-4808-8C35-5BE8DA9D03C1"
+  ssrnpage         : # "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5476154"
 
 # Reading Files
 include:

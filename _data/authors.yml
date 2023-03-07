@@ -7,10 +7,15 @@ Hao Zhao:
   email       : "hao.zhao@durham.ac.uk"
   bio         : "PhD Candidate in Finance"
   avatar      : "profile.png"
-  twitter     : # "name"
   google_plus : # "Name"
   github      : "evanhaozhao"
-  durhampage  : "haozhao"
+  durhampage  : # "https://www.durham.ac.uk/business/about/departments/"
+  ukripage    : # "https://gtr.ukri.org/person/22D6B5FA-203E-4808-8C35-5BE8DA9D03C1"
+  googlescholar: # "https://scholar.google.com/citations?user=DFvdmC8AAAAJ&hl=en"
+  twitter     : # "https://twitter.com/ehaozh"
+  ssrnpage    : # "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5476154"
+  orcid       : # "https://orcid.org/0000-0002-7061-6412"
+
 
 Name2 Name2:
   name        : "Name2 Name2"
