@@ -332,3 +332,10 @@
   background: #000;
   display: inline-block;
 }
+
+.icon {
+  background: url('/images/durham_logo.svg');
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+}
