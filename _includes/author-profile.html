@@ -106,12 +106,6 @@
       {% if author.vine %}
         <li><a href="https://vine.co/u/{{ author.vine }}"><i class="fab fa-fw fa-vine" aria-hidden="true"></i> Vine</a></li>
       {% endif %}
-      {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
-      {% endif %}
-      {% if author.ssrnpage %}
-        <li><a href="{{ author.ssrnpage }}"><i class="ssrn_logo_icon"></i> SSRN</a></li>
-      {% endif %}
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
       {% endif %}
@@ -125,10 +119,19 @@
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
       {% endif %}
       {% if author.durhampage %}
-        <li><a href="{{ author.durhampage }}"><i class="durham_logo_icon"></i> School page</a></li>
+        <li><a href="{{ author.durhampage }}"><i class="durham_logo_icon"></i> School</a></li>
+      {% endif %}
+      {% if author.ninedtppage %}
+        <li><a href="{{ author.ninedtppage }}"><i class="ninedtp_logo_icon"></i> NINE DTP</a></li>
       {% endif %}
       {% if author.ukripage %}
-        <li><a href="{{ author.ukripage }}"><i class="ukri_logo_icon"></i> UKRI page</a></li>
+        <li><a href="{{ author.ukripage }}"><i class="ukri_logo_icon"></i> UKRI</a></li>
+      {% endif %}
+      {% if author.ssrnpage %}
+        <li><a href="{{ author.ssrnpage }}"><i class="ssrn_logo_icon"></i> SSRN</a></li>
+      {% endif %}
+      {% if author.googlescholar %}
+        <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
       {% endif %}
     </ul>
   </div>
