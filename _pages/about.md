@@ -31,4 +31,3 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
 ***
 ***Contact***
 - Email: [hao.zhao@durham.ac.uk](mailto:hao.zhao@durham.ac.uk)
-
