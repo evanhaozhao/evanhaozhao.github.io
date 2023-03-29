@@ -12,8 +12,8 @@ author_profile: true
 <div>
   <ul>
     <li> Email: <a href="mailto:hao.zhao@durham.ac.uk">hao.zhao@durham.ac.uk</a>
-    <span id="workingstatus" class="limited"></span> 
-    <span> (UK Time) {{ site.time | date: "%H:%M" }}</span>
+      <span id="workingstatus"></span> 
+      <span id="uktime"></span>
     </li>
   </ul>
 </div>
@@ -51,14 +51,34 @@ author_profile: true
   }
 </style>
 
-{% assign current_time = site.time | date: "%s" | plus: 3600 | date: "%H:%M:%S" %}
-{% if current_time >= "09:00:00" and current_time < "12:00:00" or current_time >= "15:00:00" and current_time < "20:00:00" %}
-  <script>document.getElementById("workingstatus").className = "available";</script>
-{% elsif current_time >= "23:00:00" or current_time >= "00:00:00" and current_time < "09:00:00" %}
-  <script>document.getElementById("workingstatus").className = "unavailable";</script>
-{% else %}
-  <script>document.getElementById("workingstatus").className = "limited";</script>
-{% endif %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+<script>
+  function updateWorkingStatus() {
+    var now = moment();
+    var ukHours = now.utcOffset(0).utc().add(1, 'hours').hour(); // Add 1 hour during daylight saving time
+    var ukMinutes = now.utcOffset(0).utc().minute();
+    var ukSeconds = now.utcOffset(0).utc().second();
+    var workingStatusElement = document.getElementById('workingstatus');
+    var ukTimeElement = document.getElementById('uktime');
+
+    if ((ukHours >= 9 && ukHours < 12) || (ukHours >= 15 && ukHours < 20)) {
+      workingStatusElement.className = 'available';
+    } else if (ukHours >= 23 || (ukHours >= 0 && ukHours < 9)) {
+      workingStatusElement.className = 'unavailable';
+    } else {
+      workingStatusElement.className = 'limited';
+    }
+    
+    var ukTimeString = moment().utcOffset(0).add(1, 'hours').format('h:mm:ss A'); 
+    ukTimeElement.textContent =  ukTimeString + ' (UK time)';
+
+    setTimeout(updateWorkingStatus, 1000);
+  }
+  
+  updateWorkingStatus();
+</script>
+
 
 ### Address:
 
