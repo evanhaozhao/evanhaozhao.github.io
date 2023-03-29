@@ -11,7 +11,8 @@ author_profile: true
 
 <div>
   <ul>
-    <li> Email: <a href="mailto:hao.zhao@durham.ac.uk">hao.zhao@durham.ac.uk</a>
+    <li> 
+      <a href="mailto:hao.zhao@durham.ac.uk">hao.zhao@durham.ac.uk</a>
       <span id="workingstatus"></span> 
       <span id="uktime"></span>
     </li>
@@ -56,7 +57,7 @@ author_profile: true
 <script>
   function updateWorkingStatus() {
     var now = moment();
-    var ukHours = now.utcOffset(0).utc().add(1, 'hours').hour(); // Add 1 hour during daylight saving time
+    var ukHours = now.utcOffset(0).utc().add(1, 'hours').hour();
     var ukMinutes = now.utcOffset(0).utc().minute();
     var ukSeconds = now.utcOffset(0).utc().second();
     var workingStatusElement = document.getElementById('workingstatus');
