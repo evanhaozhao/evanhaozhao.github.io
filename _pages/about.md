@@ -31,23 +31,19 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
 ***
 ***Contact***
 <html>
-  <head>
-    <script>
-        function updateStatus() {
-        var now = new Date();
-        var utcHours = now.getUTCHours();
-        var utcMinutes = now.getUTCMinutes();
-        var ukHours = (utcHours + 1) % 24; // Add 1 hour during daylight saving time
-        var ukMinutes = utcMinutes;
-        if (ukHours >= 9 && ukHours < 21) {
-            document.getElementById('workingstatus').className = 'available';
-        } else {
-            document.getElementById('workingstatus').className = 'unavailable';
-        }
-        setTimeout(updateStatus, 1000);
-        }
-    </script>
-  </head>
+  <script type="text/javascript">
+      function updateStatus() {
+      var now = new Date();
+      var utcHours = now.getUTCHours();
+      var utcMinutes = now.getUTCMinutes();
+      var ukHours = (utcHours + 1) % 24; // Add 1 hour during daylight saving time
+      var ukMinutes = utcMinutes;
+      if ((ukHours >= 9 && ukHours < 12) || (ukHours >= 15 && ukHours < 20)) {document.getElementById('workingstatus').className = 'available';} 
+      else if (ukHours >= 23 || ukHours < 9) {document.getElementById('workingstatus').className = 'unavailable';} 
+      else {document.getElementById('workingstatus').className = 'other';}
+      setTimeout(updateStatus, 1000);
+      }
+  </script>
   <body onload="updateStatus()">
     <div>
       <ul>
