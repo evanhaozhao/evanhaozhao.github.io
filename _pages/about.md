@@ -30,27 +30,34 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
 
 ***
 ***Contact***
-<html>
-  <script type="text/javascript">
-      function updateStatus() {
-      var now = new Date();
-      var utcHours = now.getUTCHours();
-      var utcMinutes = now.getUTCMinutes();
-      var ukHours = (utcHours + 1) % 24; // Add 1 hour during daylight saving time
-      var ukMinutes = utcMinutes;
-      if ((ukHours >= 9 && ukHours < 12) || (ukHours >= 15 && ukHours < 20)) {document.getElementById('workingstatus').className = 'available';} 
-      else if (ukHours >= 23 || ukHours < 9) {document.getElementById('workingstatus').className = 'unavailable';} 
-      else {document.getElementById('workingstatus').className = 'other';}
-      setTimeout(updateStatus, 1000);
-      }
-  </script>
-  <body onload="updateStatus()">
-    <div>
-      <ul>
-        <li> Email: <a href="mailto:hao.zhao@durham.ac.uk">hao.zhao@durham.ac.uk</a>
-        <span id="workingstatus"></span> 
-        </li>
-      </ul>
-    </div>
-  </body>
-</html>
+
+<div>
+  <ul>
+    <li> Email: <a href="mailto:hao.zhao@durham.ac.uk">hao.zhao@durham.ac.uk</a>
+    <span id="workingstatus"></span> 
+    </li>
+  </ul>
+</div>
+
+<script>
+  function updateWorkingStatus() {
+    var now = new Date();
+    var utcHours = now.getUTCHours();
+    var utcMinutes = now.getUTCMinutes();
+    var ukHours = (utcHours + 1) % 24; // Add 1 hour during daylight saving time
+    var ukMinutes = utcMinutes;
+    var workingStatusElement = document.getElementById('workingstatus');
+    
+    if ((ukHours >= 9 && ukHours < 12) || (ukHours >= 15 && ukHours < 20)) {
+      workingStatusElement.className = 'available';
+    } else if (ukHours >= 23 || (ukHours >= 0 && ukHours < 9)) {
+      workingStatusElement.className = 'unavailable';
+    } else {
+      workingStatusElement.className = 'limited';
+    }
+    
+    setTimeout(updateWorkingStatus, 1000);
+  }
+  
+  updateWorkingStatus();
+</script>
