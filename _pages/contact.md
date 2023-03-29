@@ -6,19 +6,53 @@ author_profile: true
 ---
 
 ### Email: 
-
 <div>
   <span id="workingstatus"></span>
-  <span>Availability Status (UK time): <span id="uktime"></span></span>
+  <span> (UK time): <span id="uktime"></span></span>
 </div>
+
+<style>
+  #workingstatus {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+  }
+
+  .available {
+    background-color: #2ecc71;
+  }
+
+  .unavailable {
+    background-color: #bdc3c7;
+  }
+
+  .limited {
+    background-color: orange;
+  }
+
+  #workingstatus::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 3px;
+  }
+</style>
 
 <script>
   function updateWorkingStatus() {
     var now = new Date();
     var utcHours = now.getUTCHours();
     var utcMinutes = now.getUTCMinutes();
+    var utcSeconds = now.getUTCSeconds();
     var ukHours = (utcHours + 1) % 24; // Add 1 hour during daylight saving time
     var ukMinutes = utcMinutes;
+    var ukSeconds = utcSeconds;
     var workingStatusElement = document.getElementById('workingstatus');
     var ukTimeElement = document.getElementById('uktime');
     
@@ -30,14 +64,13 @@ author_profile: true
       workingStatusElement.className = 'limited';
     }
     
-    ukTimeElement.textContent = ukHours.toString().padStart(2, '0') + ':' + ukMinutes.toString().padStart(2, '0');
+    ukTimeElement.innerHTML = ukHours + ":" + (ukMinutes < 10 ? "0" : "") + ukMinutes + ":" + (ukSeconds < 10 ? "0" : "") + ukSeconds;
     
     setTimeout(updateWorkingStatus, 1000);
   }
   
   updateWorkingStatus();
 </script>
-
 
 
 ### Address:

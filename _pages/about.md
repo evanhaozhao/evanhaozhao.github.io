@@ -39,6 +39,39 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
   </ul>
 </div>
 
+<style>
+  #workingstatus {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+  }
+
+  .available {
+    background-color: #2ecc71;
+  }
+
+  .unavailable {
+    background-color: #bdc3c7;
+  }
+
+  .limited {
+    background-color: orange;
+  }
+
+  #workingstatus::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 3px;
+  }
+</style>
+
 <script>
   function updateWorkingStatus() {
     var now = new Date();
