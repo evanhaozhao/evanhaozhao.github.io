@@ -42,49 +42,48 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
 </div>
 
 <style>
-#workingstatus {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  margin-left: 4px;
-  text-align: center;
-}
+  #workingstatus {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 4px;
+    text-align: center;
+  }
 
-.available {
-  background-color: #2ecc71;
-}
+  .available {
+    background-color: #2ecc71;
+  }
 
-.available:hover {
-  background-color: #25A35A;
-}
+  .available:hover {
+    background-color: #25A35A;
+  }
 
-.limited {
-  background-color: #FFA500;
-}
+  .limited {
+    background-color: #FFA500;
+  }
 
-.limited:hover {
-  background-color: #CC8400;
-}
+  .limited:hover {
+    background-color: #CC8400;
+  }
 
-.unavailable {
-  background-color: #bdc3c7;
-}
+  .unavailable {
+    background-color: #bdc3c7;
+  }
 
-.unavailable:hover {
-  background-color: #979C9F;
-}
+  .unavailable:hover {
+    background-color: #979C9F;
+  }
 
-#workingstatus::before {
-  content: "";
-  display: block;
-  width: 6px;
-  height: 6px;
-  background-color: white;
-  border-radius: 50%;
-  margin: 3px;
-}
-
+  #workingstatus::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 3px;
+  }
 </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>

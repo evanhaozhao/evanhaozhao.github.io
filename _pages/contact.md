@@ -33,12 +33,24 @@ author_profile: true
     background-color: #2ecc71;
   }
 
+  .available:hover {
+    background-color: #25A35A;
+  }
+
+  .limited {
+    background-color: #FFA500;
+  }
+
+  .limited:hover {
+    background-color: #CC8400;
+  }
+
   .unavailable {
     background-color: #bdc3c7;
   }
 
-  .limited {
-    background-color: orange;
+  .unavailable:hover {
+    background-color: #979C9F;
   }
 
   #workingstatus::before {
