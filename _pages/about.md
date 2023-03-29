@@ -36,7 +36,7 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
 <div>
   <ul>
     <li> Email: <a href="mailto:hao.zhao@durham.ac.uk">hao.zhao@durham.ac.uk</a>
-    <span id="workingstatus"></span> 
+    <span id="workingstatus" class="limited"></span> 
     </li>
   </ul>
 </div>
@@ -74,26 +74,11 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
   }
 </style>
 
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/_main.js">
-
-  function updateWorkingStatus() {
-    var now = new Date();
-    var utcHours = now.getUTCHours();
-    var utcMinutes = now.getUTCMinutes();
-    var ukHours = (utcHours + 1) % 24; // Add 1 hour during daylight saving time
-    var ukMinutes = utcMinutes;
-    var workingStatusElement = document.getElementById('workingstatus');
-    
-    if ((ukHours >= 9 && ukHours < 12) || (ukHours >= 15 && ukHours < 20)) {
-      workingStatusElement.className = 'available';
-    } else if (ukHours >= 23 || (ukHours >= 0 && ukHours < 9)) {
-      workingStatusElement.className = 'unavailable';
-    } else {
-      workingStatusElement.className = 'limited';
-    }
-    
-    setTimeout(updateWorkingStatus, 1000);
-  }
-  
-  updateWorkingStatus();
-</script>
+{% assign current_time = site.time | date: "%H:%M:%S" %}
+{% if current_time >= "09:00:00" and current_time < "12:00:00" or current_time >= "15:00:00" and current_time < "20:00:00" %}
+  <script>document.getElementById("workingstatus").className = "available";</script>
+{% elsif current_time >= "23:00:00" or current_time >= "00:00:00" and current_time < "09:00:00" %}
+  <script>document.getElementById("workingstatus").className = "unavailable";</script>
+{% else %}
+  <script>document.getElementById("workingstatus").className = "limited";</script>
+{% endif %}
