@@ -33,4 +33,67 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
 ***
 ***Contact***
 
-- Email: [hao.zhao@durham.ac.uk](mailto:hao.zhao@durham.ac.uk)
+<div>
+  <ul>
+    <li> Email: <a href="mailto:hao.zhao@durham.ac.uk">hao.zhao@durham.ac.uk</a>
+    <span id="workingstatus"></span> 
+    </li>
+  </ul>
+</div>
+
+<style>
+  #workingstatus {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+  }
+
+  .available {
+    background-color: #2ecc71;
+  }
+
+  .unavailable {
+    background-color: #bdc3c7;
+  }
+
+  .limited {
+    background-color: orange;
+  }
+
+  #workingstatus::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 3px;
+  }
+</style>
+
+<script src="https://code.jquery.com/jquery-1.10.1.min.js">
+
+  function updateWorkingStatus() {
+    var now = new Date();
+    var utcHours = now.getUTCHours();
+    var utcMinutes = now.getUTCMinutes();
+    var ukHours = (utcHours + 1) % 24; // Add 1 hour during daylight saving time
+    var ukMinutes = utcMinutes;
+    var workingStatusElement = document.getElementById('workingstatus');
+    
+    if ((ukHours >= 9 && ukHours < 12) || (ukHours >= 15 && ukHours < 20)) {
+      workingStatusElement.className = 'available';
+    } else if (ukHours >= 23 || (ukHours >= 0 && ukHours < 9)) {
+      workingStatusElement.className = 'unavailable';
+    } else {
+      workingStatusElement.className = 'limited';
+    }
+    
+    setTimeout(updateWorkingStatus, 1000);
+  }
+  
+  updateWorkingStatus();
+</script>
