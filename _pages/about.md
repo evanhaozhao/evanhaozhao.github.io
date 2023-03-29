@@ -8,6 +8,8 @@ redirect_from:
   - /about.html
 ---
 
+{% include base_path %}
+
 **Welcome to my website!**
 
 I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
@@ -72,7 +74,8 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
   }
 </style>
 
-<script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/_main.js">
+
   function updateWorkingStatus() {
     var now = new Date();
     var utcHours = now.getUTCHours();

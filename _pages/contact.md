@@ -1,9 +1,11 @@
 ---
 layout: archive
 title: "Contact"
-permalink: /contactmd/
+permalink: /contact/
 author_profile: true
 ---
+
+{% include base_path %}
 
 ### Email: 
 <div>
@@ -44,7 +46,8 @@ author_profile: true
   }
 </style>
 
-<script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/_main.js">
+    
   function updateWorkingStatus() {
     var now = new Date();
     var utcHours = now.getUTCHours();
