@@ -36,7 +36,7 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
 <div>
   <ul>
     <li> Email: <a href="mailto:hao.zhao@durham.ac.uk">hao.zhao@durham.ac.uk</a>
-    <span id="workingstatus"></span> 
+      <span id="workingstatus"></span> 
     </li>
   </ul>
 </div>
@@ -74,16 +74,15 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
   }
 </style>
 
-<script src="https://code.jquery.com/jquery-1.10.1.min.js">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
+<script>
   function updateWorkingStatus() {
-    var now = new Date();
-    var utcHours = now.getUTCHours();
-    var utcMinutes = now.getUTCMinutes();
-    var ukHours = (utcHours + 1) % 24; // Add 1 hour during daylight saving time
-    var ukMinutes = utcMinutes;
+    var now = moment();
+    var ukHours = now.utcOffset(0).utc().add(1, 'hours').hour(); // Add 1 hour during daylight saving time
+    var ukMinutes = now.utcOffset(0).utc().minute();
     var workingStatusElement = document.getElementById('workingstatus');
-    
+
     if ((ukHours >= 9 && ukHours < 12) || (ukHours >= 15 && ukHours < 20)) {
       workingStatusElement.className = 'available';
     } else if (ukHours >= 23 || (ukHours >= 0 && ukHours < 9)) {
