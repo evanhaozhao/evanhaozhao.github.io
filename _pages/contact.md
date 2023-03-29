@@ -13,6 +13,7 @@ author_profile: true
   <ul>
     <li> Email: <a href="mailto:hao.zhao@durham.ac.uk">hao.zhao@durham.ac.uk</a>
     <span id="workingstatus" class="limited"></span> 
+    <span> (UK Time) {{ site.time | date: "%H:%M" }}</span>
     </li>
   </ul>
 </div>
@@ -23,8 +24,8 @@ author_profile: true
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    margin-right: 10px;
-    position: relative;
+    margin-left: 4px;
+    text-align: center;
   }
 
   .available {
@@ -50,7 +51,7 @@ author_profile: true
   }
 </style>
 
-{% assign current_time = site.time | date: "%H:%M:%S" %}
+{% assign current_time = site.time | date: "%s" | plus: 3600 | date: "%H:%M:%S" %}
 {% if current_time >= "09:00:00" and current_time < "12:00:00" or current_time >= "15:00:00" and current_time < "20:00:00" %}
   <script>document.getElementById("workingstatus").className = "available";</script>
 {% elsif current_time >= "23:00:00" or current_time >= "00:00:00" and current_time < "09:00:00" %}

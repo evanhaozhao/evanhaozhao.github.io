@@ -47,8 +47,8 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    margin-right: 10px;
-    position: relative;
+    margin-left: 4px;
+    text-align: center;
   }
 
   .available {
