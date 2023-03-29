@@ -30,4 +30,29 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
 
 ***
 ***Contact***
-- Email: [hao.zhao@durham.ac.uk](mailto:hao.zhao@durham.ac.uk)
+
+<script>
+    function updateStatus() {
+    var now = new Date();
+    var utcHours = now.getUTCHours();
+    var utcMinutes = now.getUTCMinutes();
+    var ukHours = (utcHours + 1) % 24; // Add 1 hour during daylight saving time
+    var ukMinutes = utcMinutes;
+    if (ukHours >= 9 && ukHours < 21) {
+        document.getElementById('workingstatus').className = 'available';
+    } else {
+        document.getElementById('workingstatus').className = 'unavailable';
+    }
+    setTimeout(updateStatus, 1000);
+    }
+</script>
+
+<body onload="updateStatus()">
+<div>
+  <ul>
+    <li> Email: <a href="mailto:hao.zhao@durham.ac.uk">hao.zhao@durham.ac.uk</a>
+    <span id="workingstatus"></span> 
+    </li>
+  </ul>
+</div>
+</body>
