@@ -1,0 +1,82 @@
+---
+layout: archive
+title: "Contact"
+permalink: /contact/
+author_profile: true
+---
+
+{% include base_path %}
+
+<h3>Email:</h3>
+
+<div>
+    <span id="workingstatus"></span>
+    <span> (UK time): <span id="uktime"></span></span>
+  </div>
+  
+  <style>
+    #workingstatus {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 10px;
+      position: relative;
+    }
+  
+    .available {
+      background-color: #2ecc71;
+    }
+  
+    .unavailable {
+      background-color: #bdc3c7;
+    }
+  
+    .limited {
+      background-color: orange;
+    }
+  
+    #workingstatus::before {
+      content: "";
+      display: block;
+      width: 6px;
+      height: 6px;
+      background-color: white;
+      border-radius: 50%;
+      margin: 3px;
+    }
+  </style>
+  
+  <script>
+    function updateWorkingStatus() {
+      var now = new Date();
+      var utcHours = now.getUTCHours();
+      var utcMinutes = now.getUTCMinutes();
+      var utcSeconds = now.getUTCSeconds();
+      var ukHours = (utcHours + 1) % 24; // Add 1 hour during daylight saving time
+      var ukMinutes = utcMinutes;
+      var ukSeconds = utcSeconds;
+      var workingStatusElement = document.getElementById('workingstatus');
+      var ukTimeElement = document.getElementById('uktime');
+      
+      if ((ukHours >= 9 && ukHours < 12) || (ukHours >= 15 && ukHours < 20)) {
+        workingStatusElement.className = 'available';
+      } else if (ukHours >= 23 || (ukHours >= 0 && ukHours < 9)) {
+        workingStatusElement.className = 'unavailable';
+      } else {
+        workingStatusElement.className = 'limited';
+      }
+      
+      ukTimeElement.innerHTML = ukHours + ":" + (ukMinutes < 10 ? "0" : "") + ukMinutes + ":" + (ukSeconds < 10 ? "0" : "") + ukSeconds;
+      
+      setTimeout(updateWorkingStatus, 1000);
+    }
+    
+    updateWorkingStatus();
+  </script>
+
+<h3>Address:</h3>
+<p>Durham University Business School, <br>
+Mill Hill Lane, <br>
+Durham, <br>
+DH1 3LB</p>
