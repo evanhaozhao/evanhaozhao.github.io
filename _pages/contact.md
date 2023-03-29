@@ -65,10 +65,13 @@ author_profile: true
 
     if ((ukHours >= 9 && ukHours < 12) || (ukHours >= 15 && ukHours < 20)) {
       workingStatusElement.className = 'available';
+      workingStatusElement.title = 'Online';
     } else if (ukHours >= 23 || (ukHours >= 0 && ukHours < 9)) {
       workingStatusElement.className = 'unavailable';
+      workingStatusElement.title = 'Offline';
     } else {
       workingStatusElement.className = 'limited';
+      workingStatusElement.title = 'Away';
     }
     
     var ukTimeString = moment().utcOffset(0).add(1, 'hours').format('h:mm:ss A'); 
