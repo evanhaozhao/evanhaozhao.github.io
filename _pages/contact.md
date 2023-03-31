@@ -5,12 +5,10 @@ permalink: /contact/
 author_profile: true
 ---
 
-{% include base_path %}
-
 ### Email: 
 
 <div>
-  Email: <a href="mailto:hao.zhao@durham.ac.uk">hao.zhao@durham.ac.uk</a>
+  <a href="mailto:hao.zhao@durham.ac.uk">hao.zhao@durham.ac.uk</a>
     <span id="workingstatus">
       <svg viewBox="0 0 20 20" width="8" height="8">
         <path id="second-hand" d="M10 6 L10 6" stroke="white" stroke-width="5" stroke-linecap="round" />
@@ -113,8 +111,8 @@ author_profile: true
       workingStatusElement.title = 'Away';
     }
     
-    var ukTimeString = moment().utcOffset(0).add(1, 'hours').format('h:mm:ss A'); 
-    ukTimeElement.textContent =  ukTimeString + ' (UK time)';
+    var ukTimeString = moment().utcOffset(0).add(1, 'hours').format('HH:mm:ss');
+    ukTimeElement.textContent =  ukTimeString + ' (UK)';
 
     updateClock();
     setTimeout(updateWorkingStatus, 1000);
@@ -130,3 +128,8 @@ Durham University Business School, <br>
 Mill Hill Lane, <br>
 Durham, <br>
 DH1 3LB
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2301.900588710033!2d-1.5882046843724191!3d54.764134575270376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e8742ad6f22df%3A0x8bafc519658bc8ba!2sBusiness%20School%20%E2%80%A2%20Durham%20University!5e0!3m2!1sen!2suk!4v1680297322922!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
