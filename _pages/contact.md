@@ -180,7 +180,8 @@ author_profile: false
 ***
 ***Schedule***
 
-University term: <span id="current-term"></span>
+Current term: <span id="current-term"></span><br>
+Next term: <span id="next-term"></span>
 <div class="container">
   <div class="progress">
     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
@@ -345,13 +346,88 @@ DH1 3LB
     name: "Epiphany Term",
     start: moment("2025-01-13"),
     end: moment("2025-03-21")
+    },
+    {
+    name: "Easter vacation",
+    start: moment("2025-03-22"),
+    end: moment("2025-04-27")
+    },
+    {
+    name: "Easter Term",
+    start: moment("2025-04-28"),
+    end: moment("2025-06-27")
+    },
+    {
+    name: "Summer vacation",
+    start: moment("2025-06-28"),
+    end: moment("2025-09-28")
+    },
+    {
+    name: "Summer vacation",
+    start: moment("2025-06-28"),
+    end: moment("2025-09-28")
+    },
+    {
+    name: "Induction Week",
+    start: moment("2025-09-29"),
+    end: moment("2025-10-05")
+    },
+    {
+    name: "Michaelmas Term",
+    start: moment("2025-10-06"),
+    end: moment("2025-12-12")
+    },
+    {
+    name: "Christmas vacation",
+    start: moment("2025-12-13"),
+    end: moment("2026-01-11")
+    },
+    {
+    name: "Epiphany Term",
+    start: moment("2026-01-12"),
+    end: moment("2026-03-20")
+    },
+    {
+    name: "Easter vacation",
+    start: moment("2026-03-21"),
+    end: moment("2026-04-26")
+    },
+    {
+    name: "Easter Term",
+    start: moment("2026-04-27"),
+    end: moment("2026-06-26")
+    },
+    {
+    name: "Summer vacation",
+    start: moment("2026-06-27"),
+    end: moment("2026-09-27")
+    },
+    {
+    name: "Summer vacation",
+    start: moment("2026-06-27"),
+    end: moment("2026-09-27")
     }
   ];
 
   const currentTerm = terms.find(term => {
     const now = moment().tz('Europe/London');
+    term.remainingDays = term.end.diff(now, 'days') + 1;
     return now.isBetween(term.start, term.end);
   });
 
-  document.getElementById("current-term").textContent = currentTerm.name + " (" + currentTerm.start.year() + ")";
+  if (!currentTerm) {
+    document.getElementById("current-term").textContent = "None";
+    document.getElementById("next-term").textContent = "None";
+  }
+  else{
+    document.getElementById("current-term").textContent = currentTerm.name + ", " + currentTerm.remainingDays + " days remain";
+
+    const nextTerm = terms.find(term => term.start.isAfter(currentTerm.end));
+    if (!nextTerm) {
+      document.getElementById("next-term").textContent = "None";
+    }
+    else {
+      document.getElementById("next-term").textContent = nextTerm.name + " (" + nextTerm.start.year() + ")";
+    }
+  }
 </script>
