@@ -180,13 +180,16 @@ author_profile: false
 ***
 ***Schedule***
 
-Current term: <span id="current-term"></span><br>
-Next term: <span id="next-term"></span>
+
+<p>Current term: <span id="current-term"></span></p>
+<p>Next term: <span id="next-term"></span></p>
+<p><span id="progress-message"></span></p>
 <div class="container">
   <div class="progress">
     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
   </div>
 </div>
+
 
 ***
 ***Address***
@@ -230,8 +233,8 @@ DH1 3LB
 
 <script>
   var now = moment().tz('Europe/London');
-  var daysInYear = moment.utc().endOf('year').dayOfYear();
-  var daysPassed = moment.utc().dayOfYear();
+  var daysInYear = moment.utc(now).endOf('year').dayOfYear();
+  var daysPassed = moment.utc(now).dayOfYear();
   var progressPercentage = (daysPassed / daysInYear) * 100;
   var progressBar = document.querySelector('.progress-bar');
   progressBar.style.width = progressPercentage + '%';
@@ -243,6 +246,8 @@ DH1 3LB
     var tooltipText = yearMonth + ', ' + daysPassed + ' days in ' + currentYear + ' (' + progressPercentage.toFixed(2) + '%)';
     progressBar.setAttribute('title', tooltipText);
   });
+  var currentYear = now.year();
+  document.getElementById("progress-message").textContent = currentYear + " is " + progressPercentage.toFixed(2) + "% complete";
 </script>
 
 <script>
