@@ -5,7 +5,7 @@ permalink: /contact/
 author_profile: false
 ---
 
-### Email: 
+***Email***
 
 <div>
   <a href="mailto:hao.zhao@durham.ac.uk">hao.zhao@durham.ac.uk</a>
@@ -80,6 +80,8 @@ author_profile: false
 </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data-10-year-range.min.js"></script>
+
 
 <script>
   function updateClock() {
@@ -93,10 +95,10 @@ author_profile: false
   }
 
   function updateWorkingStatus() {
-    var now = moment();
-    var ukHours = now.utcOffset(0).utc().add(1, 'hours').hour();
-    var ukMinutes = now.utcOffset(0).utc().minute();
-    var ukSeconds = now.utcOffset(0).utc().second();
+    var now = moment().tz('Europe/London');
+    var ukHours = now.hour();
+    var ukMinutes = now.minute();
+    var ukSeconds = now.second();
     var workingStatusElement = document.getElementById('workingstatus');
     var ukTimeElement = document.getElementById('uktime');
 
@@ -111,18 +113,27 @@ author_profile: false
       workingStatusElement.title = 'Away';
     }
     
-    var ukTimeString = moment().utcOffset(0).add(1, 'hours').format('HH:mm:ss');
+    var ukTimeString = now.format('HH:mm:ss');
     ukTimeElement.textContent =  ukTimeString + ' (UK)';
 
     updateClock();
     setTimeout(updateWorkingStatus, 1000);
   }
-  
   updateWorkingStatus();
 </script>
 
+***
+***Schedule***
 
-### Address:
+University term: <span id="current-term"></span>
+<div class="container">
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+</div>
+
+***
+***Address***
 
 Durham University Business School<br>
 Mill Hill Lane<br>
@@ -134,4 +145,158 @@ DH1 3LB
 </div>
 
 
+<style>
+  .container {
+    background-color: #F1F2F2;
+    display: inline-block;
+    line-height: 20px;
+    width: 30%;
+  }
+  .progress {
+    height: 20px;
+  }
+  .progress-bar {
+    background-color: #E1E2E3;
+    color: #E1E2E3;
+    font-size: 0;
+  }
+  .progress-bar:hover {
+    background-color: #BBD6B8;
+    color: #FFF;
+    font-size: 0;
+    transition: color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+  }
+</style>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data-10-year-range.min.js"></script>
+
+<script>
+  var now = moment().tz('Europe/London');
+  var daysInYear = moment.utc().endOf('year').dayOfYear();
+  var daysPassed = moment.utc().dayOfYear();
+  var progressPercentage = (daysPassed / daysInYear) * 100;
+  var progressBar = document.querySelector('.progress-bar');
+  progressBar.style.width = progressPercentage + '%';
+  progressBar.innerText = '%';
+  progressBar.addEventListener('mouseover', function() {
+    var dateFormat = 'D MMMM YYYY';
+    var yearMonth = now.format(dateFormat);
+    var currentYear = now.year();
+    var tooltipText = yearMonth + ', ' + daysPassed + ' days in ' + currentYear + ' (' + progressPercentage.toFixed(2) + '%)';
+    progressBar.setAttribute('title', tooltipText);
+  });
+</script>
+
+<script>
+  const terms = [
+    {
+    name: "Induction Week",
+    start: moment("2022-09-26"),
+    end: moment("2022-10-02")
+    },
+    {
+    name: "Michaelmas Term",
+    start: moment("2022-10-03"),
+    end: moment("2022-12-09")
+    },
+    {
+    name: "Christmas vacation",
+    start: moment("2022-12-10"),
+    end: moment("2023-01-08")
+    },
+    {
+    name: "Epiphany Term",
+    start: moment("2023-01-09"),
+    end: moment("2023-03-17")
+    },
+    {
+    name: "Easter vacation",
+    start: moment("2023-03-18"),
+    end: moment("2023-04-23")
+    },
+    {
+    name: "Easter Term",
+    start: moment("2023-04-24"),
+    end: moment("2023-06-23")
+    },
+    {
+    name: "Summer vacation",
+    start: moment("2023-06-24"),
+    end: moment("2023-09-24")
+    },
+    {
+    name: "Summer vacation",
+    start: moment("2023-06-24"),
+    end: moment("2023-09-24")
+    },
+    {
+    name: "Induction Week",
+    start: moment("2023-09-25"),
+    end: moment("2023-10-01")
+    },
+    {
+    name: "Michaelmas Term",
+    start: moment("2023-10-02"),
+    end: moment("2023-12-08")
+    },
+    {
+    name: "Christmas vacation",
+    start: moment("2023-12-09"),
+    end: moment("2024-01-07")
+    },
+    {
+    name: "Epiphany Term",
+    start: moment("2024-01-08"),
+    end: moment("2024-03-15")
+    },
+    {
+    name: "Easter vacation",
+    start: moment("2024-03-16"),
+    end: moment("2024-04-21")
+    },
+    {
+    name: "Easter Term",
+    start: moment("2024-04-22"),
+    end: moment("2024-06-21")
+    },
+    {
+    name: "Summer vacation",
+    start: moment("2024-06-22"),
+    end: moment("2024-09-29")
+    },
+    {
+    name: "Summer vacation",
+    start: moment("2024-06-22"),
+    end: moment("2024-09-29")
+    },
+    {
+    name: "Induction Week",
+    start: moment("2024-09-30"),
+    end: moment("2024-10-06")
+    },
+    {
+    name: "Michaelmas Term",
+    start: moment("2024-10-07"),
+    end: moment("2024-12-13")
+    },
+    {
+    name: "Christmas vacation",
+    start: moment("2024-12-14"),
+    end: moment("2025-01-12")
+    },
+    {
+    name: "Epiphany Term",
+    start: moment("2025-01-13"),
+    end: moment("2025-03-21")
+    }
+  ];
+
+  const currentTerm = terms.find(term => {
+    const now = moment().tz('Europe/London');
+    return now.isBetween(term.start, term.end);
+  });
+
+  document.getElementById("current-term").textContent = currentTerm.name + " (" + currentTerm.start.year() + ")";
+</script>

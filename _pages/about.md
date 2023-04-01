@@ -106,6 +106,7 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
 </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data-10-year-range.min.js"></script>
 
 <script>
   function updateClock() {
@@ -119,9 +120,9 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
   }
 
   function updateWorkingStatus() {
-    var now = moment();
-    var ukHours = now.utcOffset(0).utc().add(1, 'hours').hour();
-    var ukMinutes = now.utcOffset(0).utc().minute();
+    var now = moment().tz('Europe/London');
+    var ukHours = now.hour();
+    var ukMinutes = now.minute();
     var workingStatusElement = document.getElementById('workingstatus');
 
     if ((ukHours >= 9 && ukHours < 12) || (ukHours >= 15 && ukHours < 20)) {
@@ -134,11 +135,9 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
       workingStatusElement.className = 'limited';
       workingStatusElement.title = 'Away';
     }
-    
     updateClock();
     setTimeout(updateWorkingStatus, 1000);
   }
-  
   updateWorkingStatus();
 </script>
 
