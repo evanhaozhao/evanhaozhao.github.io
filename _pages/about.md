@@ -33,7 +33,7 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
 
 <div>
   <ul>
-    <li> Email: <a href="mailto:hao.zhao@durham.ac.uk">hao.zhao@durham.ac.uk</a>
+    <li> Email: hao.zhao@durham.ac.uk
       <span id="workingstatus">
         <svg viewBox="0 0 20 20" width="8" height="8">
           <path id="second-hand" d="M10 6 L10 6" stroke="white" stroke-width="5" stroke-linecap="round" />

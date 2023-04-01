@@ -7,14 +7,69 @@ author_profile: false
 
 ***Email***
 
+<p><span id="email">hao.zhao@durham.ac.uk</span><button id="copyButton" data-clipboard-target="#email">Copy</button></p>
+<div id="tooltip"></div>
+
+<style>
+  #copyButton {
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    color: #555;
+    font-size: 14px;
+    line-height: 1;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+    display: none;
+  }
+  #tooltip.fade {
+    opacity: 0;
+  }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+<script>
+  var clipboard = new ClipboardJS('#copyButton');
+  clipboard.on('success', function(e) {
+    e.clearSelection();
+    var tooltip = document.querySelector('#tooltip');
+    tooltip.textContent = 'Copied!';
+    tooltip.style.left = e.trigger.offsetLeft + 'px';
+    tooltip.style.top = e.trigger.offsetTop - 30 + 'px';
+    tooltip.style.display = 'block';
+    tooltip.classList.remove('fade');
+    setTimeout(function() {
+      tooltip.classList.add('fade');
+      setTimeout(function() {
+        tooltip.style.display = 'none';
+      }, 200);
+    }, 1000);
+  });
+  clipboard.on('error', function(e) {
+    alert('Failed to copy email address!');
+  });
+</script>
+
 <div>
-  <a href="mailto:hao.zhao@durham.ac.uk">hao.zhao@durham.ac.uk</a>
-    <span id="workingstatus">
-      <svg viewBox="0 0 20 20" width="8" height="8">
-        <path id="second-hand" d="M10 6 L10 6" stroke="white" stroke-width="5" stroke-linecap="round" />
-      </svg>
-    </span> 
-    <span id="uktime"></span>
+  <span id="workingstatus">
+    <svg viewBox="0 0 20 20" width="8" height="8">
+      <path id="second-hand" d="M10 6 L10 6" stroke="white" stroke-width="5" stroke-linecap="round" />
+    </svg>
+  </span> 
+  <span id="uktime"></span>
 </div>
 
 <style>
@@ -114,7 +169,7 @@ author_profile: false
     }
     
     var ukTimeString = now.format('HH:mm:ss');
-    ukTimeElement.textContent =  ukTimeString + ' (UK)';
+    ukTimeElement.textContent =  '  ' + ukTimeString + ' (UK)';
 
     updateClock();
     setTimeout(updateWorkingStatus, 1000);

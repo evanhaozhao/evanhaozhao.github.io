@@ -4,7 +4,7 @@ Hao Zhao:
   name        : "Hao Zhao"
   uri         : # "http://name.com"
   location    : "Durham, UK"
-  email       : "hao.zhao@durham.ac.uk"
+  email       : # "hao.zhao@durham.ac.uk"
   bio         : "PhD Candidate in Finance"
   avatar      : "profile.png"
   google_plus : # "Name"
