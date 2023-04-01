@@ -205,7 +205,7 @@ DH1 3LB
     background-color: #F1F2F2;
     display: inline-block;
     line-height: 20px;
-    width: 30%;
+    width: 45%;
   }
   .progress {
     height: 20px;
