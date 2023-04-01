@@ -124,15 +124,14 @@ author_profile: false
 
 ### Address:
 
-Durham University Business School, <br>
-Mill Hill Lane, <br>
-Durham, <br>
+Durham University Business School<br>
+Mill Hill Lane<br>
+Durham<br>
 DH1 3LB
 
 <div style="position: relative; padding-bottom: 40%; height: 0;">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2301.900588710033!2d-1.5882046843724191!3d54.764134575270376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e8742ad6f22df%3A0x8bafc519658bc8ba!2sBusiness%20School%20%E2%80%A2%20Durham%20University!5e0!3m2!1sen!2suk!4v1680297322922!5m2!1sen!2suk" style="position: absolute; top: 0; left: 0; width: 72%; height: 100%; border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
-
 
 
 
