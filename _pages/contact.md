@@ -219,7 +219,8 @@ DH1 3LB
     color: #E1E2E3;
     font-size: 0;
   }
-  .progress-bar:hover {
+  .progress-bar:hover,
+  .container:hover .progress-bar {
     background-color: #BBD6B8;
     color: #FFF;
     font-size: 0;
