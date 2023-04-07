@@ -128,67 +128,67 @@ $$
 
 ### Function for calculating the portfolio return and variance
 
-**Description of** `calPortRetVar(weightList, eRetList, stdList, corrList, printResults=True)`:
+**Description of** `calc_port_retvar(weight_list, eret_list, std_list, corr_list, print_results=True)`:
 
 Use lists of securities' weights, expected returns, standard deviations, and pearson correlations to calculate the portfolio's expected return and variance, and standard deviation.
 
 **Keyword arguments**:
 
-- `printResults=True`: default is `True`, will print the portfolio's expected return, variance/standard deviation, and the percentage of idiosyncratic variances out of the portfolio variance. If `False`, will not print anything, but return a dictionary containing the portfolio return, variance, standard deviation, and the proportion of diagonal variances.
+- `print_results=True`: default is `True`, will print the portfolio's expected return, variance/standard deviation, and the percentage of idiosyncratic variances out of the portfolio variance. If `False`, will not print anything, but return a dictionary containing the portfolio return, variance, standard deviation, and the proportion of diagonal variances.
 
-- `printVar=True`: default is `True`, when `printResults=True`, print the portfolio variance, if `printVar=False`, print the portfolio standard deviation.
+- `print_var=True`: default is `True`, when `print_results=True`, print the portfolio variance, if `print_var=False`, print the portfolio standard deviation.
 
 
 
 ```python
-def calPortRetVar(weightList, eRetList, stdList, corrList, printResults=True, printVar=True):
+def calc_port_retvar(weight_list, eret_list, std_list, corr_list, print_results=True, print_var=True):
     
-    portERet = np.dot(np.array(weightList), np.array(eRetList).transpose())
+    port_eret = np.dot(np.array(weight_list), np.array(eret_list).transpose())
     
-    CovMat = []
-    n = len(stdList)
+    cov_mat = []
+    n = len(std_list)
     for x in range(1,n+1):
-        Cxy = []
+        cxy= []
         for y in range(1,n+1):
             if x == y:   
-                Cxy.append(stdList[x-1]**2)
+                cxy.append(std_list[x-1]**2)
             elif x < y:
                 idx = int((y-x-1)*n-(((y-x)*(y-x-1))/2)+x)
-                Cxy.append(corrList[idx-1]*stdList[x-1]*stdList[y-1])
+                cxy.append(corr_list[idx-1]*std_list[x-1]*std_list[y-1])
             elif x > y:
                 idx = int((x-y-1)*n-(((x-y)*(x-y-1))/2)+y)
-                Cxy.append(corrList[idx-1]*stdList[x-1]*stdList[y-1])
+                cxy.append(corr_list[idx-1]*std_list[x-1]*std_list[y-1])
         
-        CovMat.append(Cxy)
+        cov_mat.append(cxy)
         
-    portVar = np.dot(np.dot(weightList, CovMat), np.array(weightList).transpose())
-    portSD = np.sqrt(portVar)
-    msv = sum(map(lambda x: x**2, stdList))/(n**2)
-    if printResults:
-        print("The portfolio's expected return is: %s" % round(portERet, 4))
-        if printVar:
-            print("The portfolio's variance is %s" % round(portVar,4))
+    port_var = np.dot(np.dot(weight_list, cov_mat), np.array(weight_list).transpose())
+    port_sd = np.sqrt(port_var)
+    msv = sum(map(lambda x: x**2, std_list))/(n**2)
+    if print_results:
+        print("The portfolio's expected return is: %s" % round(port_eret, 4))
+        if print_var:
+            print("The portfolio's variance is %s" % round(port_var,4))
         else:
-            print("The portfolio's standard deviation is %s" % round(portSD,4))
-        print("The idiosyncratic variances account for %s%% of the portfolio variance" % round((msv/portVar)*100,2))
+            print("The portfolio's standard deviation is %s" % round(port_sd,4))
+        print("The idiosyncratic variances account for %s%% of the portfolio variance" % round((msv/port_var)*100,2))
     else:
-        volaDict = dict()
-        volaDict["return"] = portERet
-        volaDict["variance"] = portVar
-        volaDict["std"] = portSD
-        volaDict["diagvar"] = msv/portVar
+        vola_dict = dict()
+        vola_dict["return"] = port_eret
+        vola_dict["variance"] = port_var
+        vola_dict["std"] = port_sd
+        vola_dict["diagvar"] = msv/port_var
         
-        return volaDict
+        return vola_dict
      
 ```
 
 
 **Note**: in order to use the above function, some conditions must be met:
-<a id="note_corrList"></a>
+<a id="note_corr_list"></a>
 
 1. All the inputs are list, and in order: stock 1, stock 2, ... , stock n.
-2. The lengths of weightList, eRetList, and stdList should be equal to $n$.
-3. The lengh of corrList equals to $\frac{n!}{2(n-2)!}$.
+2. The lengths of weight_list, eret_list, and std_list should be equal to $n$.
+3. The lengh of corr_list equals to $\frac{n!}{2(n-2)!}$.
 4. Unlike the codes in Part 1, here the input is the standard deviation rather than variance.
 4. The correlation list should follow the combination order from smaller distance between $i$ and $j$ to larger, for example, if $n = 4$:
 
@@ -209,13 +209,13 @@ $$
 $$
 
 ```python
-weightList = [0.4, -0.2, 0.8]
-eRetList = [0.08, 0.1, 0.06]
-stdList = [0.15, 0.05, 0.12]
-corrList = [0.3, 0, -0.2]
+weight_list = [0.4, -0.2, 0.8]
+eret_list = [0.08, 0.1, 0.06]
+std_list = [0.15, 0.05, 0.12]
+corr_list = [0.3, 0, -0.2]
 
-calPortRetVar(weightList, eRetList, stdList, corrList, printResults=True, printVar=False)
-calPortRetVar(weightList, eRetList, stdList, corrList, printResults=False)
+calc_port_retvar(weight_list, eret_list, std_list, corr_list, print_results=True, print_var=False)
+calc_port_retvar(weight_list, eret_list, std_list, corr_list, print_results=False)
 ```
 
     The portfolio's expected return is: 0.06
@@ -247,9 +247,9 @@ In a well-diversified portfolio, when $n \to \infty$, $\frac{1}{n} \to 0$ and $\
 
 <p style="text-align:right;"><span class="qed-square"></span></p>
 
-**Description** of `plot_corr_matrix(n_sample, dataframe, plotHeat=True)`:
+**Description** of `plot_corr_matrix(n_sample, dataframe, plot_heat=True)`:
 
-Randomly select a number of sample from a time-series financial return data with every column for every stock, print the number of stocks, equal-weighted portfolio expected return, equal-weighted portfolio standard deviation, and the percentage decrease in the portfolio variance, and plot `seaborn.heatmap` for the portfolio's correlation matrix. When keyword argument `plotHeat=False`, will only return a dictionary containing the portfolio return, variance, and standard deviation.
+Randomly select a number of sample from a time-series financial return data with every column for every stock, print the number of stocks, equal-weighted portfolio expected return, equal-weighted portfolio standard deviation, and the percentage decrease in the portfolio variance, and plot `seaborn.heatmap` for the portfolio's correlation matrix. When keyword argument `plot_heat=False`, will only return a dictionary containing the portfolio return, variance, and standard deviation.
 
 **Arguments**:
 
@@ -257,12 +257,12 @@ Randomly select a number of sample from a time-series financial return data with
 
 - `dataframe` (type: Pandas DataFrame): read from the link to the Github raw file "[crsp_small_sample.xlsx](https://github.com/evanhaozhao/Python-for-mathematical-finance/blob/main/data/crsp_small_sample.xlsx)". The file is a small time-series sample containing 906 CRSP monthly stock returns randomly selected from all industries (excl. financial) as columns, from January 2010 to December 2020.
 
-- `plotHeat=True`: default is `True`, will plot `seaborn.heatmap` for the portfolio's correlation matrix, and print the number of stocks, equal-weighted portfolio expected return, equal-weighted portfolio standard deviation, and the percentage of idiosyncratic variances out of the portfolio variance. If `False`, will only return a dictionary containing the portfolio return, variance, standard deviation, and the proportion of diagonal variances.
+- `plot_heat=True`: default is `True`, will plot `seaborn.heatmap` for the portfolio's correlation matrix, and print the number of stocks, equal-weighted portfolio expected return, equal-weighted portfolio standard deviation, and the percentage of idiosyncratic variances out of the portfolio variance. If `False`, will only return a dictionary containing the portfolio return, variance, standard deviation, and the proportion of diagonal variances.
 
 
 
 ```python
-def plot_corr_matrix(n_sample, dataframe, plotHeat=True):
+def plot_corr_matrix(n_sample, dataframe, plot_heat=True):
     df = dataframe 
     if n_sample < len(df.columns) and n_sample > 0:
         num = n_sample
@@ -274,27 +274,27 @@ def plot_corr_matrix(n_sample, dataframe, plotHeat=True):
         print("[Error] number out of range. Plot default sample.")
 
     df_sample = pd.concat([df["yrm"], df.loc[:,df.columns!="yrm"].sample(n=num,axis='columns',replace=False)], axis=1)
-    weightList = [1/(len(df_sample.columns)-1)] * (len(df_sample.columns)-1)
-    eRetList = [df_sample[df_sample.columns[i]].mean() for i in range(1, len(df_sample.columns))]
-    stdList = [df_sample[df_sample.columns[i]].std() for i in range(1, len(df_sample.columns))]
-    corrList = []
+    weight_list = [1/(len(df_sample.columns)-1)] * (len(df_sample.columns)-1)
+    eret_list = [df_sample[df_sample.columns[i]].mean() for i in range(1, len(df_sample.columns))]
+    std_list = [df_sample[df_sample.columns[i]].std() for i in range(1, len(df_sample.columns))]
+    corr_list = []
     for distance in range(1, len(df_sample.columns)-1):
         i = 1
         next_i = i + distance
         while next_i <= len(df_sample.columns)-1:
             correlation = df_sample[df_sample.columns[i]].corr(df_sample[df_sample.columns[next_i]])
-            corrList.append(correlation)
+            corr_list.append(correlation)
             i += 1
             next_i = i + distance
-    if plotHeat:
+    if plot_heat:
         print("Number of stocks in the EW portfolio: %s" % num)
-        calPortRetVar(weightList, eRetList, stdList, corrList, printResults=True, printVar=False)
-        corrMat = df_sample.corr()
+        calc_port_retvar(weight_list, eret_list, std_list, corr_list, print_results=True, print_var=False)
+        corr_mat = df_sample.corr()
         f = plt.figure(figsize = (10,6))
-        ax = sns.heatmap(corrMat)
+        ax = sns.heatmap(corr_mat)
         plt.show()
     else:
-        return calPortRetVar(weightList, eRetList, stdList, corrList, printResults=False)
+        return calc_port_retvar(weight_list, eret_list, std_list, corr_list, print_results=False)
 
 ```
 
@@ -310,7 +310,7 @@ numList = [2, 3, 5, 12, 30, 100, 300, 900]
 sample_url = "https://raw.github.com/evanhaozhao/Python-for-mathematical-finance/main/data/crsp_small_sample.xlsx"
 df = pd.read_excel(sample_url)
 for n_sample in tqdm(numList):
-    plot_corr_matrix(n_sample, df, plotHeat=True)
+    plot_corr_matrix(n_sample, df, plot_heat=True)
     
 ```
 
@@ -412,11 +412,11 @@ for n_sample in tqdm(numList):
 
 **Random selection for number of stocks**
 
-Use below cell to test the random sample selection function of `plot_corr_matrix` with `plotHeat=False`, under which circumstance the output of `plot_corr_matrix` is a dictionary.
+Use below cell to test the random sample selection function of `plot_corr_matrix` with `plot_heat=False`, under which circumstance the output of `plot_corr_matrix` is a dictionary.
 
 
 ```python
-plot_corr_matrix(10, df, plotHeat=False)
+plot_corr_matrix(10, df, plot_heat=False)
 ```
 
 
@@ -429,18 +429,18 @@ plot_corr_matrix(10, df, plotHeat=False)
 
 
 
-To further illustrate the effect of diversification on variance, we construct a DataFrame called `dfRetVar` with each row as a portfolio consisting of different number of stocks randomly selected from the previous CRSP sample file.
+To further illustrate the effect of diversification on variance, we construct a DataFrame called `df_retvar` with each row as a portfolio consisting of different number of stocks randomly selected from the previous CRSP sample file.
 
 
 ```python
-listRetVar = []
+list_ret_var = []
 for i in tqdm(range(2,300,5)):
-    dictRetVar = plot_corr_matrix(i, df, plotHeat=False)
-    dictRetVar["num_stock"] = i
-    listRetVar.append(dictRetVar)
+    dict_ret_var = plot_corr_matrix(i, df, plot_heat=False)
+    dict_ret_var["num_stock"] = i
+    list_ret_var.append(dict_ret_var)
 
-dfRetVar = pd.DataFrame(listRetVar)
-dfRetVar.head(10)
+df_retvar = pd.DataFrame(list_ret_var)
+df_retvar.head(10)
 ```
 
 
@@ -566,12 +566,12 @@ From the line chart below, we observe when the number of stocks in the portfolio
 
 
 ```python
-colDict = {"variance":"Portfolio variance", "std": "Portfolio standard deviation", \
+col_dict = {"variance":"Portfolio variance", "std": "Portfolio standard deviation", \
                "diagvar": "Proportion of idiosyncratic variances"}
-for k, v in colDict.items():
+for k, v in col_dict.items():
     f = plt.figure(figsize=(10, 4))
     color = random.choice(list(mcolors.TABLEAU_COLORS.values()))
-    plt.plot("num_stock", k, data=dfRetVar, c=color, ls='-', lw=2)
+    plt.plot("num_stock", k, data=df_retvar, c=color, ls='-', lw=2)
     plt.xlabel("Number of stocks in the portfolio")
     plt.ylabel("%s" % v)
     plt.show()
@@ -643,64 +643,64 @@ where we use the fact that $\mathrm{C}^{−1}$ is a symmetric matrix because $C$
 
 Below is the function to calculate the weights, return, and variance of the minimum variance portfolio.
 
-**Description** of `calMVP(eRetList, stdList, corrList, returnType="weightList")`:
+**Description** of `cal_mvp(eret_list, std_list, corr_list, return_type="weight_list")`:
 
 **Arguments**
 
-- `eRetList`, `stdList`, `corrList`: like what we did before, these three parameters are lists of stock returns, standard deviations, and correlations (*see* previous [Note](#note_corrList) for the required correlation order in the list)
-- `returnType="weightList"`: default is to return a list of weights with minimum portfolio variance. Besides, there are two options: `"fullPrint"` to print the minimum variance portfolio's weights, return and variance; `"dictionary"` to return a dictionary of the minimum variance portfolio's return and variance.
+- `eret_list`, `std_list`, `corr_list`: like what we did before, these three parameters are lists of stock returns, standard deviations, and correlations (*see* previous [Note](#note_corr_list) for the required correlation order in the list)
+- `return_type="weight_list"`: default is to return a list of weights with minimum portfolio variance. Besides, there are two options: `"full_print"` to print the minimum variance portfolio's weights, return and variance; `"dictionary"` to return a dictionary of the minimum variance portfolio's return and variance.
 
 
 ```python
-def calMVP(eRetList, stdList, corrList, returnType="weightList"):
+def cal_mvp(eret_list, std_list, corr_list, return_type="weight_list"):
     
-    CovMat = []
-    n = len(stdList)
+    cov_mat = []
+    n = len(std_list)
     u = np.array([1] * n)
     for x in range(1,n+1):
-        Cxy = []
+        cxy= []
         for y in range(1,n+1):
             if x == y:   
-                Cxy.append(stdList[x-1]**2)
+                cxy.append(std_list[x-1]**2)
             elif x < y:
                 idx = int((y-x-1)*n-(((y-x)*(y-x-1))/2)+x)
-                Cxy.append(corrList[idx-1]*stdList[x-1]*stdList[y-1])
+                cxy.append(corr_list[idx-1]*std_list[x-1]*std_list[y-1])
             elif x > y:
                 idx = int((x-y-1)*n-(((x-y)*(x-y-1))/2)+y)
-                Cxy.append(corrList[idx-1]*stdList[x-1]*stdList[y-1])
-        CovMat.append(Cxy)
+                cxy.append(corr_list[idx-1]*std_list[x-1]*std_list[y-1])
+        cov_mat.append(cxy)
     
-    weightArray = np.dot(u,np.linalg.inv(CovMat))/np.dot(np.dot(u,np.linalg.inv(CovMat)),u.transpose())
-    weightList = list(weightArray)
-    portERet = np.dot(np.array(weightList), np.array(eRetList).transpose())
-    portVar = np.dot(np.dot(weightList, CovMat), np.array(weightList).transpose())
-    if returnType == "weightList":
-        return weightList
-    elif returnType == "fullPrint":
-        weightRound = list(np.round(weightArray,3))
-        print("Weights for the minimum variance portfolio are: %s, sum to %s" %(weightRound, round(np.sum(weightArray),0)))
-        print("The portfolio's expected return is: %s" % round(portERet, 4))
-        print("The portfolio's variance is %s" % round(portVar,4))
+    weight_array = np.dot(u,np.linalg.inv(cov_mat))/np.dot(np.dot(u,np.linalg.inv(cov_mat)),u.transpose())
+    weight_list = list(weight_array)
+    port_eret = np.dot(np.array(weight_list), np.array(eret_list).transpose())
+    port_var = np.dot(np.dot(weight_list, cov_mat), np.array(weight_list).transpose())
+    if return_type == "weight_list":
+        return weight_list
+    elif return_type == "full_print":
+        weight_round = list(np.round(weight_array,3))
+        print("Weights for the minimum variance portfolio are: %s, sum to %s" %(weight_round, round(np.sum(weight_array),0)))
+        print("The portfolio's expected return is: %s" % round(port_eret, 4))
+        print("The portfolio's variance is %s" % round(port_var,4))
         try:
-            print("The portfolio's standard deviation is %s" % round(np.sqrt(portVar),4))
+            print("The portfolio's standard deviation is %s" % round(np.sqrt(port_var),4))
         except:
             pass
-    elif returnType == "dictionary":
-        volaDict = dict()
-        volaDict["return"] = portERet
-        volaDict["variance"] = portVar
+    elif return_type == "dictionary":
+        vola_dict = dict()
+        vola_dict["return"] = port_eret
+        vola_dict["variance"] = port_var
         
-        return volaDict
+        return vola_dict
   
 ```
 
 
 ```python
-eRetList = [0.2, 0.13, 0.17]
-stdList = [0.25, 0.28, 0.2]
-corrList = [0.3, 0, 0.15]
+eret_list = [0.2, 0.13, 0.17]
+std_list = [0.25, 0.28, 0.2]
+corr_list = [0.3, 0, 0.15]
 
-calMVP(eRetList, stdList, corrList, returnType="fullPrint")
+cal_mvp(eret_list, std_list, corr_list, return_type="full_print")
 ```
 
     Weights for the minimum variance portfolio are: [0.228, 0.235, 0.537], sum to 1
@@ -711,7 +711,7 @@ calMVP(eRetList, stdList, corrList, returnType="fullPrint")
 
 
 ```python
-def calSampleMVP(n_sample, dataframe, returnDict=False):
+def calSampleMVP(n_sample, dataframe, return_dict=False):
     df = dataframe 
     if n_sample < len(df.columns) and n_sample > 0:
         num = n_sample
@@ -723,28 +723,28 @@ def calSampleMVP(n_sample, dataframe, returnDict=False):
         print("[Error] number out of range. Plot default sample.")
     
     df_sample = pd.concat([df["yrm"], df.loc[:,df.columns!="yrm"].sample(n=num,axis='columns',replace=False)], axis=1)
-    corrList = []
+    corr_list = []
     for distance in range(1, len(df_sample.columns)-1):
         i = 1
         next_i = i + distance
         while next_i <= len(df_sample.columns)-1:
             correlation = df_sample[df_sample.columns[i]].corr(df_sample[df_sample.columns[next_i]])
-            corrList.append(correlation)
+            corr_list.append(correlation)
             i += 1
             next_i = i + distance
-    eRetList = [df_sample[df_sample.columns[i]].mean() for i in range(1, len(df_sample.columns))]
-    stdList = [df_sample[df_sample.columns[i]].std() for i in range(1, len(df_sample.columns))]
-    weightList = calMVP(eRetList, stdList, corrList, returnType="weightList")
-    if returnDict:
-        return calMVP(eRetList, stdList, corrList, returnType="dictionary")
+    eret_list = [df_sample[df_sample.columns[i]].mean() for i in range(1, len(df_sample.columns))]
+    std_list = [df_sample[df_sample.columns[i]].std() for i in range(1, len(df_sample.columns))]
+    weight_list = cal_mvp(eret_list, std_list, corr_list, return_type="weight_list")
+    if return_dict:
+        return cal_mvp(eret_list, std_list, corr_list, return_type="dictionary")
     else:
-        return calMVP(eRetList, stdList, corrList, returnType="fullPrint")
+        return cal_mvp(eret_list, std_list, corr_list, return_type="full_print")
             
 ```
 
 
 ```python
-calSampleMVP(20, df, returnDict=False)
+calSampleMVP(20, df, return_dict=False)
 ```
 
     Weights for the minimum variance portfolio are: [0.11, -0.03, 0.332, 0.198, -0.076, 0.242, 0.022, -0.031, -0.006, -0.031, -0.004, 0.107, -0.076, -0.003, 0.038, 0.157, 0.008, -0.002, 0.019, 0.026], sum to 1
@@ -757,12 +757,12 @@ calSampleMVP(20, df, returnDict=False)
 ```python
 listMVP = []
 for i in tqdm(range(2,300,5)):
-    dictMVP = calSampleMVP(i, df, returnDict=True)
+    dictMVP = calSampleMVP(i, df, return_dict=True)
     dictMVP["num_stock"] = i
     listMVP.append(dictMVP)
 
-dfMVP = pd.DataFrame(listMVP).rename(columns={"return":"return_mvp","variance":"variance_mvp"})
-dfMVP.head(10)
+df_mvp = pd.DataFrame(listMVP).rename(columns={"return":"return_mvp","variance":"variance_mvp"})
+df_mvp.head(10)
 ```
 
 
@@ -863,8 +863,8 @@ We can plot portfolio variance and return of different portfolio weights. Blue p
 
 ```python
 f = plt.figure(figsize=(10,5))
-plt.scatter("variance", "return", data=dfRetVar)
-plt.scatter("variance_mvp", "return_mvp", data=dfMVP)
+plt.scatter("variance", "return", data=df_retvar)
+plt.scatter("variance_mvp", "return_mvp", data=df_mvp)
 plt.xlim(0,0.005)
 plt.ylim(0,0.02)
 plt.xlabel("Portfolio variance")

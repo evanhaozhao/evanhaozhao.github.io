@@ -9,6 +9,7 @@ tags:
   - Python
   - Visualisation
 ---
+
 Modelling and visualisation on some of the financial engineering theorems using Jupyter Notebook. The mathematics of the theorems follow the book: [Capinski, M. and Zastawniak, T. (2011). Mathematics for Finance. An Introduction to Financial Engineering (Second Edition)](https://link.springer.com/gp/book/9780857290816).
 
 Check the Jupyter Notebook in my Github repository [Python-for-mathematical-finance
@@ -118,38 +119,36 @@ $$
 $$
 
 ```python
-# When separatePlot=True (default), the corr12 should be a digit imput.
-# When separatePlot=False, the corr12 needs to be a list of situations.
-# Note: two save figure options are currently markdowns
+# When separate_plot=True (default), the corr12 should be a digit imput.
+# When separate_plot=False, the corr12 needs to be a list of situations.
 
-def twoAssetPlot(mu1, mu2, var1, var2, corr12, separatePlot=True):
+def two_asset_plot(mu1, mu2, var1, var2, corr12, separate_plot=True):
     
     def strategy_idfier(weight):
-        stratLS = ["long", "short", "ignore"]
+        strat_ls = ["long", "short", "ignore"]
         if weight>0:
-            strategy = stratLS[0]
+            strategy = strat_ls[0]
         elif weight<0:
-            strategy = stratLS[1]
+            strategy = strat_ls[1]
         else:
-            strategy = stratLS[2]
+            strategy = strat_ls[2]
         return strategy
     
-    if separatePlot:
+    if separate_plot:
         
         if var2 == 0:
-            varRf = var2
+            var_rf = var2
             var2 += 0.0000000000001
         else:
-            varRf = var2
+            var_rf = var2
         
         cov12 = corr12*np.sqrt(var1)*np.sqrt(var2)
         s0 = (var2-cov12)/(var1+var2-2*cov12)
         mu0 = (mu1*var2+mu2*var1-(mu1+mu2)*cov12)/(var1+var2-2*cov12)
         var0 = (var1*var2-cov12**2)/(var1+var2-2*cov12)
-        # var0 = (s0**2)*var1+((1-s0)**2)*var2+2*s0*(1-s0)*cov12
         
         sd1sd2 = np.sqrt(var1)/np.sqrt(var2)
-        if varRf == 0:
+        if var_rf == 0:
             print("[Special situation]: one risky, another risk free")
         else:
             if corr12 == 1:
@@ -185,20 +184,20 @@ def twoAssetPlot(mu1, mu2, var1, var2, corr12, separatePlot=True):
         plt.plot(x2, y3,color='grey',lw=1,ls='--')
         
         formula = ((y-mu0)**2-(x**2-var0)*(((mu1-mu2)**2)/(var1+var2-2*cov12)))
-        maskedLong = (y<min(mu1,mu2))|(max(mu1,mu2)<y)
-        maskedShort = (y>=min(mu1,mu2))&(y<=max(mu1,mu2))
-        plt.contour(np.ma.masked_where(maskedLong,x),np.ma.masked_where(maskedLong,y),np.ma.masked_where(maskedLong,formula), [0], colors='deepskyblue', linestyles='-')
-        plt.contour(np.ma.masked_where(maskedShort,x),np.ma.masked_where(maskedShort,y),np.ma.masked_where(maskedShort,formula), [0], colors='deepskyblue', linestyles='--')
+        masked_long = (y<min(mu1,mu2))|(max(mu1,mu2)<y)
+        masked_short = (y>=min(mu1,mu2))&(y<=max(mu1,mu2))
+        plt.contour(np.ma.masked_where(masked_long,x),np.ma.masked_where(masked_long,y),np.ma.masked_where(masked_long,formula), [0], colors='deepskyblue', linestyles='-')
+        plt.contour(np.ma.masked_where(masked_short,x),np.ma.masked_where(masked_short,y),np.ma.masked_where(masked_short,formula), [0], colors='deepskyblue', linestyles='--')
         plt.hlines(mu0,0,np.sqrt(np.abs(var0)),color='grey',lw=1,ls='--')
         plt.vlines(np.sqrt(np.abs(var0)),0,mu0,color='grey',lw=1,ls='--')
         
-        twoAssets = [[np.sqrt(var1), np.sqrt(var2)], [mu1, mu2]]
-        plt.scatter(*twoAssets, marker='v', color='red')
+        two_assets = [[np.sqrt(var1), np.sqrt(var2)], [mu1, mu2]]
+        plt.scatter(*two_assets, marker='v', color='red')
         text1 = plt.text(np.sqrt(var1), mu1, "(σ1, μ1)")
         text2 = plt.text(np.sqrt(var2), mu2, "(σ2, μ2)")
 
-        minVar = [[np.sqrt(np.abs(var0))], [mu0]]
-        plt.scatter(*minVar, marker='x', color='purple')
+        min_var = [[np.sqrt(np.abs(var0))], [mu0]]
+        plt.scatter(*min_var, marker='x', color='purple')
         text3 = plt.text(np.sqrt(np.abs(var0)), mu0, "Min(σ)")
         adjust_text([text1, text2, text3])
         
@@ -212,21 +211,19 @@ def twoAssetPlot(mu1, mu2, var1, var2, corr12, separatePlot=True):
         ax.yaxis.set_ticks_position('left')
         plt.show()
         
-#         f.savefig("two_stock_sep_sd1sd2_%s_corr_%s.pdf"%(round(sd1sd2,3), round(corr12,3)), bbox_inches='tight')
-        
     else:
         
         if var2 == 0:
-            varRf = var2
+            var_rf = var2
             var2 += 0.0000000000001
         else:
-            varRf = var2
+            var_rf = var2
         
         sd1sd2 = np.sqrt(var1)/np.sqrt(var2)
         print("STD1/STD2 = %s" %round(sd1sd2,4))
         f = plt.figure(figsize = (10,10))
         ax = f.add_subplot(1, 1, 1)
-        colorIdx = 0
+        color_idx = 0
         colorlabel = {}
         for situation in corr12:
             cov12 = situation*np.sqrt(var1)*np.sqrt(var2)
@@ -234,10 +231,10 @@ def twoAssetPlot(mu1, mu2, var1, var2, corr12, separatePlot=True):
             mu0 = (mu1*var2+mu2*var1-(mu1+mu2)*cov12)/(var1+var2-2*cov12)
             var0 = (var1*var2-cov12**2)/(var1+var2-2*cov12)
             
-            if varRf == 0:
+            if var_rf == 0:
                 print("[Special situation]: one risky, another risk free")
             else:
-                print("[Situation %s] MVP: (%s, %s), covariance = %s;" %(colorIdx+1, round(np.sqrt(np.abs(var0)),4), round(mu0,4), round(cov12,4)))
+                print("[Situation %s] MVP: (%s, %s), covariance = %s;" %(color_idx+1, round(np.sqrt(np.abs(var0)),4), round(mu0,4), round(cov12,4)))
             print("MVP strategy (weight): %s asset 1 (%s%%), and %s asset 2 (%s%%)"
                   %(strategy_idfier(round(s0,4)),round(100*s0,2),strategy_idfier(round(1-s0,4)),round(100*(1-s0),2)))
             
@@ -245,22 +242,22 @@ def twoAssetPlot(mu1, mu2, var1, var2, corr12, separatePlot=True):
             y = np.linspace(min(mu1,mu2,mu0)-np.abs(2/3)*max(mu1,mu2,mu0), max(mu1,mu2,mu0)+np.abs((2/3)*max(mu1,mu2,mu0)), 400)
             x, y = np.meshgrid(x, y)
 
-            twoAssets = [[np.sqrt(var1), np.sqrt(var2)], [mu1, mu2]]
-            plt.scatter(*twoAssets, marker='v', color='red')
+            two_assets = [[np.sqrt(var1), np.sqrt(var2)], [mu1, mu2]]
+            plt.scatter(*two_assets, marker='v', color='red')
             
             formula = ((y-mu0)**2-(x**2-var0)*(((mu1-mu2)**2)/(var1+var2-2*cov12)))
-            maskedLong = (y<min(mu1,mu2))|(max(mu1,mu2)<y)
-            maskedShort = (y>=min(mu1,mu2))&(y<=max(mu1,mu2))
+            masked_long = (y<min(mu1,mu2))|(max(mu1,mu2)<y)
+            masked_short = (y>=min(mu1,mu2))&(y<=max(mu1,mu2))
             color = list(mcolors.TABLEAU_COLORS.values())
-            plt.contour(np.ma.masked_where(maskedLong,x),np.ma.masked_where(maskedLong,y),np.ma.masked_where(maskedLong,formula), [0], colors=color[colorIdx], linestyles='-')
-            plt.contour(np.ma.masked_where(maskedShort,x),np.ma.masked_where(maskedShort,y),np.ma.masked_where(maskedShort,formula), [0], colors=color[colorIdx], linestyles='--')
-            colorlabel["Situation %s" %(colorIdx+1)] = color[colorIdx]
-            colorIdx += 1
+            plt.contour(np.ma.masked_where(masked_long,x),np.ma.masked_where(masked_long,y),np.ma.masked_where(masked_long,formula), [0], colors=color[color_idx], linestyles='-')
+            plt.contour(np.ma.masked_where(masked_short,x),np.ma.masked_where(masked_short,y),np.ma.masked_where(masked_short,formula), [0], colors=color[color_idx], linestyles='--')
+            colorlabel["Situation %s" %(color_idx+1)] = color[color_idx]
+            color_idx += 1
             plt.hlines(mu0,0,np.sqrt(np.abs(var0)),color='grey',lw=1,ls='--')
             plt.vlines(np.sqrt(np.abs(var0)),0,mu0,color='grey',lw=1,ls='--')
             
-            minVar = [[np.sqrt(np.abs(var0))], [mu0]]
-            plt.scatter(*minVar, marker='x', color='purple')
+            min_var = [[np.sqrt(np.abs(var0))], [mu0]]
+            plt.scatter(*min_var, marker='x', color='purple')
             
         text1 = plt.text(np.sqrt(var1), mu1, "(σ1, μ1)")
         text2 = plt.text(np.sqrt(var2), mu2, "(σ2, μ2)")
@@ -276,10 +273,7 @@ def twoAssetPlot(mu1, mu2, var1, var2, corr12, separatePlot=True):
         ax.spines['top'].set_color('none')
         ax.xaxis.set_ticks_position('bottom')
         ax.yaxis.set_ticks_position('left')
-        plt.show()
-        
-#         f.savefig("two_stock_agg_sd1sd2_%s.pdf"%(round(sd1sd2,3)), bbox_inches='tight')
-        
+        plt.show()   
 
 ```
 
@@ -304,7 +298,7 @@ var2 = 0.03
 # corr12 = np.sqrt(var1)/np.sqrt(var2)
 corr12 = random.uniform(-1,1)
 
-twoAssetPlot(mu1, mu2, var1, var2, corr12)
+two_asset_plot(mu1, mu2, var1, var2, corr12)
 ```
 
     [Situation 2]: correlation between STD1/STD2 (0.7071) and 1
@@ -342,7 +336,7 @@ corr12 = [1, random.uniform(np.sqrt(var1)/np.sqrt(var2), 1), np.sqrt(var1)/np.sq
           random.uniform(-1, np.sqrt(var1)/np.sqrt(var2)), -1]
 
 if var1>0 and var2>0 and var1 != var2: 
-    for situation in map(lambda x: twoAssetPlot(mu1, mu2, var1, var2, x), corr12):
+    for situation in map(lambda x: two_asset_plot(mu1, mu2, var1, var2, x), corr12):
         situation
 else:
     print("Error: reset variance")
@@ -421,7 +415,7 @@ else:
 # corr12 = [1, random.uniform(np.sqrt(var1)/np.sqrt(var2), 1), np.sqrt(var1)/np.sqrt(var2), 
 #           random.uniform(-1, np.sqrt(var1)/np.sqrt(var2)), -1]
 
-twoAssetPlot(mu1, mu2, var1, var2, corr12, separatePlot=False)
+two_asset_plot(mu1, mu2, var1, var2, corr12, separate_plot=False)
 
 ```
 
@@ -461,7 +455,7 @@ var1_rrf = 0.03
 var2_rrf = 0
 corr12_rrf = 0
 
-twoAssetPlot(mu1_rrf, mu2_rrf, var1_rrf, var2_rrf, corr12_rrf)
+two_asset_plot(mu1_rrf, mu2_rrf, var1_rrf, var2_rrf, corr12_rrf)
 ```
 
     [Special situation]: one risky, another risk free
@@ -742,20 +736,20 @@ df_vwr.head(10)
 
 
 ```python
-def twoFinancePlot(df, firstCol, secondCol):
-    mu1 = df.mean().loc[firstCol] 
-    mu2 = df.mean().loc[secondCol]
-    var1 = (df.std().loc[firstCol])**2
-    var2 = (df.std().loc[secondCol])**2
-    corr12 = df[firstCol].corr(df[secondCol], method='pearson', min_periods=None)
-    return twoAssetPlot(mu1, mu2, var1, var2, corr12)
+def two_asset_series_plot(df, first_col, second_col):
+    mu1 = df.mean().loc[first_col] 
+    mu2 = df.mean().loc[second_col]
+    var1 = (df.std().loc[first_col])**2
+    var2 = (df.std().loc[second_col])**2
+    corr12 = df[first_col].corr(df[second_col], method='pearson', min_periods=None)
+    return two_asset_plot(mu1, mu2, var1, var2, corr12)
 ```
 
 
 ```python
 # choose any two of the portfolios on variance decile
 
-twoFinancePlot(df_vwr, "Dec 2", "Dec 7")
+two_asset_series_plot(df_vwr, "Dec 2", "Dec 7")
 ```
 
     [Situation 2]: correlation between STD1/STD2 (0.6532) and 1
