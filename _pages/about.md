@@ -20,9 +20,9 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
 
 ***
 ***Education***
-- Durham University, PhD (*current*)
-- University of Birmingham, MSc
-- Northeastern University (CN), BEc
+- PhD, Durham University (*current*)
+- MSc, University of Birmingham
+- BEc, Northeastern University (CN)
 
 ***
 ***Affiliations***
