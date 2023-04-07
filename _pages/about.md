@@ -19,14 +19,20 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
 - Data science
 
 ***
+***Education***
+- Durham University, PhD (*current*)
+- University of Birmingham, MSc
+- Northeastern University (CN), BEc
+
+***
 ***Affiliations***
 - [Department of Finance](https://www.durham.ac.uk/business/about/departments/finance/), Durham University Business School
-- [The Northern Ireland and North East Doctoral Training Partnership](https://www.ninedtp.ac.uk/) (NINE DTP), Economic and Social Research Council (ESRC), UK Research and Innovation
+- [ESRC NINE DTP](https://www.ninedtp.ac.uk/), UK Research and Innovation
 
 ***
 ***Supervisors***
-- [Xian Gu](https://www.durham.ac.uk/business/our-people/xian-gu/), Associate Professor in Finance at Durham University Business School
-- [Felix Irresberger](https://www.durham.ac.uk/business/our-people/felix-irresberger/), Associate Professor in Finance at Durham University Business School
+- [Dr Xian Gu](https://www.durham.ac.uk/business/our-people/xian-gu/), Associate Professor in Finance
+- [Dr Felix Irresberger](https://www.durham.ac.uk/business/our-people/felix-irresberger/), Associate Professor in Finance
 
 ***
 ***Contact***
