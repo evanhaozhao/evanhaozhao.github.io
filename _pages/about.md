@@ -147,3 +147,13 @@ I'm Hao Zhao, a first-year PhD candidate in Finance at Durham University.
   updateWorkingStatus();
 </script>
 
+
+<iframe id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=BTref5sA2YgJsdqJC-Wlme9WjH-r2sT1wZfP8chOQBg&cl=ffffff&w=a" frameborder="0" scrolling="no" width="1" height="1"></iframe>
+
+<script type="text/javascript">
+  window.addEventListener("load", function(){
+    var clustrmaps = document.getElementById('clustrmaps');
+    clustrmaps.style.display = 'none';
+  });
+</script>
+
