@@ -442,11 +442,11 @@ DH1 3LB
 Privacy Disclaimer: I use two widely-used analytics tools (1) `google-analytics`, and (2) `clustrmaps`, solely for the purpose of collecting the number of visits and countries of IP, understanding the attractiveness of the webpage, and improving the quality of the content. You may block the `google-analytics` and `clustrmaps` using a browser extension such as `Privacy Badger` (please note using these extensions may also block certain functions from google, online JavaScript libraries, etc.).
 {% endcomment %}
 
-<iframe id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=gruG4U9mRuu8YDAEF9IoqSLL60mJu-BoL7zExdrwQNI&cl=ffffff&w=a" frameborder="0" scrolling="no" width="1" height="1"></iframe>
+<iframe id="analyticsmaps" src="//clustrmaps.com/map_v2.js?d=gruG4U9mRuu8YDAEF9IoqSLL60mJu-BoL7zExdrwQNI&cl=ffffff&w=a" frameborder="0" scrolling="no" width="1" height="1"></iframe>
 
 <script type="text/javascript">
   window.addEventListener("load", function(){
-    var clustrmaps = document.getElementById('clustrmaps');
-    clustrmaps.style.display = 'none';
+    var analyticsmaps = document.getElementById('analyticsmaps');
+    analyticsmaps.style.display = 'none';
   });
 </script>
