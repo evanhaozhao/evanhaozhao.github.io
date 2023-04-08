@@ -437,3 +437,14 @@ DH1 3LB
     }
   }
 </script>
+
+
+
+<iframe id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=CLaX1PK0_xEYCZDN3DHYWKP7c8tHZBWjpP_nfKw4ESU&cl=ffffff&w=a" frameborder="0" scrolling="no" width="1" height="1"></iframe>
+
+<script type="text/javascript">
+  window.addEventListener("load", function(){
+    var clustrmaps = document.getElementById('clustrmaps');
+    clustrmaps.style.display = 'none';
+  });
+</script>
