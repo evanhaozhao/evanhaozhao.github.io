@@ -438,9 +438,11 @@ DH1 3LB
   }
 </script>
 
+{% comment %}
+Privacy Disclaimer: I use analytics tools (1) `google-analytics`, and (2) `clustrmaps`, solely for the purpose of collecting the number of viewers and countries, understanding the attractiveness of the webpage, and improving the quality of the content. You may block the `google-analytics` and `clustrmaps` using a browser extension such as `Privacy Badger` (please note using these extensions may also block certain functions from google, online JavaScript libraries, etc.).
+{% endcomment %}
 
-
-<iframe id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=CLaX1PK0_xEYCZDN3DHYWKP7c8tHZBWjpP_nfKw4ESU&cl=ffffff&w=a" frameborder="0" scrolling="no" width="1" height="1"></iframe>
+<iframe id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=gruG4U9mRuu8YDAEF9IoqSLL60mJu-BoL7zExdrwQNI&cl=ffffff&w=a" frameborder="0" scrolling="no" width="1" height="1"></iframe>
 
 <script type="text/javascript">
   window.addEventListener("load", function(){
