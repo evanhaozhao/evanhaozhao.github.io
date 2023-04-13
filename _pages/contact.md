@@ -15,23 +15,23 @@ author_profile: false
     display: inline-block;
     margin-left: 10px;
     margin-bottom: 0.25em;
-    padding: 0.125em 0.25em;
+    padding: 3.5px 8.5px;
     color: #7B8288;
     text-align: center;
     text-decoration: none !important;
-    border: 1px solid;
+    border: 0.8px solid;
     border-color: #7B8288;
     border-radius: 4px;
     cursor: pointer;
     background-color: white;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: middle;
   }
 
   .copyButton:hover {
     color: #fff;
-    background-color: #bdc3c7 !important;
-    border-color: #bdc3c7;
+    background-color: #7B8288 !important;
+    border-color: #7B8288;
   }
 
   .tooltip {
