@@ -43,6 +43,7 @@ Joint with Wei Chen (Citigroup), Xian Gu (Durham), Iftekhar Hasan (Fordham), Yun
     cursor: pointer;
     background-color: white;
     font-size: 14px;
+    vertical-align: middle;
   }
 
   .copyButton:hover {

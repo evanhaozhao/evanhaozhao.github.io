@@ -25,6 +25,7 @@ author_profile: false
     cursor: pointer;
     background-color: white;
     font-size: 14px;
+    vertical-align: middle;
   }
 
   .copyButton:hover {
