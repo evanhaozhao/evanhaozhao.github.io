@@ -7,23 +7,33 @@ author_profile: false
 
 ***Email***
 
-<p><span id="email">hao.zhao@durham.ac.uk</span><button id="copyButton" data-clipboard-target="#email">Copy</button></p>
-<div id="tooltip"></div>
+<p><span id="email">hao.zhao@durham.ac.uk</span><button id="copyButton" class="copyButton" data-clipboard-target="#email">Copy</button></p>
+<div class="tooltip"></div>
 
 <style>
-  #copyButton {
+  .copyButton {
     display: inline-block;
     margin-left: 10px;
-    border: 1px solid #ccc;
-    background-color: #f7f7f7;
-    color: #555;
-    font-size: 14px;
-    line-height: 1;
-    padding: 4px 12px;
+    margin-bottom: 0.25em;
+    padding: 0.125em 0.25em;
+    color: #7B8288;
+    text-align: center;
+    text-decoration: none !important;
+    border: 1px solid;
+    border-color: #7B8288;
     border-radius: 4px;
     cursor: pointer;
+    background-color: white;
+    font-size: 14px;
   }
-  #tooltip {
+
+  .copyButton:hover {
+    color: #fff;
+    background-color: #bdc3c7 !important;
+    border-color: #bdc3c7;
+  }
+
+  .tooltip {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
@@ -34,7 +44,8 @@ author_profile: false
     transition: opacity 0.2s ease-out;
     display: none;
   }
-  #tooltip.fade {
+
+  .tooltip.fade {
     opacity: 0;
   }
 </style>
@@ -42,10 +53,10 @@ author_profile: false
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
 
 <script>
-  var clipboard = new ClipboardJS('#copyButton');
+  var clipboard = new ClipboardJS('.copyButton');
   clipboard.on('success', function(e) {
     e.clearSelection();
-    var tooltip = document.querySelector('#tooltip');
+    var tooltip = document.querySelector('.tooltip');
     tooltip.textContent = 'Copied!';
     tooltip.style.left = e.trigger.offsetLeft + 'px';
     tooltip.style.top = e.trigger.offsetTop - 30 + 'px';
@@ -62,6 +73,7 @@ author_profile: false
     alert('Failed to copy email address!');
   });
 </script>
+
 
 <div>
   <span id="workingstatus">
