@@ -7,7 +7,7 @@ author_profile: false
 
 ***Email***
 
-<p><span id="email">hao.zhao@durham.ac.uk</span><button id="copyButton" class="copyButton" data-clipboard-target="#email" title="Copy email">Copy</button></p>
+<p><span id="email">hao.zhao@durham.ac.uk</span><button id="copyButton" class="copyButton" data-clipboard-target="#email" title="Copy Email">Copy</button></p>
 <div class="tooltip"></div>
 
 <style>
@@ -32,6 +32,10 @@ author_profile: false
     color: #fff;
     background-color: #7B8288 !important;
     border-color: #7B8288;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  .copyButton:not(:hover) {
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   }
 
   .tooltip {
