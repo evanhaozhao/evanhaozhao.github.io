@@ -18,11 +18,13 @@ I'm Hao Zhao, a first-year PhD student in Finance at Durham University.
 - Empirical asset pricing
 - Data science
 
+{% comment %}
 ***
 ***Education***
-- PhD, Durham University (*current*)
-- MSc, University of Birmingham
-- BEc, Northeastern University (CN)
+- PhD, Durham University, UK (*current*)
+- MSc, University of Birmingham, UK
+- BEc, Northeastern University, CN
+- {% endcomment %}
 
 ***
 ***Affiliations***
