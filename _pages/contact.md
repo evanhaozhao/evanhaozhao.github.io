@@ -7,7 +7,7 @@ author_profile: false
 
 ***Email***
 
-<p><span id="email">hao.zhao@durham.ac.uk</span><button id="copyButton" class="copyButton" data-clipboard-target="#email">Copy</button></p>
+<p><span id="email">hao.zhao@durham.ac.uk</span><button id="copyButton" class="copyButton" data-clipboard-target="#email" title="Copy email">Copy</button></p>
 <div class="tooltip"></div>
 
 <style>
@@ -234,11 +234,16 @@ DH1 3LB
   }
   .progress-bar:hover,
   .container:hover .progress-bar {
-    background-color: #BBD6B8;
+    background-color: #82B8E4;
     color: #FFF;
     font-size: 0;
-    transition: color 0.2s ease-in-out;
-    transition: background-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  .progress-bar:not(:hover) {
+    transition: color 0.6s ease-in-out, background-color 0.6s ease-in-out;
+    background-color: #E1E2E3;
+    color: #E1E2E3;
+    font-size: 0;
   }
 </style>
 
