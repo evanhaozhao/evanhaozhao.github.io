@@ -438,9 +438,9 @@ DH1 3LB
   ];
 
   const currentTerm = terms.find(term => {
-    const now = moment().tz('Europe/London');
-    term.remainingDays = term.end.diff(now, 'days') + 1;
-    return now.isBetween(term.start, term.end);
+    const now = moment().tz('Europe/London').startOf('day');
+    term.remainingDays = term.end.diff(now, 'days');
+    return now.isBetween(term.start, term.end, 'day', '[]'); 
   });
 
   if (!currentTerm) {
@@ -448,7 +448,11 @@ DH1 3LB
     document.getElementById("next-term").textContent = "None";
   }
   else{
-    document.getElementById("current-term").textContent = currentTerm.name + ", " + currentTerm.remainingDays + " days remain";
+    if (currentTerm.remainingDays === 0) {
+      document.getElementById("current-term").textContent = currentTerm.name + ", ends today";
+    } else {
+      document.getElementById("current-term").textContent = currentTerm.name + ", " + currentTerm.remainingDays + " day" + (currentTerm.remainingDays === 1 ? " remains" : "s remain");
+    }
 
     const nextTerm = terms.find(term => term.start.isAfter(currentTerm.end));
     if (!nextTerm) {
@@ -458,4 +462,5 @@ DH1 3LB
       document.getElementById("next-term").textContent = nextTerm.name + " (" + nextTerm.start.year() + ")";
     }
   }
+
 </script>
