@@ -440,6 +440,8 @@ DH1 3LB
   const currentTerm = terms.find(term => {
     const now = moment().tz('Europe/London').startOf('day');
     term.remainingDays = term.end.diff(now, 'days');
+    const weeks = Math.ceil(now.diff(term.start, 'days') / 7);
+    term.currentWeek = weeks > 0 ? weeks : 1; 
     return now.isBetween(term.start, term.end, 'day', '[]'); 
   });
 
@@ -449,9 +451,11 @@ DH1 3LB
   }
   else{
     if (currentTerm.remainingDays === 0) {
-      document.getElementById("current-term").textContent = currentTerm.name + ", ends today";
+      const termString = currentTerm.name.includes("Term") ? currentTerm.name + " (week " + currentTerm.currentWeek + "), ends today" : currentTerm.name + ", ends today";
+      document.getElementById("current-term").textContent = termString;
     } else {
-      document.getElementById("current-term").textContent = currentTerm.name + ", " + currentTerm.remainingDays + " day" + (currentTerm.remainingDays === 1 ? " remains" : "s remain");
+      const termString = currentTerm.name.includes("Term") ? currentTerm.name + " (week " + currentTerm.currentWeek + "), " + currentTerm.remainingDays + " day" + (currentTerm.remainingDays === 1 ? " remains" : "s remain") : currentTerm.name + ", " + currentTerm.remainingDays + " day" + (currentTerm.remainingDays === 1 ? " remains" : "s remain");
+      document.getElementById("current-term").textContent = termString;
     }
 
     const nextTerm = terms.find(term => term.start.isAfter(currentTerm.end));
@@ -462,5 +466,6 @@ DH1 3LB
       document.getElementById("next-term").textContent = nextTerm.name + " (" + nextTerm.start.year() + ")";
     }
   }
+
 
 </script>
