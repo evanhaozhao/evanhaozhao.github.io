@@ -29,7 +29,7 @@ I'm Hao Zhao, a first-year PhD student in Finance at Durham University.
 ***
 ***Affiliations***
 - [Department of Finance](https://www.durham.ac.uk/business/about/departments/finance/ "Department of Finance, Durham University Business School"), Durham University Business School
-- [ESRC NINE DTP](https://www.ninedtp.ac.uk/ "NINE DTP, Economic and Social Research Council"), UK Research and Innovation
+- [ESRC-funded NINE DTP](https://www.ninedtp.ac.uk/ "The Northern Ireland and North East Doctoral Training Partnership"), UK Research and Innovation
 
 ***
 ***Supervisors***
