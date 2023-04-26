@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Image Classifier</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.11.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.0.4/dist/mobilenet.min.js"></script>
+    <style>
+      #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #image-preview {
+        width: 224px;
+        height: 224px;
+        border: 1px solid black;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Image Classifier</h1>
+    <div id="container">
+      <img id="image-preview" />
+      <input type="file" accept="image/*" onchange="onFileSelected(event)">
+      <div id="output"></div>
+    </div>
+    <script>
+      // Load the MobileNet model
+      var model;
+      mobilenet.load().then(m => {
+        model = m;
+      });
+
+      // Classify the image when a file is selected
+      function onFileSelected(event) {
+        var file = event.target.files[0];
+        var reader = new FileReader();
+        reader.onload = function(event) {
+          var img = new Image();
+          img.onload = function() {
+            predict(img);
+          };
+          img.src = event.target.result;
+          document.getElementById("image-preview").src = event.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+
+      // Predict the class of the image using the MobileNet model
+      function predict(img) {
+        model.classify(img).then(predictions => {
+          var output = document.getElementById("output");
+          output.innerHTML = "";
+          predictions.forEach(prediction => {
+            var p = document.createElement("p");
+            p.innerHTML = prediction.className + " (" + Math.round(prediction.probability * 100) + "%)";
+            output.appendChild(p);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
