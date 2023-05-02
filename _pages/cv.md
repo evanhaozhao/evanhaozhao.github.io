@@ -9,46 +9,31 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* PhD, Durham University, 2022-present
-* MSc, University of Birmingham, 2019-2020
-* BEc, Northeastern University, 2015-2019
+Read more
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<h2>My CV (<span id="cv-mode">detail</span>) XXX</h2>
+<div class="cv-detail">
+  <p>This is the detailed version of my CV.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt enim vel est pulvinar, sit amet lacinia ex tristique. Sed venenatis nulla vitae quam iaculis aliquet. Etiam porta sapien at est ullamcorper bibendum. Praesent quis magna nulla. Fusce eu turpis faucibus, sollicitudin sapien eget, vestibulum arcu. Quisque molestie eros sed nisl finibus, quis hendrerit justo commodo. Vestibulum molestie, mi id lacinia feugiat, lorem massa aliquet magna, eu commodo arcu felis vitae mi. Sed eu mauris vestibulum, bibendum nisl non, feugiat ex.</p>
+</div>
+<div class="cv-simplified">
+  <p>This is the simplified version of my CV.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>        
 
-Work experience
-======
-* 2021-2022: Research Assistant
-  * Duties included: Corporate finance and applied NLP
-* 2020-2021: Research Assistant
-  * Duties included: Asset pricing and behavioural finance
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
+{% comment %} 
+  Style: (a) general
+{% endcomment %} 
+
+<link rel="stylesheet" type="text/css" href="/assets/css/widgets_style/widgets.css">
+
+{% comment %} 
+  (1) A IOS feature switch
+{% endcomment %}
+
+<script src="/assets/js/widgets/switch.js"></script>

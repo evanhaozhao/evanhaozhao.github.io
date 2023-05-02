@@ -29,78 +29,21 @@ Joint with Wei Chen (Citigroup), Xian Gu (Durham), Iftekhar Hasan (Fordham), Yun
 <button class="copyButton" data-clipboard-target="#citation_muted_insider">Copy Citation</button>
 <span class="tooltip"></span>
 
-<style>
-  .copyButton {
-    display: inline-block;
-    margin-bottom: 0.25em;
-    padding: 0.125em 0.25em;
-    color: #438EB4;
-    text-align: center;
-    text-decoration: none !important;
-    border: 1px solid;
-    border-color: #438EB4;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: white;
-    font-size: 14px;
-    vertical-align: middle;
-  }
 
-  .copyButton:hover {
-    color: #fff;
-    background-color: #438EB4 !important;
-  }
 
-  .tooltip {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    opacity: 1;
-    transition: opacity 0.2s ease-out;
-    display: none;
-  }
+{% comment %} 
+  Style: (a) a default color button
+{% endcomment %} 
 
-  .tooltip.fade {
-    opacity: 0;
-  }
-</style>
+<link rel="stylesheet" type="text/css" href="/assets/css/widgets_style/copy-button-default.css">
+
+{% comment %} 
+  (1) Copy button
+{% endcomment %} 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
 
-<script>
-  var copyButtons = document.querySelectorAll('.copyButton');
-  var tooltips = document.querySelectorAll('.tooltip');
-
-  for (var i = 0; i < copyButtons.length; i++) {
-    var clipboard = new ClipboardJS(copyButtons[i], {
-      text: function(trigger) {
-        return document.querySelector(trigger.getAttribute('data-clipboard-target')).value;
-      }
-    });
-
-    clipboard.on('success', function(e) {
-      var tooltip = e.trigger.nextElementSibling;
-      tooltip.textContent = 'Copied!';
-      tooltip.style.left = e.trigger.offsetLeft + 'px';
-      tooltip.style.top = e.trigger.offsetTop - 30 + 'px';
-      tooltip.style.display = 'block';
-      tooltip.classList.remove('fade');
-      setTimeout(function() {
-        tooltip.classList.add('fade');
-        setTimeout(function() {
-          tooltip.style.display = 'none';
-        }, 200);
-      }, 1000);
-    });
-
-    clipboard.on('error', function(e) {
-      alert('Failed to copy text!');
-    });
-  }
-</script>
+<script src="/assets/js/widgets/copy-button-default.js"></script>
 
 
 

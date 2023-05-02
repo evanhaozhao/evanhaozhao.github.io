@@ -51,100 +51,20 @@ I'm Hao Zhao, a first-year PhD student in Finance at Durham University.
   </ul>
 </div>
 
-<style>
- #workingstatus {
-   display: inline-block;
-   width: 12px;
-   height: 12px;
-   border-radius: 50%;
-   margin-left: 4px;
-   text-align: center;
-   position: relative;
- }
-
-#workingstatus svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.5);
-  z-index: 1;
-}
-
- .available {
-   background-color: #2ecc71;
- }
 
 
- .available:hover {
-   background-color: #25A35A;
- }
 
+{% comment %} 
+  Style: (a) general
+{% endcomment %} 
 
- .limited {
-   background-color: #FFA500;
- }
+<link rel="stylesheet" type="text/css" href="/assets/css/widgets_style/widgets.css">
 
-
- .limited:hover {
-   background-color: #CC8400;
- }
-
-
- .unavailable {
-   background-color: #bdc3c7;
- }
-
-
- .unavailable:hover {
-   background-color: #979C9F;
- }
-
-
- #workingstatus::before {
-   content: "";
-   display: block;
-   width: 6px;
-   height: 6px;
-   background-color: white;
-   border-radius: 50%;
-   margin: 3px;
-   position: absolute;
- }
-
-</style>
+{% comment %} 
+  (1) Working status
+{% endcomment %} 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data-10-year-range.min.js"></script>
 
-<script>
-  function updateClock() {
-    var now = moment();
-    var second = now.seconds();
-    var secondAngle = second * 6;
-    var secondHand = document.getElementById('second-hand');
-    secondHand.setAttribute('d', 'M10 10 L10 1');
-    secondHand.setAttribute('transform', 'rotate(' + secondAngle + ' 10 10)');
-    setTimeout(updateClock, 1000);
-  }
-
-  function updateWorkingStatus() {
-    var now = moment().tz('Europe/London');
-    var ukHours = now.hour();
-    var ukMinutes = now.minute();
-    var workingStatusElement = document.getElementById('workingstatus');
-
-    if ((ukHours >= 9 && ukHours < 12) || (ukHours >= 15 && ukHours < 20)) {
-      workingStatusElement.className = 'available';
-      workingStatusElement.title = 'Online';
-    } else if (ukHours >= 23 || (ukHours >= 0 && ukHours < 9)) {
-      workingStatusElement.className = 'unavailable';
-      workingStatusElement.title = 'Offline';
-    } else {
-      workingStatusElement.className = 'limited';
-      workingStatusElement.title = 'Away';
-    }
-    updateClock();
-    setTimeout(updateWorkingStatus, 1000);
-  }
-  updateWorkingStatus();
-</script>
+<script src="/assets/js/widgets/working-status.js"></script>

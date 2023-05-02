@@ -1,0 +1,45 @@
+
+/* A gray copy button */
+
+.copyButton {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 0.25em;
+    padding: 3.5px 8.5px;
+    color: #7B8288;
+    text-align: center;
+    text-decoration: none !important;
+    border: 0.8px solid;
+    border-color: #7B8288;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.copyButton:hover {
+    color: #fff;
+    background-color: #7B8288 !important;
+    border-color: #7B8288;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.copyButton:not(:hover) {
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+    display: none;
+}
+
+.tooltip.fade {
+    opacity: 0;
+}
