@@ -1,24 +1,9 @@
 ---
-layout: archive
+layout: single
 title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-<!-- 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
-
-{% include base_path %}
-
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %} -->
-
-<!-- fa-link
-fa-file-pdf
-fa-code
-fa-github -->
 
 ## [Political Network and Muted Insider Trading](http://dx.doi.org/10.2139/ssrn.4230854)
 <a href="https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4230854_code1125739.pdf?abstractid=4230854&mirid=1&type=2"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a>
