@@ -3,7 +3,7 @@ published: false
 layout: single
 title: "Publications"
 permalink: /publications/
-author_profile: true
+author_profile: false
 ---
 
 ## [Political Network and Muted Insider Trading](http://dx.doi.org/10.2139/ssrn.4230854)
