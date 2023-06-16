@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Helium Balloon Calculator</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <h1>Helium Balloon Calculator</h1>
+  <p>Enter your weight in kilograms:</p>
+  <input type="number" id="weightInput" min="1" step="0.1" required>
+  <button onclick="calculateBalloons()">Calculate</button>
+  <p id="result"></p>
+
+  <script>
+    function calculateBalloons() {
+      var weight = parseFloat($('#weightInput').val());
+      var balloons = weight / 0.011; // Assuming average lifting capacity of a helium balloon is 0.011 kg
+      $('#result').text("You would need approximately " + Math.ceil(balloons) + " helium balloons to lift you up.");
+    }
+  </script>
+</body>
+</html>
