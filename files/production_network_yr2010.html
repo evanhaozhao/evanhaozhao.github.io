@@ -1,0 +1,123 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 750px;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+        #config {
+            float: left;
+            width: 400px;
+            height: 600px;
+        }
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<div id = "config"></div>
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#C7B299", "id": "Css Industries Inc", "label": "Css Industries Inc", "shape": "dot", "title": "Css Industries Inc\n[Industry] Paper Bag and Coated and Treated Paper Manufacturing"}, {"color": "#69b4ff", "id": "Target Corp", "label": "Target Corp", "shape": "dot", "title": "Target Corp\n[Industry] All Other General Merchandise Retailers"}, {"color": "#69b4ff", "id": "Wal-Mart Stores Inc", "label": "Wal-Mart Stores Inc", "shape": "dot", "title": "Wal-Mart Stores Inc\n[Industry] All Other General Merchandise Retailers"}, {"color": "#C7B299", "id": "Hni Corp", "label": "Hni Corp", "shape": "dot", "title": "Hni Corp\n[Industry] Office Furniture (except Wood) Manufacturing"}, {"color": "#69b4ff", "id": "United Stationers Inc", "label": "United Stationers Inc", "shape": "dot", "title": "United Stationers Inc\n[Industry] Computer and Computer Peripheral Equipment and Software Merchant Wholesalers"}, {"color": "#69b4ff", "id": "Johnson Controls Intl Plc", "label": "Johnson Controls Intl Plc", "shape": "dot", "title": "Johnson Controls Intl Plc\n[Industry] Air-Conditioning and Warm Air Heating Equipment and Commercial and Industrial Refrigeration Equipment Manufacturing"}, {"color": "#69b4ff", "id": "Ford Motor Co", "label": "Ford Motor Co", "shape": "dot", "title": "Ford Motor Co\n[Industry] Automobile and Light Duty Motor Vehicle ManufacturingT"}, {"color": "#69b4ff", "id": "General Motors Corp", "label": "General Motors Corp", "shape": "dot", "title": "General Motors Corp\n[Industry] Automobile and Light Duty Motor Vehicle Manufacturing"}, {"color": "#69b4ff", "id": "Daimler Ag", "label": "Daimler Ag", "shape": "dot", "title": "Daimler Ag\n[Industry] Automobile and Light Duty Motor Vehicle Manufacturing"}, {"color": "#C7B299", "id": "Kimball International  -Cl B", "label": "Kimball International  -Cl B", "shape": "dot", "title": "Kimball International  -Cl B\n[Industry] Wood Office Furniture Manufacturing"}, {"color": "#69b4ff", "id": "Bayer Ag", "label": "Bayer Ag", "shape": "dot", "title": "Bayer Ag\n[Industry] Chemical ManufacturingT"}, {"color": "#C7B299", "id": "Kimberly-Clark Corp", "label": "Kimberly-Clark Corp", "shape": "dot", "title": "Kimberly-Clark Corp\n[Industry] Paper Mills"}, {"color": "#C7B299", "id": "Louisiana-Pacific Corp", "label": "Louisiana-Pacific Corp", "shape": "dot", "title": "Louisiana-Pacific Corp\n[Industry] Reconstituted Wood Product Manufacturing"}, {"color": "#C7B299", "id": "Taiga Building Products Ltd", "label": "Taiga Building Products Ltd", "shape": "dot", "title": "Taiga Building Products Ltd\n[Industry] Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers"}, {"color": "#69b4ff", "id": "Pepsico Inc", "label": "Pepsico Inc", "shape": "dot", "title": "Pepsico Inc\n[Industry] Soft Drink and Ice ManufacturingT"}, {"color": "#69b4ff", "id": "Procter \u0026 Gamble Co", "label": "Procter \u0026 Gamble Co", "shape": "dot", "title": "Procter \u0026 Gamble Co\n[Industry] Soap and Other Detergent Manufacturing"}, {"color": "#69b4ff", "id": "Wal-Mart Stores", "label": "Wal-Mart Stores", "shape": "dot", "title": "Wal-Mart Stores\n[Industry] All Other General Merchandise Retailers"}, {"color": "#C7B299", "id": "Sonoco Products Co", "label": "Sonoco Products Co", "shape": "dot", "title": "Sonoco Products Co\n[Industry] Other Paperboard Container Manufacturing"}, {"color": "#C7B299", "id": "Swank Inc", "label": "Swank Inc", "shape": "dot", "title": "Swank Inc\n[Industry] Other Leather and Allied Product Manufacturing"}, {"color": "#69b4ff", "id": "Macy\u0027S Inc", "label": "Macy\u0027S Inc", "shape": "dot", "title": "Macy\u0027S Inc\n[Industry] Department Stores"}, {"color": "#69b4ff", "id": "Tjx Companies Inc", "label": "Tjx Companies Inc", "shape": "dot", "title": "Tjx Companies Inc\n[Industry] Clothing and Clothing Accessories Retailers"}, {"color": "#69b4ff", "id": "Kohl\u0027S Department Stores Inc.", "label": "Kohl\u0027S Department Stores Inc.", "shape": "dot", "title": "Kohl\u0027S Department Stores Inc.\n[Industry] Department Stores"}, {"color": "#69b4ff", "id": "Essendant Inc", "label": "Essendant Inc", "shape": "dot", "title": "Essendant Inc\n[Industry] Computer and Computer Peripheral Equipment and Software Merchant Wholesalers"}, {"color": "#69b4ff", "id": "Staples Inc.", "label": "Staples Inc.", "shape": "dot", "title": "Staples Inc.\n[Industry] Stationery and Office Supplies Merchant Wholesalers"}, {"color": "#C7B299", "id": "American Woodmark Corp", "label": "American Woodmark Corp", "shape": "dot", "title": "American Woodmark Corp\n[Industry] Wood Kitchen Cabinet and Countertop Manufacturing"}, {"color": "#69b4ff", "id": "Home Depot Inc", "label": "Home Depot Inc", "shape": "dot", "title": "Home Depot Inc\n[Industry] Home Centers"}, {"color": "#69b4ff", "id": "Lowe\u0027S Companies Inc", "label": "Lowe\u0027S Companies Inc", "shape": "dot", "title": "Lowe\u0027S Companies Inc\n[Industry] Home Centers"}, {"color": "#C7B299", "id": "Boise Cascade Co", "label": "Boise Cascade Co", "shape": "dot", "title": "Boise Cascade Co\n[Industry] Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers"}, {"color": "#69b4ff", "id": "Home Depot Inc. (The)", "label": "Home Depot Inc. (The)", "shape": "dot", "title": "Home Depot Inc. (The)\n[Industry] Home Centers"}, {"color": "#C7B299", "id": "U S Home Systems Inc", "label": "U S Home Systems Inc", "shape": "dot", "title": "U S Home Systems Inc\n[Industry] Wood Kitchen Cabinet and Countertop Manufacturing"}, {"color": "#C7B299", "id": "Pope Resources/De  -Lp", "label": "Pope Resources/De  -Lp", "shape": "dot", "title": "Pope Resources/De  -Lp\n[Industry] Timber Tract Operations"}, {"color": "#C7B299", "id": "Weyerhaeuser Co", "label": "Weyerhaeuser Co", "shape": "dot", "title": "Weyerhaeuser Co\n[Industry] Wood Product ManufacturingT"}, {"color": "#C7B299", "id": "Advanced Envir Recycl  -Cl A", "label": "Advanced Envir Recycl  -Cl A", "shape": "dot", "title": "Advanced Envir Recycl  -Cl A\n[Industry] Veneer, Plywood, and Engineered Wood Product ManufacturingT"}, {"color": "#C7B299", "id": "Bluelinx Corporation", "label": "Bluelinx Corporation", "shape": "dot", "title": "Bluelinx Corporation\n[Industry] Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers"}, {"color": "#C7B299", "id": "Masonite International Corp", "label": "Masonite International Corp", "shape": "dot", "title": "Masonite International Corp\n[Industry] Wood Window and Door Manufacturing"}, {"color": "#69b4ff", "id": "Lowe\u0027S Companies Inc.", "label": "Lowe\u0027S Companies Inc.", "shape": "dot", "title": "Lowe\u0027S Companies Inc.\n[Industry] Home Centers"}, {"color": "#C7B299", "id": "Deckers Outdoor Corp", "label": "Deckers Outdoor Corp", "shape": "dot", "title": "Deckers Outdoor Corp\n[Industry] Other Leather and Allied Product Manufacturing"}, {"color": "#69b4ff", "id": "Nordstrom Inc", "label": "Nordstrom Inc", "shape": "dot", "title": "Nordstrom Inc\n[Industry] Clothing and Clothing Accessories Retailers"}, {"color": "#C7B299", "id": "Universal Forest Prods Inc", "label": "Universal Forest Prods Inc", "shape": "dot", "title": "Universal Forest Prods Inc\n[Industry] All Other Miscellaneous Wood Product Manufacturing"}, {"color": "#C7B299", "id": "Buckeye Technologies Inc", "label": "Buckeye Technologies Inc", "shape": "dot", "title": "Buckeye Technologies Inc\n[Industry] Pulp Mills"}, {"color": "#C7B299", "id": "Sappi Ltd", "label": "Sappi Ltd", "shape": "dot", "title": "Sappi Ltd\n[Industry] Paper Bag and Coated and Treated Paper Manufacturing"}, {"color": "#69b4ff", "id": "Amcor", "label": "Amcor", "shape": "dot", "title": "Amcor\n[Industry] Plastics Packaging Film and Sheet (including Laminated) Manufacturing"}, {"color": "#C7B299", "id": "Domtar Corp", "label": "Domtar Corp", "shape": "dot", "title": "Domtar Corp\n[Industry] Paper (except Newsprint) Mills "}, {"color": "#C7B299", "id": "Trex Co Inc", "label": "Trex Co Inc", "shape": "dot", "title": "Trex Co Inc\n[Industry] Reconstituted Wood Product Manufacturing"}, {"color": "#C7B299", "id": "Boise Cascade Corp", "label": "Boise Cascade Corp", "shape": "dot", "title": "Boise Cascade Corp\n[Industry] Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers"}, {"color": "#C7B299", "id": "Mod-Pac Corp", "label": "Mod-Pac Corp", "shape": "dot", "title": "Mod-Pac Corp\n[Industry] Paperboard Mills"}, {"color": "#69b4ff", "id": "Covidien Plc", "label": "Covidien Plc", "shape": "dot", "title": "Covidien Plc\n[Industry] Electromedical and Electrotherapeutic Apparatus Manufacturing"}, {"color": "#C7B299", "id": "Builders Firstsource", "label": "Builders Firstsource", "shape": "dot", "title": "Builders Firstsource\n[Industry] Prefabricated Wood Building Manufacturing"}, {"color": "#69b4ff", "id": "Hovnanian Enterprises Inc.", "label": "Hovnanian Enterprises Inc.", "shape": "dot", "title": "Hovnanian Enterprises Inc.\n[Industry] New Housing For-Sale Builders"}, {"color": "#69b4ff", "id": "Lennar Corp", "label": "Lennar Corp", "shape": "dot", "title": "Lennar Corp\n[Industry] New Housing For-Sale Builders"}, {"color": "#69b4ff", "id": "Pulte Homes, Inc", "label": "Pulte Homes, Inc", "shape": "dot", "title": "Pulte Homes, Inc\n[Industry] New Housing For-Sale Builders"}, {"color": "#69b4ff", "id": "Ryland Group Inc", "label": "Ryland Group Inc", "shape": "dot", "title": "Ryland Group Inc\n[Industry] New Housing For-Sale Builders"}, {"color": "#69b4ff", "id": "D.R. Horton Inc.", "label": "D.R. Horton Inc.", "shape": "dot", "title": "D.R. Horton Inc.\n[Industry] New Housing For-Sale Builders"}, {"color": "#69b4ff", "id": "Beazer Homes Usa Inc.", "label": "Beazer Homes Usa Inc.", "shape": "dot", "title": "Beazer Homes Usa Inc.\n[Industry] New Housing For-Sale Builders"}, {"color": "#C7B299", "id": "Orchids Paper Products", "label": "Orchids Paper Products", "shape": "dot", "title": "Orchids Paper Products\n[Industry] Sanitary Paper Product Manufacturing"}, {"color": "#69b4ff", "id": "Dollar General Corp", "label": "Dollar General Corp", "shape": "dot", "title": "Dollar General Corp\n[Industry] All Other General Merchandise Retailers"}, {"color": "#69b4ff", "id": "Family Dollar Stores", "label": "Family Dollar Stores", "shape": "dot", "title": "Family Dollar Stores\n[Industry] All Other General Merchandise Stores "}, {"color": "#C7B299", "id": "Verso Paper Holdings Llc", "label": "Verso Paper Holdings Llc", "shape": "dot", "title": "Verso Paper Holdings Llc\n[Industry] Paper (except Newsprint) Mills "}, {"color": "#69b4ff", "id": "Avon Products Inc.", "label": "Avon Products Inc.", "shape": "dot", "title": "Avon Products Inc.\n[Industry] Toilet Preparation Manufacturing"}, {"color": "#69b4ff", "id": "Sears Holdings Corp", "label": "Sears Holdings Corp", "shape": "dot", "title": "Sears Holdings Corp\n[Industry] Department Stores (except Discount Department Stores) "}, {"color": "#69b4ff", "id": "Time Inc", "label": "Time Inc", "shape": "dot", "title": "Time Inc\n[Industry] Motion Picture and Video Production"}, {"color": "#69b4ff", "id": "Quad/Graphics Inc", "label": "Quad/Graphics Inc", "shape": "dot", "title": "Quad/Graphics Inc\n[Industry] Commercial Printing (except Screen and Books)"}, {"color": "#C7B299", "id": "Verso Corp", "label": "Verso Corp", "shape": "dot", "title": "Verso Corp\n[Industry] Paper (except Newsprint) Mills "}, {"color": "#C7B299", "id": "International Paper Co", "label": "International Paper Co", "shape": "dot", "title": "International Paper Co\n[Industry] Paperboard Mills"}, {"color": "#C7B299", "id": "Clearwater Paper Corp", "label": "Clearwater Paper Corp", "shape": "dot", "title": "Clearwater Paper Corp\n[Industry] Sanitary Paper Product Manufacturing"}, {"color": "#69b4ff", "id": "Kroger Co", "label": "Kroger Co", "shape": "dot", "title": "Kroger Co\n[Industry] Supermarkets and Other Grocery Retailers (except Convenience Retailers)"}, {"color": "#C7B299", "id": "China Shandong Inds Inc", "label": "China Shandong Inds Inc", "shape": "dot", "title": "China Shandong Inds Inc\n[Industry] Household Furniture (except Wood and Metal) Manufacturing "}, {"color": "#69b4ff", "id": "Abm Group Inc", "label": "Abm Group Inc", "shape": "dot", "title": "Abm Group Inc\n[Industry] Janitorial Services"}, {"color": "#69b4ff", "id": "Fuji Boeki Co Ltd", "label": "Fuji Boeki Co Ltd", "shape": "dot", "title": "Fuji Boeki Co Ltd\n[Industry] Automobile Manufacturing "}, {"color": "#69b4ff", "id": "Tesco", "label": "Tesco", "shape": "dot", "title": "Tesco\n[Industry] Oil and Gas Field Machinery and Equipment Manufacturing"}]);
+        edges = new vis.DataSet([{"arrows": "to", "color": "#FFC107", "from": "Css Industries Inc", "title": "[Sales] 46.97", "to": "Target Corp", "width": 3.870638370513916}, {"arrows": "to", "color": "#FFC107", "from": "Css Industries Inc", "title": "[Sales] 115.51", "to": "Wal-Mart Stores Inc", "width": 4.757985591888428}, {"arrows": "to", "color": "#FFC107", "from": "Hni Corp", "title": "[Sales] 168.67", "to": "United Stationers Inc", "width": 5.133872985839844}, {"arrows": "to", "color": "#4CAF50", "from": "Johnson Controls Intl Plc", "title": "[Sales] 1.0", "to": "Ford Motor Co", "width": 0.6931471824645996}, {"arrows": "to", "color": "#4CAF50", "from": "Johnson Controls Intl Plc", "title": "[Sales] 1.0", "to": "General Motors Corp", "width": 0.6931471824645996}, {"arrows": "to", "color": "#4CAF50", "from": "Johnson Controls Intl Plc", "title": "[Sales] 1.0", "to": "Daimler Ag", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Kimball International  -Cl B", "title": "[Sales] 169.6", "to": "Bayer Ag", "width": 5.139321804046631}, {"arrows": "to", "color": "#FFC107", "from": "Kimberly-Clark Corp", "title": "[Sales] 2566.98", "to": "Wal-Mart Stores Inc", "width": 7.850874900817871}, {"arrows": "to", "color": "#FFC107", "from": "Louisiana-Pacific Corp", "title": "[Sales] 150.81", "to": "Taiga Building Products Ltd", "width": 5.022643089294434}, {"arrows": "to", "color": "#4CAF50", "from": "Pepsico Inc", "title": "[Sales] 6941.0", "to": "Wal-Mart Stores Inc", "width": 8.845345497131348}, {"arrows": "to", "color": "#4CAF50", "from": "Procter \u0026 Gamble Co", "title": "[Sales] 12630.0", "to": "Wal-Mart Stores", "width": 9.443909645080566}, {"arrows": "to", "color": "#FFC107", "from": "Sonoco Products Co", "title": "[Sales] 412.41", "to": "Procter \u0026 Gamble Co", "width": 6.024444580078125}, {"arrows": "to", "color": "#FFC107", "from": "Swank Inc", "title": "[Sales] 21.23", "to": "Macy\u0027S Inc", "width": 3.1015326976776123}, {"arrows": "to", "color": "#FFC107", "from": "Swank Inc", "title": "[Sales] 11.94", "to": "Tjx Companies Inc", "width": 2.5605552196502686}, {"arrows": "to", "color": "#FFC107", "from": "Swank Inc", "title": "[Sales] 19.91", "to": "Kohl\u0027S Department Stores Inc.", "width": 3.0399882793426514}, {"arrows": "to", "color": "#4CAF50", "from": "Essendant Inc", "title": "[Sales] 517.05", "to": "Staples Inc.", "width": 6.250069618225098}, {"arrows": "to", "color": "#FFC107", "from": "American Woodmark Corp", "title": "[Sales] 1.0", "to": "Home Depot Inc", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "American Woodmark Corp", "title": "[Sales] 1.0", "to": "Lowe\u0027S Companies Inc", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Boise Cascade Co", "title": "[Sales] 231.4", "to": "Home Depot Inc. (The)", "width": 5.448460102081299}, {"arrows": "to", "color": "#FFC107", "from": "U S Home Systems Inc", "title": "[Sales] 145.87", "to": "Home Depot Inc", "width": 4.98956823348999}, {"arrows": "to", "color": "#FFC107", "from": "Pope Resources/De  -Lp", "title": "[Sales] 7.75", "to": "Weyerhaeuser Co", "width": 2.1689393520355225}, {"arrows": "to", "color": "#FFC107", "from": "Advanced Envir Recycl  -Cl A", "title": "[Sales] 1.0", "to": "Bluelinx Corporation", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Masonite International Corp", "title": "[Sales] 262.38", "to": "Home Depot Inc. (The)", "width": 5.573590278625488}, {"arrows": "to", "color": "#FFC107", "from": "Masonite International Corp", "title": "[Sales] 140.83", "to": "Lowe\u0027S Companies Inc.", "width": 4.954600811004639}, {"arrows": "to", "color": "#FFC107", "from": "Deckers Outdoor Corp", "title": "[Sales] 119.12", "to": "Nordstrom Inc", "width": 4.7884745597839355}, {"arrows": "to", "color": "#FFC107", "from": "Universal Forest Prods Inc", "title": "[Sales] 529.44", "to": "Home Depot Inc", "width": 6.273703098297119}, {"arrows": "to", "color": "#FFC107", "from": "Buckeye Technologies Inc", "title": "[Sales] 53.0", "to": "Procter \u0026 Gamble Co", "width": 3.989021062850952}, {"arrows": "to", "color": "#FFC107", "from": "Sappi Ltd", "title": "[Sales] 1.0", "to": "Amcor", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Sappi Ltd", "title": "[Sales] 1.0", "to": "Domtar Corp", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Trex Co Inc", "title": "[Sales] 1.0", "to": "Boise Cascade Corp", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Mod-Pac Corp", "title": "[Sales] 8.43", "to": "Covidien Plc", "width": 2.2437901496887207}, {"arrows": "to", "color": "#FFC107", "from": "Builders Firstsource", "title": "[Sales] 1.0", "to": "Hovnanian Enterprises Inc.", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Builders Firstsource", "title": "[Sales] 1.0", "to": "Lennar Corp", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Builders Firstsource", "title": "[Sales] 1.0", "to": "Pulte Homes, Inc", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Builders Firstsource", "title": "[Sales] 1.0", "to": "Ryland Group Inc", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Builders Firstsource", "title": "[Sales] 1.0", "to": "D.R. Horton Inc.", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Builders Firstsource", "title": "[Sales] 1.0", "to": "Beazer Homes Usa Inc.", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Orchids Paper Products", "title": "[Sales] 37.0", "to": "Dollar General Corp", "width": 3.637638807296753}, {"arrows": "to", "color": "#FFC107", "from": "Orchids Paper Products", "title": "[Sales] 12.03", "to": "Family Dollar Stores", "width": 2.5669474601745605}, {"arrows": "to", "color": "#FFC107", "from": "Orchids Paper Products", "title": "[Sales] 12.03", "to": "Wal-Mart Stores Inc", "width": 2.5669474601745605}, {"arrows": "to", "color": "#FFC107", "from": "Verso Paper Holdings Llc", "title": "[Sales] 1.0", "to": "Avon Products Inc.", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Verso Paper Holdings Llc", "title": "[Sales] 1.0", "to": "Sears Holdings Corp", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Verso Paper Holdings Llc", "title": "[Sales] 1.0", "to": "Time Inc", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Verso Paper Holdings Llc", "title": "[Sales] 1.0", "to": "Quad/Graphics Inc", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Verso Corp", "title": "[Sales] 176.59", "to": "International Paper Co", "width": 5.179449558258057}, {"arrows": "to", "color": "#FFC107", "from": "Clearwater Paper Corp", "title": "[Sales] 62.7", "to": "Kroger Co", "width": 4.154263019561768}, {"arrows": "to", "color": "#FFC107", "from": "China Shandong Inds Inc", "title": "[Sales] 4.91", "to": "Abm Group Inc", "width": 1.7769842147827148}, {"arrows": "to", "color": "#FFC107", "from": "China Shandong Inds Inc", "title": "[Sales] 2.51", "to": "Fuji Boeki Co Ltd", "width": 1.2564703226089478}, {"arrows": "to", "color": "#FFC107", "from": "China Shandong Inds Inc", "title": "[Sales] 1.98", "to": "Tesco", "width": 1.0932646989822388}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+        // if this network requires displaying the configure window,
+        // put it in its div
+        options.configure["container"] = document.getElementById("config");
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

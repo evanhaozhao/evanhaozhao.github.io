@@ -1,0 +1,123 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 750px;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+        #config {
+            float: left;
+            width: 400px;
+            height: 600px;
+        }
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<div id = "config"></div>
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#C7B299", "id": "Glatfelter Corp", "label": "Glatfelter Corp", "shape": "dot", "title": "Glatfelter Corp\n[Industry] Paper Mills"}, {"color": "#69b4ff", "id": "Procter \u0026 Gamble Co (The)", "label": "Procter \u0026 Gamble Co (The)", "shape": "dot", "title": "Procter \u0026 Gamble Co (The)\n[Industry] Soap and Other Detergent Manufacturing"}, {"color": "#C7B299", "id": "Kimberly-Clark Corp", "label": "Kimberly-Clark Corp", "shape": "dot", "title": "Kimberly-Clark Corp\n[Industry] Paper Mills"}, {"color": "#69b4ff", "id": "Wal-Mart Stores Inc", "label": "Wal-Mart Stores Inc", "shape": "dot", "title": "Wal-Mart Stores Inc\n[Industry] All Other General Merchandise Retailers"}, {"color": "#69b4ff", "id": "Pepsico Inc", "label": "Pepsico Inc", "shape": "dot", "title": "Pepsico Inc\n[Industry] Soft Drink and Ice ManufacturingT"}, {"color": "#69b4ff", "id": "Procter \u0026 Gamble Co", "label": "Procter \u0026 Gamble Co", "shape": "dot", "title": "Procter \u0026 Gamble Co\n[Industry] Soap and Other Detergent Manufacturing"}, {"color": "#69b4ff", "id": "Wal-Mart Stores", "label": "Wal-Mart Stores", "shape": "dot", "title": "Wal-Mart Stores\n[Industry] All Other General Merchandise Retailers"}, {"color": "#C7B299", "id": "American Woodmark Corp", "label": "American Woodmark Corp", "shape": "dot", "title": "American Woodmark Corp\n[Industry] Wood Kitchen Cabinet and Countertop Manufacturing"}, {"color": "#69b4ff", "id": "Home Depot Inc", "label": "Home Depot Inc", "shape": "dot", "title": "Home Depot Inc\n[Industry] Home Centers"}, {"color": "#69b4ff", "id": "Lowe\u0027S Companies Inc", "label": "Lowe\u0027S Companies Inc", "shape": "dot", "title": "Lowe\u0027S Companies Inc\n[Industry] Home Centers"}, {"color": "#C7B299", "id": "Boise Cascade Co", "label": "Boise Cascade Co", "shape": "dot", "title": "Boise Cascade Co\n[Industry] Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers"}, {"color": "#69b4ff", "id": "Home Depot Inc. (The)", "label": "Home Depot Inc. (The)", "shape": "dot", "title": "Home Depot Inc. (The)\n[Industry] Home Centers"}, {"color": "#C7B299", "id": "Builders Firstsource Inc", "label": "Builders Firstsource Inc", "shape": "dot", "title": "Builders Firstsource Inc\n[Industry] Prefabricated Wood Building Manufacturing"}, {"color": "#C7B299", "id": "Masonite International Corp", "label": "Masonite International Corp", "shape": "dot", "title": "Masonite International Corp\n[Industry] Wood Window and Door Manufacturing"}, {"color": "#C7B299", "id": "Ufp Industries Inc", "label": "Ufp Industries Inc", "shape": "dot", "title": "Ufp Industries Inc\n[Industry] All Other Miscellaneous Wood Product Manufacturing"}, {"color": "#C7B299", "id": "Reynolds Consumer Products", "label": "Reynolds Consumer Products", "shape": "dot", "title": "Reynolds Consumer Products\n[Industry] Converted Paper Product ManufacturingT"}, {"color": "#69b4ff", "id": "Walmart Inc", "label": "Walmart Inc", "shape": "dot", "title": "Walmart Inc\n[Industry] All Other General Merchandise Retailers"}, {"color": "#69b4ff", "id": "Amcor Plc", "label": "Amcor Plc", "shape": "dot", "title": "Amcor Plc\n[Industry] Plastics Packaging Film and Sheet (including Laminated) Manufacturing"}, {"color": "#C7B299", "id": "Trex Co Inc", "label": "Trex Co Inc", "shape": "dot", "title": "Trex Co Inc\n[Industry] Reconstituted Wood Product Manufacturing"}, {"color": "#69b4ff", "id": "Lowe\u0027S Stores", "label": "Lowe\u0027S Stores", "shape": "dot", "title": "Lowe\u0027S Stores\n[Industry] Home Centers"}, {"color": "#C7B299", "id": "Boise Cascade Corp", "label": "Boise Cascade Corp", "shape": "dot", "title": "Boise Cascade Corp\n[Industry] Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers"}, {"color": "#69b4ff", "id": "Packaging Corp Of America", "label": "Packaging Corp Of America", "shape": "dot", "title": "Packaging Corp Of America\n[Industry] Corrugated and Solid Fiber Box Manufacturing"}, {"color": "#69b4ff", "id": "Office Depot Inc", "label": "Office Depot Inc", "shape": "dot", "title": "Office Depot Inc\n[Industry] Office Supplies and Stationery Retailers"}, {"color": "#C7B299", "id": "Builders Firstsource", "label": "Builders Firstsource", "shape": "dot", "title": "Builders Firstsource\n[Industry] Prefabricated Wood Building Manufacturing"}, {"color": "#69b4ff", "id": "Hovnanian Enterprises Inc.", "label": "Hovnanian Enterprises Inc.", "shape": "dot", "title": "Hovnanian Enterprises Inc.\n[Industry] New Housing For-Sale Builders"}, {"color": "#69b4ff", "id": "Lennar Corp", "label": "Lennar Corp", "shape": "dot", "title": "Lennar Corp\n[Industry] New Housing For-Sale Builders"}, {"color": "#69b4ff", "id": "Pulte Homes, Inc", "label": "Pulte Homes, Inc", "shape": "dot", "title": "Pulte Homes, Inc\n[Industry] New Housing For-Sale Builders"}, {"color": "#69b4ff", "id": "Taylor Morrison Home Corp", "label": "Taylor Morrison Home Corp", "shape": "dot", "title": "Taylor Morrison Home Corp\n[Industry] New Housing For-Sale Builders"}, {"color": "#69b4ff", "id": "D.R. Horton Inc.", "label": "D.R. Horton Inc.", "shape": "dot", "title": "D.R. Horton Inc.\n[Industry] New Housing For-Sale Builders"}, {"color": "#C7B299", "id": "Verso Corp", "label": "Verso Corp", "shape": "dot", "title": "Verso Corp\n[Industry] Paper (except Newsprint) Mills "}, {"color": "#C7B299", "id": "Veritiv Corp", "label": "Veritiv Corp", "shape": "dot", "title": "Veritiv Corp\n[Industry] Printing and Writing Paper Merchant Wholesalers"}]);
+        edges = new vis.DataSet([{"arrows": "to", "color": "#FFC107", "from": "Glatfelter Corp", "title": "[Sales] 148.43", "to": "Procter \u0026 Gamble Co (The)", "width": 5.006814479827881}, {"arrows": "to", "color": "#FFC107", "from": "Kimberly-Clark Corp", "title": "[Sales] 2583.0", "to": "Wal-Mart Stores Inc", "width": 7.857093811035156}, {"arrows": "to", "color": "#4CAF50", "from": "Pepsico Inc", "title": "[Sales] 8730.93", "to": "Wal-Mart Stores Inc", "width": 9.07474136352539}, {"arrows": "to", "color": "#4CAF50", "from": "Procter \u0026 Gamble Co", "title": "[Sales] 10152.6", "to": "Wal-Mart Stores", "width": 9.225584030151367}, {"arrows": "to", "color": "#FFC107", "from": "American Woodmark Corp", "title": "[Sales] 1.0", "to": "Home Depot Inc", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "American Woodmark Corp", "title": "[Sales] 1.0", "to": "Lowe\u0027S Companies Inc", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Boise Cascade Co", "title": "[Sales] 1.0", "to": "Home Depot Inc. (The)", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Boise Cascade Co", "title": "[Sales] 1.0", "to": "Builders Firstsource Inc", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Masonite International Corp", "title": "[Sales] 372.4", "to": "Home Depot Inc. (The)", "width": 5.922650337219238}, {"arrows": "to", "color": "#FFC107", "from": "Ufp Industries Inc", "title": "[Sales] 839.04", "to": "Home Depot Inc", "width": 6.733451843261719}, {"arrows": "to", "color": "#FFC107", "from": "Reynolds Consumer Products", "title": "[Sales] 1303.76", "to": "Walmart Inc", "width": 7.173774242401123}, {"arrows": "to", "color": "#4CAF50", "from": "Amcor Plc", "title": "[Sales] 1049.86", "to": "Pepsico Inc", "width": 6.957364082336426}, {"arrows": "to", "color": "#FFC107", "from": "Trex Co Inc", "title": "[Sales] 1.0", "to": "Lowe\u0027S Stores", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Trex Co Inc", "title": "[Sales] 1.0", "to": "Boise Cascade Corp", "width": 0.6931471824645996}, {"arrows": "to", "color": "#4CAF50", "from": "Packaging Corp Of America", "title": "[Sales] 487.5", "to": "Office Depot Inc", "width": 6.191341400146484}, {"arrows": "to", "color": "#FFC107", "from": "Builders Firstsource", "title": "[Sales] 1.0", "to": "Hovnanian Enterprises Inc.", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Builders Firstsource", "title": "[Sales] 1.0", "to": "Lennar Corp", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Builders Firstsource", "title": "[Sales] 1.0", "to": "Pulte Homes, Inc", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Builders Firstsource", "title": "[Sales] 1.0", "to": "Taylor Morrison Home Corp", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Builders Firstsource", "title": "[Sales] 1.0", "to": "D.R. Horton Inc.", "width": 0.6931471824645996}, {"arrows": "to", "color": "#FFC107", "from": "Verso Corp", "title": "[Sales] 1.0", "to": "Veritiv Corp", "width": 0.6931471824645996}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+        // if this network requires displaying the configure window,
+        // put it in its div
+        options.configure["container"] = document.getElementById("config");
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
