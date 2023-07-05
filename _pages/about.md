@@ -10,7 +10,7 @@ redirect_from:
 
 **Welcome to my website!**
 
-I'm Hao Zhao, a first-year PhD student in Finance at Durham University.
+I'm Hao Zhao, a PhD student in Finance at Durham University.
 
 ***
 ***Interests***
