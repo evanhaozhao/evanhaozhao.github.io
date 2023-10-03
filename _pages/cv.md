@@ -20,7 +20,7 @@ Read more
 
 <div class="cv-detail">
   <p>This is the detailed version of my CV.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt enim vel est pulvinar, sit amet lacinia ex tristique. Sed venenatis nulla vitae quam iaculis aliquet. Etiam porta sapien at est ullamcorper bibendum. Praesent quis magna nulla. Fusce eu turpis faucibus, sollicitudin sapien eget, vestibulum arcu. Quisque molestie eros sed nisl finibus, quis hendrerit justo commodo. Vestibulum molestie, mi id lacinia feugiat, lorem massa aliquet magna, eu commodo arcu felis vitae mi. Sed eu mauris vestibulum, bibendum nisl non, feugiat ex.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt enim vel est pulvinar, sit amet lacinia ex tristique. Sed venenatis nulla vitae quam iaculis aliquet. Etiam porta sapien at est ullamcorper bibendum. Praesent quis magna nulla. Fusce eu turpis faucibus, sollicitudin sapien eget, vestibulum arcu. Quisque molestie eros sed nisl finibus, quis hendrerit justo commodo. Vestibulum molestie, mi id lacinia feugiat, lorem massa aliquet magna, eu commodo arcu felis vitae mi. Sed eu mauris vestibulum, bibendum nisl non, feugiat ex. </p>
 </div>
 
 
