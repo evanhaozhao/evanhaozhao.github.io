@@ -10,7 +10,7 @@ redirect_from:
 
 **Welcome to my website!**
 
-I'm Hao Zhao, a PhD student in Finance at Durham University.
+I'm Hao Zhao, a PhD candidate in Finance at Durham University.
 
 ***
 ***Interests***
@@ -23,7 +23,7 @@ I'm Hao Zhao, a PhD student in Finance at Durham University.
 ***Education***
 - PhD, Durham University, UK (*current*)
 - MSc, University of Birmingham, UK
-- BEc, Northeastern University, CN
+- BEc, Northeastern University, China
 - {% endcomment %}
 
 ***
