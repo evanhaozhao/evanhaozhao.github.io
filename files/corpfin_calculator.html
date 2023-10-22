@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Annuity Calculator: Present Value and Future Value</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://www.desmos.com/api/v1.5/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: left; /* Left align the page content */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #007BFF; /* Keep the blue color */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center; /* Center align the heading */
+        }
+
+        .container {
+            margin: 0 auto; /* Center the container */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            font-family: sans-serif; /* Use sans-serif font */
+            margin: 10px 0;
+        }
+
+        input[type="number"] {
+            width: 20%; /* Set input box width to 80% of its container */
+            padding: 10px;
+            margin: 5px 0; /* Smaller gap between inputs */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: sans-serif; /* Use sans-serif font */
+        }
+
+        button {
+            background-color: #007BFF; /* Keep the blue color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Slightly darker blue on hover */
+        }
+
+        #valueChart {
+            margin-top: 20px;
+            width: 100%; /* Set the plot to take the full width of the container */
+        }
+
+        .menu {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        #desmosCalculator {
+            width: 100%;
+            height: 400px; /* Adjust the height as needed */
+        }
+
+    </style>
+    <script>
+        // Function to calculate present value, future value, and annuity
+        function calculateValues() {
+            // Get user input
+            var C = parseFloat(document.getElementById("inputPayment").value);
+            var r = parseFloat(document.getElementById("inputInterestRate").value);
+            var t = parseInt(document.getElementById("inputNumberOfPeriods").value);
+            var g = parseFloat(document.getElementById("inputGrowthRate").value);
+
+            // If any of the required fields are empty, display a warning
+            if (isNaN(C) || isNaN(r) || isNaN(t)) {
+                alert("Please fill in all required fields (C, r, t)!");
+                return;
+            }
+
+            // If g is not provided, treat it as g=0
+            if (isNaN(g)) {
+                g = 0;
+            }
+
+            // Create data for dynamic chart
+            var chartData = {
+                labels: [],
+                presentValueData: [],
+                futureValueData: [],
+                annuityData: []
+            };
+
+            for (var t_timestamp = 0; t_timestamp <= t; t_timestamp++) {
+                // Calculate annuity at time t
+                var annuity = C * Math.pow(1 + g, t_timestamp);
+
+                // Calculate present value at time t
+                var PV = (C / (r - g)) * (1 - Math.pow(((1 + g) / (1 + r)), t_timestamp));
+
+                // Calculate future value at time t
+                var FV = C * ((Math.pow(1 + r, t_timestamp) - Math.pow(1 + g, t_timestamp)) / (r - g));
+
+                chartData.labels.push("Time " + t_timestamp);
+                chartData.presentValueData.push(PV);
+                chartData.futureValueData.push(FV);
+                chartData.annuityData.push(annuity);
+            }
+
+            // Update the chart
+            updateChart(chartData);
+            updateTable(chartData);
+        }
+
+        // Function to update the chart
+        function updateChart(data) {
+            var valueChart = document.getElementById('valueChart');
+
+            var tracePresentValue = {
+                x: data.labels,
+                y: data.presentValueData,
+                type: 'scatter',
+                mode: 'lines+markers',
+                name: 'Present Value',
+            };
+
+            var traceFutureValue = {
+                x: data.labels,
+                y: data.futureValueData,
+                type: 'scatter',
+                mode: 'lines+markers',
+                name: 'Future Value',
+            };
+
+            var traceAnnuity = {
+                x: data.labels,
+                y: data.annuityData,
+                type: 'scatter',
+                mode: 'lines+markers',
+                name: 'Annuity',
+            };
+
+            var layout = {
+                title: 'Present Value, Future Value, and Annuity at Different Timestamps',
+                yaxis: {
+                    tickformat: ',.2f' // Display y-axis as numeric with 2 decimal places
+                }
+            };
+
+            var chartData = [tracePresentValue, traceFutureValue, traceAnnuity];
+
+            Plotly.newPlot(valueChart, chartData, layout);
+        }
+
+        // Function to update the table
+        function updateTable(data) {
+            var table = document.getElementById('dataTable');
+            table.innerHTML = ''; // Clear previous data
+
+            // Create the table header
+            var thead = table.createTHead();
+            var row = thead.insertRow();
+            var headers = ['Time', 'Annuity', 'Present Value', 'Future Value'];
+
+            for (var i = 0; i < headers.length; i++) {
+                var th = document.createElement('th');
+                th.textContent = headers[i];
+                row.appendChild(th);
+            }
+
+            // Create the table rows
+            for (var i = 0; i < data.labels.length; i++) {
+                var row = table.insertRow();
+                var timeCell = row.insertCell(0);
+                var annuityCell = row.insertCell(1);
+                var presentValueCell = row.insertCell(2);
+                var futureValueCell = row.insertCell(3);
+
+                timeCell.textContent = data.labels[i];
+                annuityCell.textContent = data.annuityData[i].toFixed(2);
+                presentValueCell.textContent = data.presentValueData[i].toFixed(2);
+                futureValueCell.textContent = data.futureValueData[i].toFixed(2);
+            }
+        }
+  
+        // Function to set up the Desmos calculator with preset equations
+        function setupCalculator() {
+            // Create a Desmos calculator instance
+            var calculator = Desmos.Calculator(document.getElementById('desmosCalculator'));
+
+            // Set expressions for present value (PV) and future value (FV)
+            calculator.setExpression({
+                id: 'eq1',
+                latex: 'PV = \\frac{C}{r - g} \\cdot (1 - ((1 + g)/(1 + r))^t)'
+            });
+            calculator.setExpression({
+                id: 'eq2',
+                latex: 'FV = C \\cdot ((1 + r)^t - (1 + g)^t) / (r - g)'
+            });
+        }
+
+        // Call the setupCalculator function when the page loads
+        window.onload = setupCalculator;
+
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <a href="#annuityCalculator">Annuity Calculator</a>
+        <a href="#desmosCalculator">Desmos Calculator</a>
+    </div>
+
+    <div id="annuityCalculator" class="container">
+
+        <h2>Annuity Calculator: Present Value and Future Value</h2>
+
+        <p>Annunity = \( C_{0} \cdot (1 + g)^t \)</p>
+        <p>PV = \( \frac{C_{0}}{r - g} \cdot \left(1 - \left[\frac{{(1 + g)}}{{(1 + r)}}\right]^t\right) \)</p>
+        <p>FV = \( C_{0} \cdot \frac{{(1 + r)^t - (1 + g)^t}}{{r - g}} \)</p>    
+
+        <label for="inputPayment">Initial payment (C):</label>
+        <input type="number" id="inputPayment" required>
+
+        <label for="inputInterestRate">Interest rate per period (r):</label>
+        <input type="number" step="0.01" id="inputInterestRate" required>
+
+        <label for="inputGrowthRate">Growth rate (g):</label>
+        <input type="number" step="0.01" id="inputGrowthRate"><br>
+
+        <label for="inputNumberOfPeriods">Number of periods (t):</label>
+        <input type="number" id="inputNumberOfPeriods" required><br>
+
+        <button onclick="calculateValues()">Calculate Values</button>
+        <div id="valueChart"></div>
+        <table id="dataTable"></table>
+    </div>
+
+    <div id="desmosCalculator"></div>
+
+</body>
+</html>
