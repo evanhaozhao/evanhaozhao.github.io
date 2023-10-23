@@ -133,7 +133,12 @@
 
             for (var t_timestamp = 0; t_timestamp <= t; t_timestamp++) {
                 // Calculate annuity at time t
-                var annuity = C * Math.pow(1 + g, t_timestamp);
+                if (t_timestamp == 0) {
+                    var annuity = 0;
+                }
+                else {
+                    var annuity = C * Math.pow(1 + g, t_timestamp);
+                }
 
                 // Calculate present value at time t
                 var PV = (C / (r - g)) * (1 - Math.pow(((1 + g) / (1 + r)), t_timestamp));
@@ -254,9 +259,9 @@
 
         <h2>Annuity Calculator: Present Value and Future Value</h2>
 
-        <p>Annunity = \( C_{0} \cdot (1 + g)^t \)</p>
-        <p>PV = \( \frac{C_{0}}{r - g} \cdot \left(1 - \left[\frac{{(1 + g)}}{{(1 + r)}}\right]^t\right) \)</p>
-        <p>FV = \( C_{0} \cdot \frac{{(1 + r)^t - (1 + g)^t}}{{r - g}} \)</p>    
+        <p>Annunity = \( C_{1} \cdot (1 + g)^t \)</p>
+        <p>PV = \( \frac{C_{1}}{r - g} \cdot \left(1 - \left[\frac{{(1 + g)}}{{(1 + r)}}\right]^t\right) \)</p>
+        <p>FV = \( C_{1} \cdot \frac{{(1 + r)^t - (1 + g)^t}}{{r - g}} \)</p>    
 
         <label for="inputPayment">Initial payment (C):</label>
         <input type="number" id="inputPayment" required>
