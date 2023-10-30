@@ -101,6 +101,9 @@
             width: 100%;
             height: 400px; /* Adjust the height as needed */
         }
+        .shaded-equation {
+            background-color: #f0f0f0;
+        }
 
     </style>
     <script>
@@ -257,11 +260,58 @@
 
     <div id="annuityCalculator" class="container">
 
-        <h2>Annuity Calculator: Present Value and Future Value</h2>
+        <h3>Formulae: Annuity, Present Value and Future Value</h3>
+        <p class="shaded-equation">
+            $$
+            Annunity_{t} = C_{1} \cdot (1 + g)^{t-1}
+            $$
+        </p>
+        <p class="shaded-equation">
+            $$
+            PV = \frac{C_{1}}{r - g} \cdot \left(1 - \left[\frac{{(1 + g)}}{{(1 + r)}}\right]^t\right)
+            $$
+        </p>
+        <p>
+            <i>Proof</i>
+            $$
+            PV = C_{1} \cdot \frac{(1+g)^0}{(1+r)^1} + C_{1} \cdot \frac{(1+g)^1}{(1+r)^2} + ... + C_{1} \cdot \frac{(1+g)^{t-1}}{(1+r)^t}\qquad (1)
+            $$
+            Multiply both sides of (1) by (1+r)/(1+g):
+            $$
+            PV \cdot (\frac{1+r}{1+g}) = C_{1} \cdot \frac{1}{(1+g)} + C_{1} \cdot \frac{1}{(1+r)} + C_{1} \cdot \frac{1+g}{(1+r)^2} ... + C_{1} \cdot \frac{(1+g)^{t-2}}{(1+r)^{t-1}}\qquad  (2)
+            $$
+            (1) - (2):
+            $$
+            PV \cdot (1 - \frac{1+r}{1+g}) = C_{1} \cdot (\frac{(1+g)^{t-1}}{(1+r)^{t}}) - C_{1} \cdot (\frac{1}{1+g})      
+            $$
+            $$
+            PV = C_{1} \cdot (\frac{1+g}{g-r})\left[ \frac{(1+g)^{t-1}}{(1+r)^t} - \frac{1}{(1+g)} \right]
+            $$
+            $$
+            PV = \frac{C_{1}}{r - g} \cdot \left(1 - \left[\frac{{(1 + g)}}{{(1 + r)}}\right]^t\right)\qquad  (3)
+            $$
+            <p style="text-align:right;"><span class="qed-square"></span></p>
+        </p>
+        <p class="shaded-equation">
+            $$
+            FV = C_{1} \cdot \frac{{(1 + r)^t - (1 + g)^t}}{{r - g}}
+            $$
+        </p>
+        <p>
+            <i>Proof</i>
+            Compounding PV in (3) to FV:
+            $$
+            FV = PV (1+r)^t
+            $$
+            $$
+            FV = \frac{C_{1}}{r - g} \cdot \left(1 - \left[\frac{{(1 + g)}}{{(1 + r)}}\right]^t\right) \cdot (1+r)^t
+            $$
+            $$
+            FV = C_{1} \cdot \frac{{(1 + r)^t - (1 + g)^t}}{{r - g}}
+            $$
+        </p>
 
-        <p>Annunity = \( C_{1} \cdot (1 + g)^t \)</p>
-        <p>PV = \( \frac{C_{1}}{r - g} \cdot \left(1 - \left[\frac{{(1 + g)}}{{(1 + r)}}\right]^t\right) \)</p>
-        <p>FV = \( C_{1} \cdot \frac{{(1 + r)^t - (1 + g)^t}}{{r - g}} \)</p>    
+        <h3>Annuity Calculator: Present Value and Future Value</h3>
 
         <label for="inputPayment">Initial payment (C):</label>
         <input type="number" id="inputPayment" required>
