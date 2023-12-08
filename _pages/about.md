@@ -34,7 +34,7 @@ I'm Hao Zhao, a PhD candidate in Finance at Durham University.
 ***
 ***Supervisors***
 - [Dr Xian Gu](https://www.durham.ac.uk/business/our-people/xian-gu/), Associate Professor in Finance
-- [Dr Felix Irresberger](https://www.durham.ac.uk/business/our-people/felix-irresberger/), Associate Professor in Finance
+- [Dr Felix Irresberger](https://www.durham.ac.uk/business/our-people/felix-irresberger/), Professor in Finance
 
 ***
 ***Contact***
