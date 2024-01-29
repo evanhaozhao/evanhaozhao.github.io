@@ -165,8 +165,8 @@ const terms = [
 const currentTerm = terms.find(term => {
     const now = moment().tz('Europe/London').startOf('day');
     term.remainingDays = term.end.diff(now, 'days');
-    const weeks = Math.ceil(now.diff(term.start, 'days') / 7);
-    term.currentWeek = weeks > 0 ? weeks : 1; 
+    const weeks = Math.floor(now.diff(term.start, 'days') / 7);
+    term.currentWeek = weeks + 1;
     return now.isBetween(term.start, term.end, 'day', '[]'); 
 });
 
