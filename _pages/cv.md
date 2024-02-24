@@ -57,11 +57,40 @@ Download my CV [here](/files/paper1.pdf)
       </div>
   </div>
 </div>
+
 <div class="cv-section" id="workingpapers">
   <div class="cv-section-title">Working papers</div>
   <div class="cv-section-body">
   </div>
 </div>
+
+<div class="cv-section" id="workinprogress">
+  <div class="cv-section-title">Work in progress</div>
+  <div class="cv-section-body">
+  </div>
+</div>
+
+<div class="cv-section" id="awards">
+  <div class="cv-section-title">Scholarships and awards</div>
+  <div class="cv-section-body">
+    <div class="cv-section-item-title">
+      <span>ESRC (Economic and Social Research Council) NINE DTP Studentships</span>
+      <span class="cv-section-time">2022 - 2026</span>
+    </div>
+    <div class="cv-section-smaller">
+      <span>- Fully-funded for the PhD in Finance and PGCert in Research Methods</span>
+    </div>
+    <div class="cv-section-item-title">
+      <span>NINE DTP Research Training Support Grant</span>
+      <span class="cv-section-time">2023</span>
+    </div>
+    <div class="cv-section-item-title">
+      <span>Durham University Finance Department Conference Funding</span>
+      <span class="cv-section-time">2023</span>
+    </div>
+  </div>
+</div>
+
 
 {% comment %} 
   Style: (a) general
