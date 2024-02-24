@@ -1,0 +1,86 @@
+/*-------page level styling--------*/
+.cv-inline-list {
+    padding: 0px;
+    margin: 0px;
+}
+
+.cv-inline-list li {
+    display: inline;
+}
+
+.info-section-name {
+    font-size: 1.2em
+}
+
+.cv-section-title {
+    font-size: 1.2em;
+    padding: 7px 10px;
+    color: #820000;
+    /*border-top: 2px solid #e4c264;*/
+    border-bottom: 2px solid #8C1515;
+}
+
+.cv-link, .cv-link:visited {
+    color: #820000;
+}
+
+/*---------specific styling--------*/
+.cv-container {
+    /*--------layout---------*/
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: -10px 10px 30px #9F9F9F;
+    max-width: 70%;
+
+    background-color: #FFFFFF;
+    color: #444444;
+}
+
+.info-section {
+    text-align: center;
+    color: #820000;
+}
+
+.cv-section {
+    padding: 5px;
+}
+
+.cv-section-body {
+    margin: 5px 10px;
+}
+
+.cv-section-item {
+    margin: 20px 0px;
+}
+
+.cv-main-item {
+    font-weight: bold;
+}
+
+/* .cv-section-item-title {
+    font-weight: bold;
+    color: #333333;
+} */
+
+.cv-section-item-title {
+    display: flex;
+    justify-content: space-between;
+    color: #333333;
+}
+
+.cv-section-time {
+    float: right;
+    color: #9f9f9f;
+}
+
+.cv-section-smaller {
+    font-size: 0.9em;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.cv-section-smallest {
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: #666666;
+}

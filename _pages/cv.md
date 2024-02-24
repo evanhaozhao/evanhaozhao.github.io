@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: single
 title: ""
 permalink: /cv/
@@ -10,83 +10,65 @@ redirect_from:
 
 {% include base_path %}
 
-View my CV in PDF [here](/files/paper1.pdf)
+Download my CV [here](/files/paper1.pdf)
 
-Read more
-<label class="switch">
-  <input type="checkbox">
-  <span class="slider round"></span>
-</label>
-
-<div class="cv-detail">
-  <p>This is the detailed version of my CV.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt enim vel est pulvinar, sit amet lacinia ex tristique. Sed venenatis nulla vitae quam iaculis aliquet. Etiam porta sapien at est ullamcorper bibendum. Praesent quis magna nulla. Fusce eu turpis faucibus, sollicitudin sapien eget, vestibulum arcu. Quisque molestie eros sed nisl finibus, quis hendrerit justo commodo. Vestibulum molestie, mi id lacinia feugiat, lorem massa aliquet magna, eu commodo arcu felis vitae mi. Sed eu mauris vestibulum, bibendum nisl non, feugiat ex. </p>
+<div class="cv-section" id="education">
+  <div class="cv-section-title">Education</div>
+  <div class="cv-section-body">
+      <div class="cv-section-item-title">
+          <span class="cv-main-item">Durham University</span>
+          <span class="cv-section-time">UK</span>
+      </div>
+      <div class="cv-section-smaller">
+          <span>Doctor of Philosophy - PhD in Finance, ESRC NINE DTP Scholar</span>
+          <span class="cv-section-time">2022 - Present</span>
+      </div>
+      <div class="cv-section-item-title">
+          <span class="cv-main-item">Durham University</span>
+          <span class="cv-section-time">UK</span>
+      </div>
+      <div class="cv-section-smaller">
+          <span>Postgraduate Certificate - PGCert in Research Methods, Distinction</span>
+          <span class="cv-section-time">2022 - 2023</span>
+      </div>
+      <div class="cv-section-item-title">
+          <span class="cv-main-item">University of Birmingham</span>
+          <span class="cv-section-time">UK</span>
+      </div>
+      <div class="cv-section-smaller">
+          <span>Master of Science - MSc in Financial Management, Distinction</span>
+          <span class="cv-section-time">2019 - 2020</span>
+      </div>
+      <div class="cv-section-item-title">
+          <span class="cv-main-item">London School of Economics and Political Science</span>
+          <span class="cv-section-time">UK</span>
+      </div>
+      <div class="cv-section-smaller">
+          <span>LSE Summer School Certificate in Business</span>
+          <span class="cv-section-time">2017</span>
+      </div>
+      <div class="cv-section-item-title">
+          <span class="cv-main-item">Northeastern University</span>
+          <span class="cv-section-time">China</span>
+      </div>
+      <div class="cv-section-smaller">
+          <span>Bachelor of Economics - BEc in International Economics</span>
+          <span class="cv-section-time">2015 - 2019</span>
+      </div>
+  </div>
 </div>
-
-
-<div class="cv-simplified">
-  <section>
-    <h3>Education</h3>
-    <ul>
-      <li> 
-      PhD in XXX, University of XYZ, expected 2026
-      </li>
-      <li> 
-      Master of Science in XXX, University of XYZ, 2020 
-      </li>
-      <li> 
-      Bachelor of Science in XXX, University of XYZ, 2019 
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Research Experience</h3>
-    <ul>
-      <li>
-      Research Assistant, University of XYZ, 2020
-      </li>
-      <li>
-      Summer Intern, Research Institute ABC, 2019
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Publications</h3>
-    <ul>
-      <li>
-      Doe, J. et al. "A New Algorithm for XYZ." Journal of XYZ, vol. 5, no. 2, 2022.
-      </li>
-      <li>
-      Doe, J. and Smith, J. "A Comparative Study of Machine Learning Algorithms." XYZ, 2021.
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Skills</h3>
-    <ul>
-      <li>
-      Programming languages: Java, Python, C++
-      </li>
-      <li>
-      Machine learning and data analysis tools: TensorFlow, PyTorch, Scikit-Learn
-      </li>
-      <li>
-      Operating systems: Windows, Linux, macOS
-      </li>
-    </ul>
-  </section>
-</div>        
-
-
+<div class="cv-section" id="workingpapers">
+  <div class="cv-section-title">Working papers</div>
+  <div class="cv-section-body">
+  </div>
+</div>
 
 {% comment %} 
   Style: (a) general
 {% endcomment %} 
 
 <link rel="stylesheet" type="text/css" href="/assets/css/widgets_style/widgets.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/cv-style.css">
 
 {% comment %} 
   (1) A IOS feature switch
