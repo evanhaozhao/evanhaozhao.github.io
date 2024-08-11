@@ -15,8 +15,8 @@ I'm Hao Zhao, a PhD candidate in Finance at Durham University.
 ***
 ***Interests***
 
-- Main focus: Corporate finance; Climate finance; Politics and finance
-- Other interests: Networks; Insider trading; Empirical asset pricing; Data science
+- *Primary*: Corporate finance; Climate finance; Politics and finance
+- *Secondary*: Networks; Insider trading; Empirical asset pricing; Data science
 
 {% comment %}
 ***
