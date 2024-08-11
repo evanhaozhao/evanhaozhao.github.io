@@ -14,9 +14,9 @@ I'm Hao Zhao, a PhD candidate in Finance at Durham University.
 
 ***
 ***Interests***
-- Corporate finance
-- Empirical asset pricing
-- Data science
+
+- Main focus: Corporate finance; Climate finance; Politics and finance
+- Other interests: Networks; Insider trading; Empirical asset pricing; Data science
 
 {% comment %}
 ***
@@ -28,13 +28,13 @@ I'm Hao Zhao, a PhD candidate in Finance at Durham University.
 
 ***
 ***Affiliations***
-- [Department of Finance](https://www.durham.ac.uk/business/about/departments/finance/ "Department of Finance, Durham University Business School"), Durham University Business School
-- [ESRC-funded NINE DTP](https://www.ninedtp.ac.uk/ "The Northern Ireland and North East Doctoral Training Partnership"), UK Research and Innovation
+- [Department of Finance](https://www.durham.ac.uk/business/about/departments/finance/ "Department of Finance, Durham University Business School"){:target="_blank"}, Durham University Business School
+- [ESRC-funded NINE DTP](https://www.ninedtp.ac.uk/ "The Northern Ireland and North East Doctoral Training Partnership"){:target="_blank"}, UK Research and Innovation
 
 ***
 ***Supervisors***
-- [Professor Xian Gu](https://www.durham.ac.uk/business/our-people/xian-gu/), Professor of Finance
-- [Professor Felix Irresberger](https://www.durham.ac.uk/business/our-people/felix-irresberger/), Professor of Finance
+- [Professor Xian Gu](https://www.durham.ac.uk/business/our-people/xian-gu/){:target="_blank"}, Professor of Finance
+- [Professor Felix Irresberger](https://www.durham.ac.uk/business/our-people/felix-irresberger/){:target="_blank"}, Professor of Finance
 
 ***
 ***Contact***
