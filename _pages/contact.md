@@ -24,6 +24,11 @@ author_profile: false
 
 <p>Current term: <span id="current-term"></span></p>
 <p>Next term: <span id="next-term"></span></p>
+
+<p>Durham Finance Department activities: 
+  <a href="https://www.durham.ac.uk/business/about/departments/finance/seminars/" target="_blank">2024-25 Seminars</a>
+</p>
+
 <p><span id="progress-message"></span></p>
 <div class="container">
   <div class="progress">
