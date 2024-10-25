@@ -10,13 +10,19 @@ redirect_from:
 
 **Welcome to my website!**
 
-I'm Hao Zhao, a PhD candidate in Finance at Durham University.
+I'm Hao Zhao, a PhD candidate in Finance at Durham University
+
+{% comment %}
+I will be on the academic job market in the *2025-2026* cycle
+
+Here is my [CV (pdf)](https://evanhaozhao.github.io/files/cv_hao_zhao.pdf)
+{% endcomment %}
 
 ***
 ***Interests***
 
 - *Primary*: Corporate finance; Climate finance; Politics and finance
-- *Secondary*: Networks; Insider trading; Empirical asset pricing; Data science
+- *Secondary*: Networks; Insider trading; Empirical asset pricing; Entrepreneurship
 
 {% comment %}
 ***
