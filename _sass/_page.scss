@@ -60,6 +60,10 @@
     font-size: 1em;
   }
 
+  li:first-child {
+    margin-top: -0.36em;
+  }
+
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
