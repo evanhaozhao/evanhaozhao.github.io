@@ -9,17 +9,17 @@ main:
   # - title: "Teaching"
   #   url: /teaching/    
     
-  # - title: "Research"
-  #   url: /research/
+  - title: "Research"
+    url: /research/
 
   # - title: "Portfolio"
   #   url: /portfolio/
-        
+
+  - title: "CV"
+    url: /cv/
+
   - title: "Posts"
     url: /year-archive/
-    
-  # - title: "CV"
-  #   url: /cv/
     
   # - title: "公众号文章"
   #   url: /chineseposts/

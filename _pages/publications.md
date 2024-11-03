@@ -1,20 +1,38 @@
 ---
 published: false
 layout: single
-title: "Publications"
-permalink: /publications/
+permalink: /research/
 author_profile: false
+redirect_from:
+  - /publications/
+  - /papers/
+  - /paper/
+  - /publication/
 ---
 
-## [Political Network and Muted Insider Trading](http://dx.doi.org/10.2139/ssrn.4230854)
-<a href="https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4230854_code1125739.pdf?abstractid=4230854&mirid=1&type=2"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a>
-Joint with Wei Chen (Citigroup), Xian Gu (Durham), Iftekhar Hasan (Fordham), Yun Zhu (St. John’s), 2022
-<br><br> **Abstract:**This paper explores the impact of political network on insider trading activities in China. With a comprehensive network mapping links between politicians and firm chairmen, we find that stronger political network discourages insider trading. Such effect is stronger among long-standing, high-level, and regulatory connections, and persists in the events of M&A and public policy announcement when insiders may make profitable informed trading. This suggests an insinuated rule that managers with powerful political network choose to keep a low profile in insider trading. In exploring the underlying mechanisms, we confirm that the muted insider trading is related to preferable financial and policy support, and are more pronounced in provinces with stronger market force and legal enforcement.
+***Working Papers***
 
-<input type="text" id="citation_muted_insider" style="display:none;" value="Chen, Wei and Gu, Xian and Hasan, Iftekhar and Zhao, Hao and Zhu, Yun, Political Network and Muted Insider Trading (September 27, 2022). Available at SSRN: https://ssrn.com/abstract=4230854 or http://dx.doi.org/10.2139/ssrn.4230854">
-<button class="copyButton" data-clipboard-target="#citation_muted_insider">Copy Citation</button>
-<span class="tooltip"></span>
-
+***
+<div class="paper-entry">
+    <div class="paper-title"><b>Political Network and Muted Insider Trading</b></div>
+        <div class="paper-author">
+        With <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.fordham.edu/gabelli-school-of-business/faculty/full-time-faculty/iftekhar-hasan/" target="_blank">Iftekhar Hasan</a> (Fordham), <a href="https://www.stjohns.edu/academics/faculty/yun-zhu-phd" target="_blank">Yun Zhu</a> (St. John’s)
+        </div>
+        <div class="paper-content">
+        <div class="left-description">
+            <ul>
+                <li>Stronger political networks discourage insider trading in China</li>
+                <li>Effects are more pronounced among long-standing and high-level connections</li>
+                <li>Muted trading is linked to better financial support in stronger legal environments</li>
+            </ul>
+            <div><i>Presented</i> at MFA 2023, FMA Europe 2023, FMA 2024 etc.</div>
+            Access the paper: <a href="https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4230854_code1125739.pdf?abstractid=4230854&mirid=1&type=2" target="_blank"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a>
+        </div>
+        <div class="right-image">
+            <img src="/images/paper_fig/plot_network_6819.svg" alt="network_demo">
+        </div>
+    </div>
+</div>
 
 
 {% comment %} 

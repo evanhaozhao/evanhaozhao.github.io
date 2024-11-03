@@ -35,3 +35,32 @@
 .tooltip.fade {
     opacity: 0;
 }
+
+.paper-entry {
+    /* margin-bottom: 30px; */
+    font-family: Arial, sans-serif;
+}
+.paper-title {
+    font-size: 18px;
+    font-weight: bold;
+    /* margin-bottom: 10px; */
+}
+.paper-content {
+    font-size: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+.paper-author {
+    font-size: 15px;
+}
+.left-description {
+    flex: 3; /* Adjusts width: 3 parts for description */
+    padding-right: 20px;
+}
+.right-image {
+    flex: 2; /* Adjusts width: 2 parts for image */
+}
+.right-image img {
+    width: 100%;
+    max-width: 100%; /* Ensures the image fills its container */
+}
