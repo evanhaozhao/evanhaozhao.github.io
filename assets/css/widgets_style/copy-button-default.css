@@ -53,9 +53,13 @@
 .paper-author {
     font-size: 15px;
 }
+.paper-keyword {
+    font-size: 15px;
+}
 .left-description {
+    font-size: 15px;
     flex: 3; /* Adjusts width: 3 parts for description */
-    padding-right: 20px;
+    /* padding-right: 20px; */
 }
 .right-image {
     flex: 2; /* Adjusts width: 2 parts for image */
@@ -64,3 +68,17 @@
     width: 100%;
     max-width: 100%; /* Ensures the image fills its container */
 }
+
+.gray-list li {
+    color: #888888;         /* text color */
+    margin-bottom: 3px;     /* Adjust this value to control spacing */
+}
+
+code {
+    font-size: 13px;
+    background-color: #f5f5f580; /* Light gray background */
+    padding: 2px 4px;          /* Padding around the text */
+    border-radius: 3px;        /* Rounded corners */
+    font-family: monospace;    /* Monospaced font for code */
+    color: #666666;              /* Dark gray font color */
+  }
