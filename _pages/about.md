@@ -15,7 +15,7 @@ I'm Hao Zhao, a PhD candidate in Finance at Durham University
 {% comment %}
 I will be on the academic job market in the *2025-2026* cycle
 
-Here is my [CV (pdf)](https://evanhaozhao.github.io/files/cv_hao_zhao.pdf)
+Here is my [CV (pdf)](https://evanhaozhao.github.io/files/cv_hao_zhao.pdf){:target="_blank"}
 {% endcomment %}
 
 ***

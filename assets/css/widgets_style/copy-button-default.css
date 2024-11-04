@@ -46,18 +46,18 @@
     /* margin-bottom: 10px; */
 }
 .paper-content {
-    font-size: 15px;
+    font-size: 16px;
     display: flex;
     align-items: flex-start;
 }
 .paper-author {
-    font-size: 15px;
+    font-size: 16px;
 }
 .paper-keyword {
-    font-size: 15px;
+    font-size: 16px;
 }
 .left-description {
-    font-size: 15px;
+    font-size: 16px;
     flex: 3; /* Adjusts width: 3 parts for description */
     /* padding-right: 20px; */
 }
@@ -71,7 +71,10 @@
 
 .gray-list li {
     color: #888888;         /* text color */
-    margin-bottom: 3px;     /* Adjust this value to control spacing */
+    margin-bottom: 0px;     /* Adjust this value to control spacing */
+}
+.gray-list li:last-child {
+    margin-bottom: -5px;     /* Negative value to shrink spacing further */
 }
 
 code {

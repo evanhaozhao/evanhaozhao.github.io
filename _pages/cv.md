@@ -10,7 +10,7 @@ redirect_from:
 
 {% include base_path %}
 
-Download my CV [here](/files/paper1.pdf)
+Download my [CV (PDF - Nov 2024)](/files/cv_hao_zhao.pdf){:target="_blank"}
 
 <div class="cv-section" id="education">
   <div class="cv-section-title">Education</div>
