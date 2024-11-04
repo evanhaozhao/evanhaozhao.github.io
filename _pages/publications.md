@@ -72,5 +72,16 @@ redirect_from:
 
 <script src="/assets/js/widgets/copy-button-default.js"></script>
 
+{% comment %}
+Privacy Disclosure: To better understand the performance of my website and improve the quality of its content, I use two common analytics tools: (1) google-analytics and (2) clustrmaps. These tools collect data on the number of visits and the countries from which visitors access my website. While the information collected does not identify individual users, you have the option to block google-analytics and clustrmaps using browser extensions such as Privacy Badger. However, please note that doing so may also block certain functions from Google and online JavaScript libraries.
+{% endcomment %}
 
+<iframe id="analyticsmaps" src="https://clustrmaps.com/map_v2.js?d=nnD5YvkMdIeMrhIu4NJdHaIYLLWGlOWRnNjMXbtljdI&cl=ffffff&w=a" frameborder="0" scrolling="no" width="1" height="1"></iframe>
+
+<script type="text/javascript">
+  window.addEventListener("load", function(){
+    var analyticsmaps = document.getElementById('analyticsmaps');
+    analyticsmaps.style.display = 'none';
+  });
+</script>
 
