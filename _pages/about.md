@@ -21,7 +21,7 @@ Here is my [CV (pdf)](https://evanhaozhao.github.io/files/cv_hao_zhao.pdf){:targ
 ***
 ***Interests***
 
-- *Primary*: Corporate finance; Climate finance; Politics and finance
+- *Primary*: Corporate finance; Climate finance; Political economy in finance
 - *Secondary*: Networks; Insider trading; Empirical asset pricing; Entrepreneurship
 
 {% comment %}
