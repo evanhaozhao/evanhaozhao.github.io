@@ -14,6 +14,27 @@ redirect_from:
 
 ***
 <div class="paper-entry">
+    <div class="paper-title"><b>Do Banks Care about Forest Loss?</b></div>
+        <div class="paper-author">
+        with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank">Felix Irresberger</a> (Durham), <a href="https://www.stjohns.edu/academics/faculty/yun-zhu-phd" target="_blank">Yun Zhu</a> (St. John’s)
+        </div>
+        <div class="paper-content">
+        <div class="left-description">
+            <ul class="gray-list">
+                <li>When forest loss is fire-induced, loan spreads for forest-dependent firms increase by 12-65 bps compared to other firms</li>
+                <li>When loss is human-induced, such spread difference only rises after the development of EUDR, and is higher within the EU</li>
+                <li>Firms receiving loans after human-driven loss cut forest-based inputs from high-deforestation-risk suppliers</li>
+            </ul>
+        </div>
+        <div class="right-image">
+            <img src="/images/paper_fig/yield_spread_topbottomdep_fire.svg" alt="fire_loss_cutoff">
+        </div>
+    </div>
+</div>
+
+
+***
+<div class="paper-entry">
     <div class="paper-title"><b>Biodiversity Risk and Bank Lending</b></div>
         <div class="paper-author">
         with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank">Felix Irresberger</a> (Durham)
@@ -21,12 +42,13 @@ redirect_from:
         <div class="paper-content">
         <div class="left-description">
             <ul class="gray-list">
-                <li>Assessing firm-level biodiversity risk via call transcripts</li>
-                <li>Loan terms are unaffected by firms’ biodiversity risk or banks’ commitments</li>
-                <li>Findings suggest limited impact of banks’ biodiversity pledges</li>
+                <li>Assessing firm-level biodiversity risk (ecosystem dependency & business condition) via call transcripts</li>
+                <li>Both loan spreads and non-price terms are unaffected by firms’ biodiversity risk or banks’ commitments</li>
+                <li>Findings suggest limited impact of banks’ voluntary pledges</li>
             </ul>
             <div><i>Presented</i> at Boca-ECGI Corporate Finance 2024, etc.</div>
-            Paper PDF <a href="https://drive.google.com/file/d/1Ma-PHg50xAzk9hGaMa1wnvNQTgCmVyaO/view" target="_blank"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a> (25 Aug 2024)
+            Paper PDF <a href="https://drive.google.com/file/d/1Ma-PHg50xAzk9hGaMa1wnvNQTgCmVyaO/view" target="_blank"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a> (25 Aug 2024);
+            Slides <a href="/files/boca_ecgi_2024_hao_zhao.pdf" target="_blank"><i class="fas fa-fw fa-chalkboard zoom" aria-hidden="true"></i></a> (13 Dec 2024)
         </div>
         <div class="right-image">
             <img src="/images/paper_fig/spread_biod_int_commit.svg" alt="network_demo">
@@ -37,18 +59,20 @@ redirect_from:
 ***
 <div class="paper-entry">
     <div class="paper-title"><b>Political Network and Muted Insider Trading</b></div>
+        <div class="paper-status">R&R at [Journal Name]</div>
         <div class="paper-author">
         with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.fordham.edu/gabelli-school-of-business/faculty/full-time-faculty/iftekhar-hasan/" target="_blank">Iftekhar Hasan</a> (Fordham), <a href="https://www.stjohns.edu/academics/faculty/yun-zhu-phd" target="_blank">Yun Zhu</a> (St. John’s)
         </div>
         <div class="paper-content">
         <div class="left-description">
             <ul class="gray-list">
-                <li>Stronger political networks discourage insider trading in China</li>
-                <li>Effects are more pronounced among long-standing and high-level connections</li>
-                <li>Muted trading is linked to better financial support or stronger legal environments</li>
+                <li>Political ties reduce insider trading in China, especially with long-term, high-level connections</li>
+                <li>Effect is stronger during M&A and public policy announcement when trading is informed</li>
+                <li>Muted insider trading is linked to better financial and policy support or stronger legal environments</li>
             </ul>
             <div><i>Presented</i> at MFA 2023, FMA Europe 2023, FMA 2024 etc.</div>
-            Paper PDF <a href="https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4230854_code1125739.pdf?abstractid=4230854&mirid=1&type=2" target="_blank"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a> (6 Feb 2024)
+            Paper PDF <a href="https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4230854_code1125739.pdf?abstractid=4230854&mirid=1&type=2" target="_blank"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a> (6 Feb 2024); 
+            Slides <a href="/files/fma2024.pdf" target="_blank"><i class="fas fa-fw fa-chalkboard zoom" aria-hidden="true"></i></a> (17 Oct 2024)
         </div>
         <div class="right-image">
             <img src="/images/paper_fig/plot_network_6819.svg" alt="network_demo">

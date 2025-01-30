@@ -54,6 +54,11 @@
 .paper-author {
     font-size: 16px;
 }
+.paper-status {
+    font-size: 16px; /* Matches other text */
+    font-style: italic; /* Makes it italic */
+    color: #820000; /* Sets text color to red */
+}
 .paper-keyword {
     font-size: 16px;
 }
@@ -86,3 +91,24 @@ code {
     font-family: monospace;    /* Monospaced font for code */
     color: #666666;              /* Dark gray font color */
   }
+
+  @media (max-width: 768px) { /* Adjusts layout for screens smaller than 768px */
+    .paper-content {
+        flex-direction: column; /* Stacks elements vertically */
+        align-items: center; /* Centers content */
+    }
+
+    .left-description, .right-image {
+        width: 100%; /* Ensures full width */
+        flex: none; /* Removes flex-based width allocation */
+    }
+
+    .right-image {
+        margin-top: 10px; /* Adds spacing between text and image */
+        text-align: center; /* Centers the image */
+    }
+
+    .right-image img {
+        max-width: 90%; /* Makes the image responsive */
+    }
+}
