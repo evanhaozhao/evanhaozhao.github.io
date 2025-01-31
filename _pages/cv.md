@@ -1,6 +1,6 @@
 ---
 published: false
-layout: single
+layout: singlenarrow
 title: ""
 permalink: /cv/
 author_profile: false

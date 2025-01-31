@@ -1,6 +1,6 @@
 ---
 published: false
-layout: single
+layout: singlewide
 permalink: /research/
 author_profile: false
 redirect_from:
