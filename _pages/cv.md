@@ -20,7 +20,7 @@ Download my [CV (PDF - Nov 2024)](/files/cv_hao_zhao.pdf){:target="_blank"}
           <span class="cv-section-time">UK</span>
       </div>
       <div class="cv-section-smaller">
-          <span>Doctor of Philosophy - PhD in Finance, ESRC NINE DTP Scholar</span>
+          <span>PhD in Finance (Advisors: Xian Gu, Felix Irresberger); ESRC Scholar</span>
           <span class="cv-section-time">2022 - Present</span>
       </div>
       <div class="cv-section-item-title">
@@ -28,7 +28,7 @@ Download my [CV (PDF - Nov 2024)](/files/cv_hao_zhao.pdf){:target="_blank"}
           <span class="cv-section-time">UK</span>
       </div>
       <div class="cv-section-smaller">
-          <span>Postgraduate Certificate - PGCert in Research Methods, Distinction</span>
+          <span>Postgraduate Certificate in Research Methods, Distinction</span>
           <span class="cv-section-time">2022 - 2023</span>
       </div>
       <div class="cv-section-item-title">
@@ -36,23 +36,15 @@ Download my [CV (PDF - Nov 2024)](/files/cv_hao_zhao.pdf){:target="_blank"}
           <span class="cv-section-time">UK</span>
       </div>
       <div class="cv-section-smaller">
-          <span>Master of Science - MSc in Financial Management, Distinction</span>
+          <span>MSc in Financial Management, Distinction</span>
           <span class="cv-section-time">2019 - 2020</span>
-      </div>
-      <div class="cv-section-item-title">
-          <span class="cv-main-item">London School of Economics and Political Science</span>
-          <span class="cv-section-time">UK</span>
-      </div>
-      <div class="cv-section-smaller">
-          <span>LSE Summer School Certificate in Business</span>
-          <span class="cv-section-time">2017</span>
       </div>
       <div class="cv-section-item-title">
           <span class="cv-main-item">Northeastern University</span>
           <span class="cv-section-time">China</span>
       </div>
       <div class="cv-section-smaller">
-          <span>Bachelor of Economics - BEc in International Economics</span>
+          <span>Bachelor of Economics in International Economics</span>
           <span class="cv-section-time">2015 - 2019</span>
       </div>
   </div>
