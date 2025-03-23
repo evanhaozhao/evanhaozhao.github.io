@@ -112,3 +112,10 @@ code {
         max-width: 90%; /* Makes the image responsive */
     }
 }
+
+
+
+.event-bold {
+    color: #5A6A73;
+    font-weight: 600; /* This will render as semi-bold if available */
+}

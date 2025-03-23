@@ -14,7 +14,7 @@ redirect_from:
 
 ***
 <div class="paper-entry">
-    <div class="paper-title"><b>Do Banks Care about Forest Loss?</b></div>
+    <div class="paper-title"><b>Do Banks Care about Deforestation?</b></div>
         <div class="paper-content">
         <div class="left-description">
             <div class="paper-author">
@@ -23,8 +23,9 @@ redirect_from:
             <ul class="gray-list">
                 <li>When forest loss is fire-induced, loan spreads for forest-dependent firms increase by 12-65 bps compared to other firms</li>
                 <li>When loss is human-induced, such spread difference only rises after the development of EUDR, and is higher within the EU</li>
-                <li>Firms receiving loans after human-driven loss cut forest-based inputs from high-deforestation-risk suppliers</li>
+                <li>Getting loan leads to the green transition of high-deforestation-risk firms via sustainable sourcing, reforestation, and plant divestiture </li>
             </ul>
+            <div><i>Presented</i> at <span class="event-bold">CICF 2025</span>, etc.</div>
         </div>
         <div class="right-image">
             <img src="/images/paper_fig/yield_spread_topbottomdep_fire.svg" alt="fire_loss_cutoff">
@@ -46,7 +47,7 @@ redirect_from:
                 <li>Both loan spreads and non-price terms are unaffected by firms’ biodiversity risk or banks’ commitments</li>
                 <li>Findings suggest limited impact of banks’ voluntary pledges</li>
             </ul>
-            <div><i>Presented</i> at Boca-ECGI Corporate Finance 2024, etc.</div>
+            <div><i>Presented</i> at <span class="event-bold">Boca-ECGI Corporate Finance 2024</span>, etc.</div>
             Paper PDF <a href="https://drive.google.com/file/d/1Ma-PHg50xAzk9hGaMa1wnvNQTgCmVyaO/view" target="_blank"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a> (25 Aug 2024);
             Slides <a href="/files/boca_ecgi_2024_hao_zhao.pdf" target="_blank"><i class="fas fa-fw fa-chalkboard zoom" aria-hidden="true"></i></a> (13 Dec 2024)
         </div>
@@ -70,7 +71,7 @@ redirect_from:
                 <li>Effect is stronger during M&A and public policy announcement when insiders make informed trading</li>
                 <li>Muted insider trading is linked to better financial and policy support or stronger legal environments</li>
             </ul>
-            <div><i>Presented</i> at MFA 2023, FMA Europe 2023, FMA 2024, etc.</div>
+            <div><i>Presented</i> at <span class="event-bold">FMA 2024</span>, <span class="event-bold">MFA 2023</span>, <span class="event-bold">FMA Europe 2023</span>, etc.</div>
             Paper PDF <a href="https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4230854_code1125739.pdf?abstractid=4230854&mirid=1&type=2" target="_blank"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a> (6 Feb 2024); 
             Slides <a href="/files/fma2024.pdf" target="_blank"><i class="fas fa-fw fa-chalkboard zoom" aria-hidden="true"></i></a> (17 Oct 2024)
         </div>
