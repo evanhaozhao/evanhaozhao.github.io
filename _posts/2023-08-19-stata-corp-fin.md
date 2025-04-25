@@ -12,7 +12,7 @@ tags:
 
 `corp_fin` is a collection of Stata commands designed to streamline common tasks in empirical corporate finance research. The goal is simple: automate the repetitive processes such as running regressions, testing coefficients, doing univariate analyses, while producing clean, ready-to-use output.
 
-This package started as a set of practical solutions to two recurring needs I built to simplify my work:  
+This package started as a set of practical solutions to two recurring needs to simplify my work:  
 (1) moving quickly from a model setup to a presentable output table with minimal code, and  
 (2) performing structured coefficient-level analysis & output using concise and consistent commands.
 
