@@ -37,12 +37,14 @@ Here is my [CV (pdf)](https://evanhaozhao.github.io/files/cv_hao_zhao.pdf){:targ
 - [Department of Finance](https://www.durham.ac.uk/business/about/departments/finance/ "Department of Finance, Durham University Business School"){:target="_blank"}, Durham University Business School
 - [ESRC-funded NINE DTP](https://www.ninedtp.ac.uk/ "The Northern Ireland and North East Doctoral Training Partnership"){:target="_blank"}, UK Research and Innovation
 
+{% comment %}
 ***
 ***Supervisors***
 - [Professor Xian Gu](https://www.durham.ac.uk/business/our-people/xian-gu/){:target="_blank"}, Professor of Finance
 - [Professor Felix Irresberger](https://www.durham.ac.uk/business/our-people/felix-irresberger/){:target="_blank"}, Professor of Finance
-
+{% endcomment %}
 ***
+
 ***Contact***
 
 <div>
