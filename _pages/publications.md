@@ -14,7 +14,7 @@ redirect_from:
 
 ***
 <div class="paper-entry">
-    <div class="paper-title"><b>Do Banks Care about Deforestation?</b></div>
+    <div class="paper-title"><b>Banking on Forest</b></div>
         <div class="paper-content">
         <div class="left-description">
             <div class="paper-author">
@@ -26,6 +26,8 @@ redirect_from:
                 <li>Getting loan leads to the green transition of high-deforestation-risk firms via sustainable sourcing, reforestation, and plant divestiture </li>
             </ul>
             <div><i>Presented</i> at <span class="event-bold">CICF 2025</span>, etc.</div>
+            Paper PDF <a href="/files/banking_on_forest.pdf" target="_blank"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a> (20 Apr 2025);
+            Slides <a href="/files/slides_banking_on_forest.pdf" target="_blank"><i class="fas fa-fw fa-chalkboard zoom" aria-hidden="true"></i></a> (23 May 2025)
         </div>
         <div class="right-image">
             <img src="/images/paper_fig/yield_spread_topbottomdep_fire.svg" alt="fire_loss_cutoff">
