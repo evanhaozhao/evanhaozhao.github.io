@@ -117,6 +117,31 @@
   }
 }
 
+.author__avatarrect {
+  display: table-cell;
+  vertical-align: top;
+  width: 36px;
+
+  @include breakpoint($large) {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  img {
+    // Fill the 36×27 container exactly
+    max-width: 150px;
+
+    // Slightly rounded corners—feel free to change to 0px if you want perfectly sharp corners
+    border-radius: 7px;
+
+    @include breakpoint($large) {
+      padding: 0;
+      border: 0 solid $border-color;
+    }
+  }
+}
+
 .author__content {
   display: table-cell;
   vertical-align: top;
