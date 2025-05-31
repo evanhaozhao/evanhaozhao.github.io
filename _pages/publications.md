@@ -26,8 +26,8 @@ redirect_from:
                 <li>Getting loan leads to the green transition of high-deforestation-risk firms via sustainable sourcing, reforestation, and plant divestiture </li>
             </ul>
             <div><i>Presented</i> at <span class="event-bold">CICF 2025</span>, etc.</div>
-            Paper PDF <a href="/files/banking_on_forest.pdf" target="_blank"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a> (20 Apr 2025);
-            Slides <a href="/files/slides_banking_on_forest.pdf" target="_blank"><i class="fas fa-fw fa-chalkboard zoom" aria-hidden="true"></i></a> (23 May 2025)
+            <a href="/files/banking_on_forest.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(20_Apr_2025)-white?logo=googledocs&logoColor=white&labelColor=%235A6A73"></a>
+            <a href="/files/slides_banking_on_forest.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(28_May_2025)-white?logo=googleslides&logoColor=white&labelColor=%235A6A73"></a>
         </div>
         <div class="right-image">
             <img src="/images/paper_fig/yield_spread_topbottomdep_fire.svg" alt="fire_loss_cutoff">
@@ -50,8 +50,8 @@ redirect_from:
                 <li>Findings suggest limited impact of banks’ voluntary pledges</li>
             </ul>
             <div><i>Presented</i> at <span class="event-bold">Boca-ECGI Corporate Finance 2024</span>, etc.</div>
-            Paper PDF <a href="https://drive.google.com/file/d/1Ma-PHg50xAzk9hGaMa1wnvNQTgCmVyaO/view" target="_blank"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a> (25 Aug 2024);
-            Slides <a href="/files/boca_ecgi_2024_hao_zhao.pdf" target="_blank"><i class="fas fa-fw fa-chalkboard zoom" aria-hidden="true"></i></a> (13 Dec 2024)
+             <a href="https://drive.google.com/file/d/1Ma-PHg50xAzk9hGaMa1wnvNQTgCmVyaO/view" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(25_Aug_2024)-white?logo=googledocs&logoColor=white&labelColor=%235A6A73"></a>
+            <a href="/files/boca_ecgi_2024_hao_zhao.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(13_Dec_2024)-white?logo=googleslides&logoColor=white&labelColor=%235A6A73"></a>
         </div>
         <div class="right-image">
             <img src="/images/paper_fig/spread_biod_int_commit.svg" alt="network_demo">
@@ -74,8 +74,8 @@ redirect_from:
                 <li>Muted insider trading is linked to better financial and policy support or stronger legal environments</li>
             </ul>
             <div><i>Presented</i> at <span class="event-bold">FMA 2024</span>, <span class="event-bold">MFA 2023</span>, <span class="event-bold">FMA Europe 2023</span>, etc.</div>
-            Paper PDF <a href="https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4230854_code1125739.pdf?abstractid=4230854&mirid=1&type=2" target="_blank"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a> (6 Feb 2024); 
-            Slides <a href="/files/fma2024.pdf" target="_blank"><i class="fas fa-fw fa-chalkboard zoom" aria-hidden="true"></i></a> (17 Oct 2024)
+            <a href="https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4230854_code1125739.pdf?abstractid=4230854&mirid=1&type=2" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(6_Feb_2024)-white?logo=googledocs&logoColor=white&labelColor=%235A6A73"></a>
+            <a href="/files/fma2024.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(17_Oct_2024)-white?logo=googleslides&logoColor=white&labelColor=%235A6A73"></a>
         </div>
         <div class="right-image">
             <img src="/images/paper_fig/plot_network_6819.svg" alt="network_demo">
