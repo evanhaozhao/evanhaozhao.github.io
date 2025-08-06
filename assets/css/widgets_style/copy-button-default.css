@@ -116,6 +116,11 @@ code {
 
 
 .event-bold {
-    color: #5A6A73;
-    font-weight: 600; /* This will render as semi-bold if available */
+     /*  color: #820000; font-weight: 600;  */
+    font-weight: 599;
+}
+
+.event-gray {
+     /*  color: #820000; font-weight: 600;  */
+    color: #888888;  
 }
