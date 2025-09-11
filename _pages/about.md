@@ -23,7 +23,7 @@ I will be on the academic job market in the *2025-2026* cycle
 ***
 ***Interests***
 
--  Corporate finance; Climate finance; Green transition; Political economy in finance
+-  Corporate finance; Climate finance; Green transition; Political economy
 
 {% comment %}
 - *Secondary*: Network; Insider trading; Empirical asset pricing; Entrepreneurship
