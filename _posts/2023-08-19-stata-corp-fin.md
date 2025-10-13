@@ -16,7 +16,7 @@ This package started as a set of practical solutions to two recurring needs to s
 (1) moving quickly from a model setup to a presentable output table with minimal code, and  
 (2) performing structured coefficient-level analysis & output using concise and consistent commands.
 
-The latest version: [github.com/evanhaozhao/corp-fin-ado-toolkit](https://github.com/evanhaozhao/corp-fin-ado-toolkit)
+The latest version: [github.com/evanhaozhao/corp-fin-ado-toolkit](https://github.com/evanhaozhao/corp-fin-ado-toolkit){:target="_blank"}
 
 ---
 
