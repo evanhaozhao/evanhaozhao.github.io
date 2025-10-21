@@ -117,7 +117,8 @@ code {
 
 .event-bold {
      /*  color: #820000; font-weight: 600;  */
-    font-weight: 599;
+    /* font-weight: 599; */
+    color: #3A3B55;  
 }
 
 .event-gray {
