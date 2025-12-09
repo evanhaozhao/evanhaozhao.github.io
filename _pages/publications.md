@@ -13,118 +13,123 @@ redirect_from:
 ***Working Papers***
 
 ***
-<div class="paper-entry">
-    <div class="paper-title"><b>Burnout to Buildout: Energy Transition Tradeoffs and Hidden Costs</b></div>
-        <div class="paper-content">
-        <div class="left-description">
-            <div class="paper-author">
-            Job Market Paper
+<div class="research-card row">
+    <div class="paper-entry">
+        <div class="paper-title"><b>Burnout to Buildout: Coal Exit and the Geography of Transition Costs</b></div>
+            <div class="paper-content">
+            <div class="left-description">
+                <div class="paper-status">Job Market Paper</div>
+                <ul class="gray-list">
+                    <li>Two key channels: air pollution regulations push coal exit; renewable mandates and incentives redirect the subsequent renewable transition</li>
+                    <li>Geography shapes two transition frictions: financial costs from geographic misalignment, and social costs from workplace remoteness</li>
+                    <li>Counterfactuals: aligning policy with resource geography increases total generation and the share from solar, even with fewer solar projects</li>
+                </ul>
             </div>
-            <ul class="gray-list">
-                <li>Regulatory pressures and financial incentives shape coal generation exit paths and redirect the renewable transition</li>
-                <li>Geographic misalignment leads to a financial loss of \$290–\$300 in electric operating revenue per installed kW in less irradiated areas</li>
-                <li>Green transition dilemma: situations where pursuing “E” comes at the cost of “S”, when renewables are sited in remote areas </li>
-            </ul>
-        </div>
-        <div class="right-image">
-            <img src="/images/paper_fig/solar_panel1.jpg" alt="pv_construction">
+            <div class="right-image">
+                <img src="/images/paper_fig/solar_panel1.jpg" alt="pv_construction">
+            </div>
         </div>
     </div>
 </div>
 
 
-***
-<div class="paper-entry">
-    <div class="paper-title"><b>Banking on Forest</b></div>
-        <div class="paper-content">
-        <div class="left-description">
-            <div class="paper-author">
-            with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank">Felix Irresberger</a> (Durham), <a href="https://www.stjohns.edu/academics/faculty/yun-zhu-phd" target="_blank">Yun Zhu</a> (St. John’s)
-            </div>
-            <ul class="gray-list">
-                <li>When forest loss is fire-induced, loan spreads for forest-dependent firms increase by 12-65 bps compared to other firms</li>
-                <li>When loss is human-induced, such spread difference only rises after the development of EUDR, and is higher within the EU</li>
-                <li>Getting loan leads to the green transition of high-deforestation-risk firms via sustainable sourcing, reforestation, and plant divestiture </li>
-            </ul>
-            <div><i>Presented</i> at <span class="event-bold">CICF</span> <span class="event-gray">(2025)</span>, <span class="event-bold">GRASFI PhD workshop</span> <span class="event-gray">(2025)</span>, <span class="event-bold">FMA</span> <span class="event-gray">(2025)</span>, <span class="event-bold">FMA Europe</span> <span class="event-gray">(2025)</span>, <span class="event-bold">Conference on Contemporary Issues in Banking</span> <span class="event-gray">(2025)</span>, <span class="event-bold">Durham Finance Internal Seminar</span> <span class="event-gray">(2025)</span> etc.</div>
-            <a href="http://dx.doi.org/10.2139/ssrn.5303222" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(23_Jun_2025)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=%232b579a"></a>
-            <a href="/files/slides_banking_on_forest.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(28_May_2025)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=%23d24726"></a>
-            <a href="http://dx.doi.org/10.2139/ssrn.5303222" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-%23154881?style=flat&logo=ssrn&logoSize=auto"></a>
-        </div>
-        <div class="right-image">
-            <img src="/images/paper_fig/yield_spread_eudr.svg" alt="eudr_cutoff">
-        </div>
-    </div>
-</div>
-
-***
-<div class="paper-entry">
-    <div class="paper-title"><b>Trading Under Scrutiny: Social Media Attention and Congressional Trading</b></div>
-        <div class="paper-content">
-        <div class="left-description">
-            <div class="paper-author">
-            with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.business.uconn.edu/person/yiming-qian/" target="_blank">Yiming Qian</a> (UConn)
-            </div>
-            <ul class="gray-list">
-                <li>We build a comprehensive dataset of congressional trades (2014–2022) using OCR, LLMs, and manual collection</li>
-                <li>Twitter scrutiny reduces trading and returns, especially for influential politicians and before elections</li>
-                <li>Findings suggest social media serves as a disciplining force that complements the STOCK Act</li>
-            </ul>
-        </div>
-        <div class="right-image">
-            <img src="/images/paper_fig/ptr_example.jpg" alt="ptr_example">
-        </div>
-    </div>
-</div>
-
-***
-<div class="paper-entry">
-    <div class="paper-title"><b>Biodiversity Risk and Bank Lending</b></div>
-        <div class="paper-content">
-        <div class="left-description">
-            <div class="paper-author">
-            with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank">Felix Irresberger</a> (Durham)
-            </div>
-            <ul class="gray-list">
-                <li>Assessing firm-level biodiversity risk (ecosystem dependency & business condition) via call transcripts</li>
-                <li>Both loan spreads and non-price terms are unaffected by firms’ biodiversity risk or banks’ commitments</li>
-                <li>Findings suggest limited impact of banks’ voluntary pledges</li>
-            </ul>
-            <div><i>Presented</i> at <span class="event-bold">Boca-ECGI Corporate Finance</span> <span class="event-gray">(2024)</span>, etc.</div>
-             <a href="https://drive.google.com/file/d/1Ma-PHg50xAzk9hGaMa1wnvNQTgCmVyaO/view" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(25_Aug_2024)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=%232b579a"></a>
-            <a href="/files/boca_ecgi_2024_hao_zhao.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(13_Dec_2024)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=%23d24726"></a>
-        </div>
-        <div class="right-image">
-            <img src="/images/paper_fig/spread_biod_int_commit.svg" alt="biodiversity_example">
-        </div>
-    </div>
-</div>
-
-***
-<div class="paper-entry">
-    <div class="paper-title"><b>Political Network and Muted Insider Trading</b></div>
-        <div class="paper-content">
-        <div class="left-description">
+<div class="research-card row">
+    <div class="paper-entry">
+        <div class="paper-title"><b>Banking on Forest</b></div>
             <div class="paper-status">R&R at [Journal Name]</div>
-            <div class="paper-author">
-            with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.fordham.edu/gabelli-school-of-business/faculty/full-time-faculty/iftekhar-hasan/" target="_blank">Iftekhar Hasan</a> (Fordham), <a href="https://www.stjohns.edu/academics/faculty/yun-zhu-phd" target="_blank">Yun Zhu</a> (St. John’s)
+            <div class="paper-content">
+            <div class="left-description">
+                <div class="paper-author">
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank">Felix Irresberger</a> (Durham), <a href="https://www.stjohns.edu/academics/faculty/yun-zhu-phd" target="_blank">Yun Zhu</a> (St. John’s)
+                </div>
+                <ul class="gray-list">
+                    <li>When forest loss is fire-induced, loan spreads for forest-dependent firms increase by 12-65 bps compared to other firms</li>
+                    <li>When loss is human-induced, such spread difference only rises after the development of EUDR, and is higher within the EU</li>
+                    <li>Getting loan leads to the green transition of high-deforestation-risk firms via sustainable sourcing, reforestation, and plant divestiture </li>
+                </ul>
+                <div><i>Presented</i> at CICF <span class="event-gray">(2025)</span>, GRASFI PhD Workshop <span class="event-gray">(2025)</span>, FMA <span class="event-gray">(2025)</span>, FMA Europe <span class="event-gray">(2025)</span>, Conference on Contemporary Issues in Banking <span class="event-gray">(2025)</span>, Durham Finance Internal Seminar <span class="event-gray">(2025)</span>, etc.</div>
+                <a href="http://dx.doi.org/10.2139/ssrn.5303222" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(23_Jun_2025)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=%232b579a"></a>
+                <a href="/files/slides_banking_on_forest.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(28_May_2025)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=%23d24726"></a>
             </div>
-            <ul class="gray-list">
-                <li>Political ties reduce insider trading in China, especially with long-term, high-level connections</li>
-                <li>Effect is stronger during M&A and public policy announcement when insiders make informed trading</li>
-                <li>Muted insider trading is linked to better financial and policy support or stronger legal environments</li>
-            </ul>
-            <div><i>Presented</i> at <span class="event-bold">FMA</span> <span class="event-gray">(2024)</span>, <span class="event-bold">MFA</span> <span class="event-gray">(2023)</span>, <span class="event-bold">FMA Europe</span> <span class="event-gray">(2023)</span>, etc.</div>
-            <a href="https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4230854_code1125739.pdf?abstractid=4230854&mirid=1&type=2" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(6_Feb_2024)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=%232b579a"></a>
-            <a href="/files/fma2024.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(17_Oct_2024)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=%23d24726"></a>
-            <a href="https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4230854_code1125739.pdf?abstractid=4230854&mirid=1&type=2" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-%23154881?style=flat&logo=ssrn&logoSize=auto"></a>
-        </div>
-        <div class="right-image">
-            <img src="/images/paper_fig/plot_network_6819.svg" alt="network_demo">
+            <div class="right-image">
+                <img src="/images/paper_fig/yield_spread_eudr.svg" alt="eudr_cutoff">
+            </div>
         </div>
     </div>
 </div>
 
+
+<div class="research-card row">
+    <div class="paper-entry">
+        <div class="paper-title"><b>Trading Under Scrutiny: Social Media Attention and Congressional Trading</b></div>
+            <div class="paper-content">
+            <div class="left-description">
+                <div class="paper-author">
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.business.uconn.edu/person/yiming-qian/" target="_blank">Yiming Qian</a> (UConn)
+                </div>
+                <ul class="gray-list">
+                    <li>We build a comprehensive dataset of congressional trades (2014–2022) using OCR, LLMs, and manual collection</li>
+                    <li>Twitter scrutiny reduces trading and returns, especially for influential politicians and before elections</li>
+                    <li>Findings suggest social media serves as a disciplining force that complements the STOCK Act</li>
+                </ul>
+            </div>
+            <div class="right-image">
+                <img src="/images/paper_fig/ptr_example.jpg" alt="ptr_example">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="research-card row">
+    <div class="paper-entry">
+        <div class="paper-title"><b>Biodiversity Risk and Bank Lending</b></div>
+            <div class="paper-content">
+            <div class="left-description">
+                <div class="paper-author">
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank">Felix Irresberger</a> (Durham)
+                </div>
+                <ul class="gray-list">
+                    <li>Assessing firm-level biodiversity risk (ecosystem dependency & business condition) via call transcripts</li>
+                    <li>Both loan spreads and non-price terms are unaffected by firms’ biodiversity risk or banks’ commitments</li>
+                    <li>Findings suggest limited impact of banks’ voluntary pledges</li>
+                </ul>
+                <div><i>Presented</i> at Boca-ECGI Corporate Finance <span class="event-gray">(2024)</span>, etc.</div>
+                <a href="https://drive.google.com/file/d/1Ma-PHg50xAzk9hGaMa1wnvNQTgCmVyaO/view" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(25_Aug_2024)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=%232b579a"></a>
+                <a href="/files/boca_ecgi_2024_hao_zhao.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(13_Dec_2024)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=%23d24726"></a>
+            </div>
+            <div class="right-image">
+                <img src="/images/paper_fig/spread_biod_int_commit.svg" alt="biodiversity_example">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="research-card row">
+    <div class="paper-entry">
+        <div class="paper-title"><b>Political Network and Muted Insider Trading</b></div>
+            <div class="paper-content">
+            <div class="left-description">
+                <div class="paper-status">R&R at Journal of Corporate Finance</div>
+                <div class="paper-author">
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.fordham.edu/gabelli-school-of-business/faculty/full-time-faculty/iftekhar-hasan/" target="_blank">Iftekhar Hasan</a> (Fordham), <a href="https://www.stjohns.edu/academics/faculty/yun-zhu-phd" target="_blank">Yun Zhu</a> (St. John’s)
+                </div>
+                <ul class="gray-list">
+                    <li>Political ties reduce insider trading in China, especially with long-term, high-level connections</li>
+                    <li>Effect is stronger during M&A and public policy announcement when insiders make informed trading</li>
+                    <li>Muted insider trading is linked to better financial and policy support or stronger legal environments</li>
+                </ul>
+                <div><i>Presented</i> at FMA <span class="event-gray">(2024)</span>, MFA <span class="event-gray">(2023)</span>, FMA Europe <span class="event-gray">(2023)</span>, etc.</div>
+                <a href="https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4230854_code1125739.pdf?abstractid=4230854&mirid=1&type=2" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(6_Feb_2024)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=%232b579a"></a>
+                <a href="/files/fma2024.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(17_Oct_2024)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=%23d24726"></a>
+            </div>
+            <div class="right-image">
+                <img src="/images/paper_fig/plot_network_6819.svg" alt="network_demo">
+            </div>
+        </div>
+    </div>
+</div>
 
 
 {% comment %} 

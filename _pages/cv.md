@@ -10,8 +10,10 @@ redirect_from:
 
 {% include base_path %}
 
-Download my [CV (PDF - Nov 2024)](/files/cv_hao_zhao.pdf){:target="_blank"}
+Download my [CV (PDF - Nov 2024)](/files/paper1.pdf){:target="_blank"}
 
+---
+<div class="cv-card row">
 <div class="cv-section" id="education">
   <div class="cv-section-title">Education</div>
   <div class="cv-section-body">
@@ -20,7 +22,7 @@ Download my [CV (PDF - Nov 2024)](/files/cv_hao_zhao.pdf){:target="_blank"}
           <span class="cv-section-time">UK</span>
       </div>
       <div class="cv-section-smaller">
-          <span>PhD in Finance (Advisors: Xian Gu, Felix Irresberger); ESRC Scholar</span>
+          <span>PhD in Finance (Supervisors: Xian Gu, Felix Irresberger); ESRC Scholar</span>
           <span class="cv-section-time">2022 - Present</span>
       </div>
       <div class="cv-section-item-title">
@@ -82,7 +84,7 @@ Download my [CV (PDF - Nov 2024)](/files/cv_hao_zhao.pdf){:target="_blank"}
     </div>
   </div>
 </div>
-
+</div>
 
 {% comment %} 
   Style: (a) general

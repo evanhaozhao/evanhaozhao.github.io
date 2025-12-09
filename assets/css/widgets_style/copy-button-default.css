@@ -43,7 +43,7 @@
 .paper-title {
     font-size: 18px;
     font-weight: bold;
-    color: #820000;
+    color: #820000; /* 820000 */
     /* margin-bottom: 10px; */
 }
 .paper-content {
@@ -76,7 +76,8 @@
 }
 
 .gray-list li {
-    color: #888888;         /* text color */
+    font-size: 15px;
+    color: #888888;         /* text color #888888 */
     margin-bottom: 0px;     /* Adjust this value to control spacing */
 }
 .gray-list li:last-child {
@@ -118,10 +119,31 @@ code {
 .event-bold {
      /*  color: #820000; font-weight: 600;  */
     /* font-weight: 599; */
-    color: #3A3B55;  
+    color: #3A3B55;  /* #3A3B55 */
 }
 
 .event-gray {
      /*  color: #820000; font-weight: 600;  */
     color: #888888;  
+}
+
+.research-card {
+  background-color: #FFFFFF;
+  border-radius: 7px;
+  padding: 1rem 1rem;
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1); /* box-shadow: 0 5px 0px rgba(0,0,0,0.2); */
+  border: 1px solid rgba(15, 23, 42, 0.05); /* #e6e6e6 */
+  margin-bottom: 0.7rem;
+}
+
+/* .research-card:hover {
+  box-shadow:
+    0 4px 14px rgba(15, 23, 42, 0.10); 
+  transform: translateY(-1px);          
+} */
+
+.research-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
