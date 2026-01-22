@@ -92,6 +92,6 @@
   background-color: #FFFFFF;
   /* border-radius: 7px; */
   padding: 1rem 1rem;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3); /* box-shadow: 0 5px 0px rgba(0,0,0,0.2); */
-  border: 0px solid rgba(15, 23, 42, 0.05); /* #e6e6e6 */
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); /* box-shadow: 0 5px 0px rgba(0,0,0,0.2); */
+  border: 1px solid #e6e6e6; /* #e6e6e6 */
 }

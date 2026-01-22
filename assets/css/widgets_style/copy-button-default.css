@@ -114,7 +114,10 @@ code {
     }
 }
 
-
+.conference-description {
+    font-size: 14px;
+    font-weight: 600;
+}
 
 .event-bold {
      /*  color: #820000; font-weight: 600;  */
@@ -124,6 +127,7 @@ code {
 
 .event-gray {
      /*  color: #820000; font-weight: 600;  */
+    font-weight: 570;
     color: #888888;  
 }
 
@@ -131,8 +135,8 @@ code {
   background-color: #FFFFFF;
   border-radius: 7px;
   padding: 1rem 1rem;
-  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1); /* box-shadow: 0 5px 0px rgba(0,0,0,0.2); */
-  border: 1px solid rgba(15, 23, 42, 0.05); /* #e6e6e6 */
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.15); /* box-shadow: 0 5px 0px rgba(0,0,0,0.2); */
+  border: 1.5px solid #e6e6e6; /* #e6e6e6; rgba(15, 23, 42, 0.05) */
   margin-bottom: 0.7rem;
 }
 

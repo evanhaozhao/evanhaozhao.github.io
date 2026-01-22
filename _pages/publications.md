@@ -20,9 +20,9 @@ redirect_from:
             <div class="left-description">
                 <div class="paper-status">Job Market Paper</div>
                 <ul class="gray-list">
-                    <li>Two key channels: air pollution regulations push coal exit; renewable mandates and incentives redirect the subsequent renewable transition</li>
-                    <li>Geography shapes two transition frictions: financial costs from geographic misalignment, and social costs from workplace remoteness</li>
-                    <li>Counterfactuals: aligning policy with resource geography increases total generation and the share from solar, even with fewer solar projects</li>
+                    <li>Coal exit: air pollution regulations trigger gas substitution and favor closures where gas is cheap</li>
+                    <li>Subsequent redirection: policy and incentives expand renewable investment, but the transition carries geographic costs</li>
+                    <li>Counterfactual: aligning policy with resource geography delivers more solar output with fewer projects</li>
                 </ul>
             </div>
             <div class="right-image">
@@ -43,13 +43,13 @@ redirect_from:
                 with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank">Felix Irresberger</a> (Durham), <a href="https://www.stjohns.edu/academics/faculty/yun-zhu-phd" target="_blank">Yun Zhu</a> (St. John’s)
                 </div>
                 <ul class="gray-list">
-                    <li>When forest loss is fire-induced, loan spreads for forest-dependent firms increase by 12-65 bps compared to other firms</li>
-                    <li>When loss is human-induced, such spread difference only rises after the development of EUDR, and is higher within the EU</li>
-                    <li>Getting loan leads to the green transition of high-deforestation-risk firms via sustainable sourcing, reforestation, and plant divestiture </li>
+                    <li>When forest loss is fire-induced, loan spreads for forest-dependent firms increase compared to other firms</li>
+                    <li>When loss is human-induced, such spread gap only rises after EUDR, and is higher for EU operators</li>
+                    <li>Getting loan leads to green transition via (i) sustainable sourcing, (ii) reforestation, and (iii) plant divestiture </li>
                 </ul>
-                <div><i>Presented</i> at CICF <span class="event-gray">(2025)</span>, GRASFI PhD Workshop <span class="event-gray">(2025)</span>, FMA <span class="event-gray">(2025)</span>, FMA Europe <span class="event-gray">(2025)</span>, Conference on Contemporary Issues in Banking <span class="event-gray">(2025)</span>, Durham Finance Internal Seminar <span class="event-gray">(2025)</span>, etc.</div>
-                <a href="http://dx.doi.org/10.2139/ssrn.5303222" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(23_Jun_2025)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=%232b579a"></a>
-                <a href="/files/slides_banking_on_forest.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(28_May_2025)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=%23d24726"></a>
+                <div class="conference-description"><i style="font-weight: 570;">Presented at:</i> CICF <span class="event-gray">(2025)</span>, GRASFI PhD Workshop <span class="event-gray">(2025 Edinburgh)</span>, FMA <span class="event-gray">(2025)</span>, FMA Europe <span class="event-gray">(2025)</span>, Conference on Contemporary Issues in Banking <span class="event-gray">(2025 St Andrews)</span>, Durham Finance Internal Seminar <span class="event-gray">(2025)</span>, etc.</div>
+                <a href="http://dx.doi.org/10.2139/ssrn.5303222" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_PDF_(Jan_2026)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=%232b579a"></a>
+                <a href="/files/slides_banking_on_forest.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(May_2025)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=%23d24726"></a>
             </div>
             <div class="right-image">
                 <img src="/images/paper_fig/yield_spread_eudr.svg" alt="eudr_cutoff">
@@ -94,9 +94,9 @@ redirect_from:
                     <li>Both loan spreads and non-price terms are unaffected by firms’ biodiversity risk or banks’ commitments</li>
                     <li>Findings suggest limited impact of banks’ voluntary pledges</li>
                 </ul>
-                <div><i>Presented</i> at Boca-ECGI Corporate Finance <span class="event-gray">(2024)</span>, etc.</div>
-                <a href="https://drive.google.com/file/d/1Ma-PHg50xAzk9hGaMa1wnvNQTgCmVyaO/view" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(25_Aug_2024)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=%232b579a"></a>
-                <a href="/files/boca_ecgi_2024_hao_zhao.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(13_Dec_2024)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=%23d24726"></a>
+                <div class="conference-description"><i style="font-weight: 570;">Presented at:</i> Boca-ECGI Corporate Finance <span class="event-gray">(2024)</span>, etc.</div>
+                <a href="https://drive.google.com/file/d/1Ma-PHg50xAzk9hGaMa1wnvNQTgCmVyaO/view" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Aug_2024)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=%232b579a"></a>
+                <a href="/files/boca_ecgi_2024_hao_zhao.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Dec_2024)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=%23d24726"></a>
             </div>
             <div class="right-image">
                 <img src="/images/paper_fig/spread_biod_int_commit.svg" alt="biodiversity_example">
@@ -104,7 +104,6 @@ redirect_from:
         </div>
     </div>
 </div>
-
 
 <div class="research-card row">
     <div class="paper-entry">
@@ -120,9 +119,9 @@ redirect_from:
                     <li>Effect is stronger during M&A and public policy announcement when insiders make informed trading</li>
                     <li>Muted insider trading is linked to better financial and policy support or stronger legal environments</li>
                 </ul>
-                <div><i>Presented</i> at FMA <span class="event-gray">(2024)</span>, MFA <span class="event-gray">(2023)</span>, FMA Europe <span class="event-gray">(2023)</span>, etc.</div>
-                <a href="https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4230854_code1125739.pdf?abstractid=4230854&mirid=1&type=2" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(6_Feb_2024)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=%232b579a"></a>
-                <a href="/files/fma2024.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(17_Oct_2024)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=%23d24726"></a>
+                <div class="conference-description"><i style="font-weight: 570;">Presented at:</i> FMA <span class="event-gray">(2024)</span>, MFA <span class="event-gray">(2023)</span>, FMA Europe <span class="event-gray">(2023)</span>, etc.</div>
+                <a href="https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4230854_code1125739.pdf?abstractid=4230854&mirid=1&type=2" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Feb_2024)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=%232b579a"></a>
+                <a href="/files/fma2024.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Oct_2024)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=%23d24726"></a>
             </div>
             <div class="right-image">
                 <img src="/images/paper_fig/plot_network_6819.svg" alt="network_demo">
