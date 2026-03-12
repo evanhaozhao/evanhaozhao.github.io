@@ -19,8 +19,8 @@ redirect_from:
             <div class="left-description">
                 <ul class="gray-list">
                     <li>Does exiting polluting assets necessarily deliver a green transition? I trace firm-level generation portfolios after a coal exit shock</li>
-                    <li>Fossil substitution vs. green transition: mandates and incentives expand renewable buildouts, but can carry geographic costs</li>
-                    <li>Counterfactuals from a firm decision model: aligning policy with resource geography delivers more solar output with fewer projects</li>
+                    <li>Fossil substitution vs. green transition: mandates and incentives expand renewable investment, but can carry geographic costs</li>
+                    <li>Counterfactuals from a firm decision model: aligning policy with resource geography delivers more output with fewer projects</li>
                 </ul>
                 <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> Durham Finance Internal Seminar <span class="event-gray">(2026)</span></div>
                 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6225898" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Mar_2026)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
