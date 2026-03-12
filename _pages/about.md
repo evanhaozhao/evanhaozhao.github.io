@@ -12,9 +12,22 @@ redirect_from:
 
 I'm Hao Zhao, a PhD candidate in Finance at Durham University
 
+
 {% comment %}
+
+- Academic job market: 2026–2027
+
+- <a href="/research/"><img alt="Research badge" src="https://img.shields.io/badge/-Research-FAFAFA?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=828F98"></a> <a href="/files/paper1.pdf" target="_blank"><img alt="CV Badge" src="https://img.shields.io/badge/-CV-FAFAFA?style=for-the-badge&logo=googleforms&logoColor=white&labelColor=828F98"></a>
+
+- <a href="/research/"><img alt="Research badge" src="https://img.shields.io/badge/-Research-FAFAFA?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=C0C0C0"></a> <a href="/files/paper1.pdf" target="_blank"><img alt="CV Badge" src="https://img.shields.io/badge/-CV-FAFAFA?style=for-the-badge&logo=googleforms&logoColor=white&labelColor=C0C0C0"></a>
+
+- <a href="/files/slides_banking_on_forest.pdf" target="_blank"><img alt="JMP badge" src="https://img.shields.io/badge/-JMP-FAFAFA?style=for-the-badge&logo=googledocs&logoColor=white&labelColor=C0C0C0"></a>
+
 I will be on the academic job market in the *2025-2026* cycle
 
+- <a href="/files/slides_banking_on_forest.pdf" target="_blank"><img alt="Research badge" src="https://img.shields.io/badge/-Research-F3F4F6?style=for-the-badge&logoColor=%23C0C0C0&labelColor=F3F4F6"></a> <a href="/files/slides_banking_on_forest.pdf" target="_blank"><img alt="CV Badge" src="https://img.shields.io/badge/-CV-F3F4F6?style=for-the-badge&logo=googleforms&logoColor=%23C0C0C0&labelColor=white"></a> <a href="/files/slides_banking_on_forest.pdf" target="_blank"><img alt="JMP badge" src="https://img.shields.io/badge/-JMP-F3F4F6?style=for-the-badge&logo=googledocs&logoColor=%23C0C0C0&labelColor=white"></a>
+
+- View [[ Research ]](https://evanhaozhao.github.io/files/cv_hao_zhao.pdf), [[ CV.pdf ]](https://evanhaozhao.github.io/files/cv_hao_zhao.pdf), and [[ JMP.pdf ]](https://evanhaozhao.github.io/files/cv_hao_zhao.pdf)
 - View [[Research]](https://evanhaozhao.github.io/files/cv_hao_zhao.pdf), [[CV.pdf]](https://evanhaozhao.github.io/files/cv_hao_zhao.pdf), and [[JMP.pdf]](https://evanhaozhao.github.io/files/cv_hao_zhao.pdf)
 - [View my research](https://evanhaozhao.github.io/files/cv_hao_zhao.pdf), and [Curriculum Vitae](https://evanhaozhao.github.io/files/cv_hao_zhao.pdf)
 - [View my research](https://evanhaozhao.github.io/files/cv_hao_zhao.pdf){:target="_blank"}

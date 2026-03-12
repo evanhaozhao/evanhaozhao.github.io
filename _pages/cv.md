@@ -12,6 +12,15 @@ redirect_from:
 
 Download my [CV (PDF - Nov 2024)](/files/paper1.pdf){:target="_blank"}
 
+<iframe
+    src="/files/paper1.pdf"
+    width="100%"
+    height="600px"
+    title="PDF-file"
+></iframe>
+
+
+{% comment %} 
 ---
 <div class="cv-card row">
 <div class="cv-section" id="education">
@@ -85,6 +94,8 @@ Download my [CV (PDF - Nov 2024)](/files/paper1.pdf){:target="_blank"}
   </div>
 </div>
 </div>
+{% endcomment %} 
+
 
 {% comment %} 
   Style: (a) general

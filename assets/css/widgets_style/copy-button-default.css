@@ -57,7 +57,7 @@
 .paper-status {
     font-size: 16px; /* Matches other text */
     font-style: italic; /* Makes it italic */
-    color: #820000; /* Sets text color to red */
+    color: #923232; /* Sets text color to red */
 }
 .paper-keyword {
     font-size: 16px;
@@ -75,6 +75,10 @@
     max-width: 100%; /* Ensures the image fills its container */
 }
 
+.gray-list {
+    /* Ensures numbers (1, 2, 3) are visible */
+    list-style-type: square; 
+}
 .gray-list li {
     font-size: 15px;
     color: #888888;         /* text color #888888 */
@@ -117,6 +121,7 @@ code {
 .conference-description {
     font-size: 14px;
     font-weight: 600;
+    color: #5f5f5f; 
 }
 
 .event-bold {
@@ -133,11 +138,24 @@ code {
 
 .research-card {
   background-color: #FFFFFF;
-  border-radius: 7px;
+  border-radius: 17px;
   padding: 1rem 1rem;
-  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.15); /* box-shadow: 0 5px 0px rgba(0,0,0,0.2); */
-  border: 1.5px solid #e6e6e6; /* #e6e6e6; rgba(15, 23, 42, 0.05) */
   margin-bottom: 0.7rem;
+
+  /* Absolutely zero standard borders */
+  border: none;
+
+  box-shadow: 
+    /* 1. THE SHARP WHITE LINE (Inside bottom-right) */
+    inset -0.3px -0.3px 0px rgba(255, 255, 255, 1),
+    
+    /* 2. THE SHARP DARK THIN LINE (Inside bottom-right) */
+    inset -1.5px -1.5px 0px rgba(0, 0, 0, 0.08),
+    
+    /* 3. THE OUTER DARK FADE (Pulled tight so it CANNOT bleed top/left) */
+    /* Syntax: Offset X, Offset Y, Blur, Spread (Negative), Color */
+    1px 1px 2px -1px rgba(0, 0, 0, 0.08), 
+    1px 1px 2px -1px rgba(0, 0, 0, 0.08);
 }
 
 /* .research-card:hover {
