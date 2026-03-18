@@ -72,6 +72,7 @@ redirect_from:
                     <li>Individual-targeted Twitter discussions reduce trading volume and returns, especially for influential politicians and before elections</li>
                     <li>Findings suggest social media acts as a disciplining force that complements the STOCK Act of 2012</li>
                 </ul>
+                <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> CICF <span class="event-gray">(2026; scheduled)</span></div>
             </div>
             <div class="right-image">
                 <img src="/images/paper_fig/ptr_example.jpg" alt="ptr_example">
