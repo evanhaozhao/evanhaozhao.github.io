@@ -12,6 +12,9 @@ redirect_from:
 
 I'm Hao Zhao, a PhD candidate in Finance at Durham University
 
+<ul style="list-style-type: circle;">
+  <li><a href="/research/"><img alt="Research badge" src="https://img.shields.io/badge/-Research-FAFAFA?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=828F98"></a></li>
+</ul>
 
 {% comment %}
 
@@ -37,7 +40,9 @@ I will be on the academic job market in the *2025-2026* cycle
 ***
 ***Interests***
 
--  Corporate finance; Sustainable finance; Political economy; Entrepreneurial finance
+<ul style="list-style-type: circle;">
+  <li>Corporate finance; Sustainable finance; Political economy; Entrepreneurial finance </li>
+</ul>
 
 {% comment %}
 - *Secondary*: Network; Insider trading; Empirical asset pricing; Entrepreneurship
@@ -53,8 +58,14 @@ I will be on the academic job market in the *2025-2026* cycle
 
 ***
 ***Affiliations***
-- [Department of Finance](https://www.durham.ac.uk/business/about/departments/finance/ "Department of Finance, Durham University Business School"){:target="_blank"}, Durham University Business School
-- [ESRC-funded NINE DTP](https://www.ninedtp.ac.uk/ "The Northern Ireland and North East Doctoral Training Partnership"){:target="_blank"}, UK Research and Innovation
+<ul style="list-style-type: circle;">
+  <li>
+    <a href="https://www.durham.ac.uk/business/about/departments/finance/" title="Department of Finance, Durham University Business School" target="_blank">Department of Finance</a>, Durham University Business School
+  </li>
+  <li>
+    <a href="https://www.ninedtp.ac.uk/" title="The Northern Ireland and North East Doctoral Training Partnership" target="_blank">ESRC-funded NINE DTP</a>, UK Research and Innovation
+  </li>
+</ul>
 
 {% comment %}
 ***
@@ -67,7 +78,7 @@ I will be on the academic job market in the *2025-2026* cycle
 ***Contact***
 
 <div>
-  <ul>
+  <ul style="list-style-type: circle;">
     <li> Email: hao.zhao@durham.ac.uk
       <span id="workingstatus">
         <svg viewBox="0 0 20 20" width="8" height="8">
@@ -77,8 +88,6 @@ I will be on the academic job market in the *2025-2026* cycle
     </li>
   </ul>
 </div>
-
-
 
 
 {% comment %} 
