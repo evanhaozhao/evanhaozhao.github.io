@@ -22,7 +22,7 @@ redirect_from:
                     <li>Fossil substitution vs. green transition: mandates and incentives expand renewable investment, but can carry geographic costs</li>
                     <li>Counterfactuals from a firm decision model: aligning policy with resource geography delivers more output with fewer projects</li>
                 </ul>
-                <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> Durham Finance Internal Seminar <span class="event-gray">(2026)</span></div>
+                <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> Durham <span class="event-gray">(2026)</span>, CICF <span class="event-gray">(2026; scheduled)</span></div>
                 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6225898" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Mar_2026)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
                 <a href="/files/slides_burnout_to_buildout.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Feb_2026)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
             </div>
@@ -47,7 +47,7 @@ redirect_from:
                     <li>Fire-induced loss is priced throughout; human-induced loss only after EUDR, especially for EU operators</li>
                     <li>Loan access supports green transition through responsible sourcing, reforestation, and plant divestiture </li>
                 </ul>
-                <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> Durham <span class="event-gray">(2025)</span>, CICF <span class="event-gray">(2025)</span>, GRASFI PhD Workshop <span class="event-gray">(2025 Edinburgh)</span>, FMA <span class="event-gray">(2025)</span>, FMA Europe <span class="event-gray">(2025)</span>, CEA UK/Europe Conference <span class="event-gray">(2025 Glasgow)</span>, Conference on Contemporary Issues in Banking <span class="event-gray">(2025 St Andrews)</span>, Cardiff-Leeds Sustainable Finance Conference <span class="event-gray">(2026 Leeds; scheduled)</span>, etc.</div>
+                <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> Durham <span class="event-gray">(2025)</span>, CICF <span class="event-gray">(2025)</span>, GRASFI PhD Workshop <span class="event-gray">(2025 Edinburgh)</span>, FMA <span class="event-gray">(2025)</span>, FMA Europe <span class="event-gray">(2025)</span>, Conference on Contemporary Issues in Banking <span class="event-gray">(2025 St Andrews)</span>, Cardiff-Leeds Sustainable Finance Conference <span class="event-gray">(2026 Leeds; scheduled)</span>, etc.</div>
                 <a href="http://dx.doi.org/10.2139/ssrn.5303222" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Jan_2026)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
                 <a href="/files/cib2025.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Dec_2025)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
             </div>
