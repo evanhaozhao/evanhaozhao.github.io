@@ -23,7 +23,7 @@ redirect_from:
                     <li>Counterfactuals from a firm decision model: aligning policy with resource geography delivers more output with fewer projects</li>
                 </ul>
                 <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> Durham <span class="event-gray">(2026)</span>, CICF <span class="event-gray">(2026; scheduled)</span></div>
-                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6225898" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Mar_2026)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
+                <a href="http://dx.doi.org/10.2139/ssrn.6225898" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Mar_2026)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
                 <a href="/files/slides_burnout_to_buildout.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Feb_2026)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
             </div>
             <div class="right-image">
@@ -121,7 +121,7 @@ redirect_from:
                     <li>Stronger effects in non-SOEs and around M&A and major policy events, when private information is especially valuable</li>
                 </ul>
                 <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> FMA <span class="event-gray">(2024)</span>, MFA <span class="event-gray">(2023)</span>, FMA Europe <span class="event-gray">(2023)</span>, etc.</div>
-                <a href="https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4230854_code1125739.pdf?abstractid=4230854&mirid=1&type=2" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Feb_2024)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
+                <a href="http://dx.doi.org/10.2139/ssrn.4230854" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Feb_2024)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
                 <a href="/files/fma2024.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Oct_2024)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
             </div>
             <div class="right-image">
