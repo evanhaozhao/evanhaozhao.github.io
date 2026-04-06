@@ -22,7 +22,7 @@ redirect_from:
                     <li>Fossil substitution vs. green transition: mandates and incentives expand renewable investment, but can carry geographic costs</li>
                     <li>Counterfactuals from a firm decision model: aligning policy with resource geography delivers more output with fewer projects</li>
                 </ul>
-                <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> Durham <span class="event-gray">(2026)</span>, CICF <span class="event-gray">(2026; scheduled)</span></div>
+                <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> Durham <span class="event-gray">(2026)</span>, CICF <span class="event-gray">(2026; scheduled)</span>, Exeter Sustainable Finance Conference <span class="event-gray">(2026; scheduled)</span></div>
                 <a href="http://dx.doi.org/10.2139/ssrn.6225898" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Mar_2026)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
                 <a href="/files/slides_burnout_to_buildout.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Feb_2026)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
             </div>
@@ -106,12 +106,16 @@ redirect_from:
     </div>
 </div>
 
+***
+
+***Publications***
+
 <div class="research-card row">
     <div class="paper-entry">
         <div class="paper-title"><b>Political Network and Muted Insider Trading</b></div>
             <div class="paper-content">
             <div class="left-description">
-                <div class="paper-status">Revise and resubmit, Journal of Corporate Finance</div>
+                <div class="paper-status">Journal of Corporate Finance, accepted</div>
                 <div class="paper-author">
                 with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.fordham.edu/gabelli-school-of-business/faculty/full-time-faculty/iftekhar-hasan/" target="_blank">Iftekhar Hasan</a> (Fordham), <a href="https://www.stjohns.edu/academics/faculty/yun-zhu-phd" target="_blank">Yun Zhu</a> (St. John’s)
                 </div>
