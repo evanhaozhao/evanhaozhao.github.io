@@ -124,7 +124,7 @@ redirect_from:
                     <li>Political networks as informal governance in China: connected firms engage in less insider trading</li>
                     <li>Stronger effects in non-SOEs and around M&A and major policy events, when private information is especially valuable</li>
                 </ul>
-                <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> FMA <span class="event-gray">(2024)</span>, MFA <span class="event-gray">(2023)</span>, FMA Europe <span class="event-gray">(2023)</span>, etc.</div>
+                <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> Midwest FA <span class="event-gray">(2023)</span>, FMA Europe <span class="event-gray">(2023)</span>, FMA <span class="event-gray">(2024)</span>, etc.</div>
                 <a href="http://dx.doi.org/10.2139/ssrn.4230854" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Feb_2024)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
                 <a href="/files/fma2024.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Oct_2024)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
             </div>
