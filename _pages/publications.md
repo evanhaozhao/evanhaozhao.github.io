@@ -22,7 +22,9 @@ redirect_from:
                     <li>Fossil substitution vs. green transition: mandates and incentives expand renewable investment, but can carry geographic costs</li>
                     <li>Counterfactuals from a firm decision model: aligning policy with resource geography delivers more output with fewer projects</li>
                 </ul>
-                <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> Durham <span class="event-gray">(2026)</span>, CICF <span class="event-gray">(2026; scheduled)</span>, Exeter Sustainable Finance Conference <span class="event-gray">(2026; scheduled)</span></div>
+                <div class="conference-description">
+                <span class="conf-label">Presentations:</span> Durham <span class="conf-date">(2026)</span>, CICF <span class="conf-date">(2026; scheduled)</span>, Exeter Sustainable Finance Conference <span class="conf-date">(2026; scheduled)</span>
+                </div>
                 <a href="http://dx.doi.org/10.2139/ssrn.6225898" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Mar_2026)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
                 <a href="/files/slides_burnout_to_buildout.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Feb_2026)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
             </div>
@@ -47,7 +49,9 @@ redirect_from:
                     <li>Fire-induced loss is priced throughout; human-induced loss only after EUDR, especially for EU operators</li>
                     <li>Loan access supports green transition through responsible sourcing, reforestation, and plant divestiture </li>
                 </ul>
-                <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> Durham <span class="event-gray">(2025)</span>, CICF <span class="event-gray">(2025)</span>, GRASFI PhD Workshop <span class="event-gray">(2025 Edinburgh)</span>, FMA <span class="event-gray">(2025)</span>, FMA Europe <span class="event-gray">(2025)</span>, Conference on Contemporary Issues in Banking <span class="event-gray">(2025 St Andrews)</span>, Cardiff-Leeds Sustainable Finance Conference <span class="event-gray">(2026 Leeds; scheduled)</span>, etc.</div>
+                <div class="conference-description">
+                <span class="conf-label">Presentations:</span> Durham <span class="conf-date">(2025)</span>, CICF <span class="conf-date">(2025)</span>, GRASFI PhD Workshop <span class="conf-date">(2025 Edinburgh)</span>, FMA <span class="conf-date">(2025)</span>, FMA Europe <span class="conf-date">(2025)</span>, Conference on Contemporary Issues in Banking <span class="conf-date">(2025 St Andrews)</span>, Cardiff-Leeds Sustainable Finance Conference <span class="conf-date">(2026 Leeds; scheduled)</span>, etc.
+                </div>
                 <a href="http://dx.doi.org/10.2139/ssrn.5303222" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Jan_2026)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
                 <a href="/files/cib2025.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Dec_2025)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
             </div>
@@ -72,7 +76,9 @@ redirect_from:
                     <li>Individual-targeted Twitter discussions reduce trading volume and returns, especially for influential politicians and before elections</li>
                     <li>Findings suggest social media acts as a disciplining force that complements the STOCK Act of 2012</li>
                 </ul>
-                <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> CICF <span class="event-gray">(2026; scheduled)</span></div>
+                <div class="conference-description">
+                <span class="conf-label">Presentations:</span> CICF <span class="conf-date">(2026; scheduled)</span>
+                </div>
             </div>
             <div class="right-image">
                 <img src="/images/paper_fig/ptr_example.jpg" alt="ptr_example">
@@ -95,7 +101,9 @@ redirect_from:
                     <li>Both loan spreads and non-price terms are unaffected by firms’ biodiversity risk or banks’ commitments</li>
                     <li>Findings suggest limited impact of banks’ voluntary pledges across 44 risk proxies and multiple specifications</li>
                 </ul>
-                <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> Boca-ECGI Corporate Finance <span class="event-gray">(2024)</span>, etc.</div>
+                <div class="conference-description">
+                <span class="conf-label">Presentations:</span> Boca-ECGI Corporate Finance <span class="conf-date">(2024)</span>, etc.
+                </div>
                 <a href="https://drive.google.com/file/d/1Ma-PHg50xAzk9hGaMa1wnvNQTgCmVyaO/view" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Aug_2024)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
                 <a href="/files/boca_ecgi_2024_hao_zhao.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Dec_2024)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
             </div>
@@ -124,7 +132,9 @@ redirect_from:
                     <li>Political networks as informal governance in China: connected firms engage in less insider trading</li>
                     <li>Stronger effects in non-SOEs and around M&A and major policy events, when private information is especially valuable</li>
                 </ul>
-                <div class="conference-description"><i style="font-weight: 570;">Presentations:</i> Midwest FA <span class="event-gray">(2023)</span>, FMA Europe <span class="event-gray">(2023)</span>, FMA <span class="event-gray">(2024)</span>, etc.</div>
+                <div class="conference-description">
+                <span class="conf-label">Presentations:</span> Midwest FA <span class="conf-date">(2023)</span>, FMA Europe <span class="conf-date">(2023)</span>, FMA <span class="conf-date">(2024)</span>, etc.
+                </div>
                 <a href="http://dx.doi.org/10.2139/ssrn.4230854" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Feb_2024)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
                 <a href="/files/fma2024.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Oct_2024)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
             </div>

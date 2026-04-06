@@ -118,10 +118,25 @@ code {
     }
 }
 
+/* 1. The Base Container (Applies to the Events and commas) */
 .conference-description {
     font-size: 14px;
-    font-weight: 600;
-    color: #5f5f5f; 
+    font-weight: 600; /* Standard semi-bold */
+    color: #5f5f5f;   /* Standard gray */
+}
+
+/* 2. The Label Exception ("Presentations:") */
+.conf-label {
+    font-weight: normal; /* Steps down to normal thickness */
+    font-style: italic;  /* Makes it italic */
+    color: inherit;      /* Keeps the #5f5f5f gray from the container */
+    /* font-style: italic;  <-- Uncomment this if you want it italicized like your old <i> tag */
+}
+
+/* 3. The Parentheses Exception */
+.conf-date {
+    font-weight: normal; /* Steps down to normal thickness */
+    color: #888888;      /* Applies the lighter gray */
 }
 
 .event-bold {
