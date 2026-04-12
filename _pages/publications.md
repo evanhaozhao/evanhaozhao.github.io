@@ -123,7 +123,7 @@ redirect_from:
         <div class="paper-title"><b>Political Network and Muted Insider Trading</b></div>
             <div class="paper-content">
             <div class="left-description">
-                <div class="paper-status">Journal of Corporate Finance, accepted</div>
+                <div class="paper-status">Journal of Corporate Finance, 2026</div>
                 <div class="paper-author">
                 with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.fordham.edu/gabelli-school-of-business/faculty/full-time-faculty/iftekhar-hasan/" target="_blank">Iftekhar Hasan</a> (Fordham), <a href="https://www.stjohns.edu/academics/faculty/yun-zhu-phd" target="_blank">Yun Zhu</a> (St. John’s)
                 </div>
@@ -135,8 +135,9 @@ redirect_from:
                 <div class="conference-description">
                 <span class="conf-label">Presentations:</span> Midwest FA <span class="conf-date">(2023)</span>, FMA Europe <span class="conf-date">(2023)</span>, FMA <span class="conf-date">(2024)</span>, etc.
                 </div>
-                <a href="http://dx.doi.org/10.2139/ssrn.4230854" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Feb_2024)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
+                <a href="/files/1-s2.0-S0929119926000659-main.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Published_Paper_(PDF)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
                 <a href="/files/fma2024.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Oct_2024)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
+                <a href="https://doi.org/10.1016/j.jcorpfin.2026.103007" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-10.1016/j.jcorpfin.2026.103007-white?style=flat-square&logo=googlechrome&logoColor=white&labelColor=828F98"></a>
             </div>
             <div class="right-image">
                 <img src="/images/paper_fig/plot_network_6819.svg" alt="network_demo">
