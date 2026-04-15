@@ -135,9 +135,7 @@ redirect_from:
                 <div class="conference-description">
                 <span class="conf-label">Presentations:</span> Midwest FA <span class="conf-date">(2023)</span>, FMA Europe <span class="conf-date">(2023)</span>, FMA <span class="conf-date">(2024)</span>, etc.
                 </div>
-                <a href="/files/1-s2.0-S0929119926000659-main.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Published_Paper_(PDF)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
-                <a href="/files/fma2024.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Oct_2024)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
-                <a href="https://doi.org/10.1016/j.jcorpfin.2026.103007" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-10.1016/j.jcorpfin.2026.103007-white?style=flat-square&logo=googlechrome&logoColor=white&labelColor=828F98"></a>
+                <a href="https://doi.org/10.1016/j.jcorpfin.2026.103007" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-DOI:_10.1016/j.jcorpfin.2026.103007-white?style=flat-square&logo=googlechrome&logoColor=white&labelColor=828F98"></a>
             </div>
             <div class="right-image">
                 <img src="/images/paper_fig/plot_network_6819.svg" alt="network_demo">
