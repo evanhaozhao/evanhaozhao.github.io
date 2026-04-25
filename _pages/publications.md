@@ -50,7 +50,7 @@ redirect_from:
                     <li>Loan access supports green transition through responsible sourcing, reforestation, and plant divestiture </li>
                 </ul>
                 <div class="conference-description">
-                <span class="conf-label">Presentations:</span> Durham <span class="conf-date">(2025)</span>, CICF <span class="conf-date">(2025)</span>, GRASFI PhD Workshop <span class="conf-date">(2025 Edinburgh)</span>, FMA <span class="conf-date">(2025)</span>, FMA Europe <span class="conf-date">(2025)</span>, Conference on Contemporary Issues in Banking <span class="conf-date">(2025 St Andrews)</span>, Cardiff-Leeds Sustainable Finance Conference <span class="conf-date">(2026 Leeds; scheduled)</span>, etc.
+                <span class="conf-label">Presentations:</span> Durham <span class="conf-date">(2025)</span>, CICF <span class="conf-date">(2025)</span>, GRASFI PhD Workshop <span class="conf-date">(2025 Edinburgh)</span>, FMA <span class="conf-date">(2025)</span>, FMA Europe <span class="conf-date">(2025)</span>, Conference on Contemporary Issues in Banking <span class="conf-date">(2025 St Andrews)</span>, Cardiff-Leeds Sustainable Finance Conference <span class="conf-date">(2026 Leeds)</span>, etc.
                 </div>
                 <a href="http://dx.doi.org/10.2139/ssrn.5303222" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Jan_2026)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
                 <a href="/files/cib2025.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Dec_2025)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
