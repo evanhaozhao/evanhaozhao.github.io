@@ -1,2 +1,5 @@
+User-agent: Googlebot
+Disallow: /images/avatar_square.jpg
+
 User-agent: Googlebot-Image
 Disallow: /images/avatar_square.jpg
