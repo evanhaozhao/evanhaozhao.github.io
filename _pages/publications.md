@@ -42,7 +42,7 @@ redirect_from:
             <div class="paper-content">
             <div class="left-description">
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank">Felix Irresberger</a> (Durham), <a href="https://www.stjohns.edu/academics/faculty/yun-zhu-phd" target="_blank">Yun Zhu</a> (St. John’s)
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank">Felix Irresberger</a> (Durham), <a>Yun Zhu</a> (St. John’s)
                 </div>
                 <ul class="gray-list">
                     <li>Credit markets distinguish between physical forest shocks and regulation-driven transition risk</li>
@@ -125,7 +125,7 @@ redirect_from:
             <div class="left-description">
                 <div class="paper-status">Journal of Corporate Finance, 2026</div>
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.fordham.edu/gabelli-school-of-business/faculty/full-time-faculty/iftekhar-hasan/" target="_blank">Iftekhar Hasan</a> (Fordham), <a href="https://www.stjohns.edu/academics/faculty/yun-zhu-phd" target="_blank">Yun Zhu</a> (St. John’s)
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.fordham.edu/gabelli-school-of-business/faculty/full-time-faculty/iftekhar-hasan/" target="_blank">Iftekhar Hasan</a> (Fordham), <a>Yun Zhu</a> (St. John’s)
                 </div>
                 <ul class="gray-list">
                     <li>Chairman–politician network built from biographical data, capturing the strength, rank, and duration of ties</li>
