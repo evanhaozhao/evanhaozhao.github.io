@@ -17,6 +17,7 @@ redirect_from:
         <div class="paper-title"><b>Burnout to Buildout: Brown Asset Exit and Green Transition Misallocation</b></div>
             <div class="paper-content">
             <div class="left-description">
+                <div class="paper-status">Job Market Paper</div>
                 <ul class="gray-list">
                     <li>Does exiting polluting assets necessarily deliver a green transition? I trace firm-level generation portfolios after a coal exit shock</li>
                     <li>Fossil substitution vs. green transition: mandates and incentives expand renewable investment, but can carry geographic costs</li>
