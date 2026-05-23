@@ -43,7 +43,7 @@ redirect_from:
             <div class="paper-content">
             <div class="left-description">
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank">Felix Irresberger</a> (Durham), <a>Yun Zhu</a> (St. John’s)
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a>, <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank">Felix Irresberger</a>, and <a>Yun Zhu</a>
                 </div>
                 <ul class="gray-list">
                     <li>Credit markets distinguish between physical forest shocks and regulation-driven transition risk</li>
@@ -70,7 +70,7 @@ redirect_from:
             <div class="paper-content">
             <div class="left-description">
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.business.uconn.edu/person/yiming-qian/" target="_blank">Yiming Qian</a> (UConn)
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> and <a href="https://www.business.uconn.edu/person/yiming-qian/" target="_blank">Yiming Qian</a>
                 </div>
                 <ul class="gray-list">
                     <li>Comprehensive dataset of congressional trades constructed through structured scraping, OCR, LLMs, and manual collection</li>
@@ -95,7 +95,7 @@ redirect_from:
             <div class="paper-content">
             <div class="left-description">
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank">Felix Irresberger</a> (Durham)
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> and <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank">Felix Irresberger</a>
                 </div>
                 <ul class="gray-list">
                     <li>Assessing firm-level biodiversity risk (ecosystem dependency & business condition) using call transcripts</li>
@@ -126,7 +126,7 @@ redirect_from:
             <div class="left-description">
                 <div class="paper-status">Journal of Corporate Finance, 2026</div>
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.fordham.edu/gabelli-school-of-business/faculty/full-time-faculty/iftekhar-hasan/" target="_blank">Iftekhar Hasan</a> (Fordham), <a>Yun Zhu</a> (St. John’s)
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a>, <a href="https://www.fordham.edu/gabelli-school-of-business/faculty/full-time-faculty/iftekhar-hasan/" target="_blank">Iftekhar Hasan</a>, and <a>Yun Zhu</a>
                 </div>
                 <ul class="gray-list">
                     <li>Chairman–politician network built from biographical data, capturing the strength, rank, and duration of ties</li>
@@ -158,7 +158,7 @@ redirect_from:
             <div class="paper-content">
             <div class="left-description">
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.business.uconn.edu/person/yiming-qian/" target="_blank">Yiming Qian</a> (UConn)
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a>, <a href="https://www.business.uconn.edu/person/yiming-qian/" target="_blank">Yiming Qian</a>
                 </div>
             </div>
         </div>
@@ -172,7 +172,7 @@ redirect_from:
             <div class="paper-content">
             <div class="left-description">
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham)
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a>
                 </div>
             </div>
         </div>
@@ -186,7 +186,7 @@ redirect_from:
             <div class="paper-content">
             <div class="left-description">
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> (Durham), <a href="https://www.ieseg.fr/en/faculty-and-research/professor/?id=1740" target="_blank">Oskar Kowalewski</a> (IÉSEG)
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a>, <a href="https://www.ieseg.fr/en/faculty-and-research/professor/?id=1740" target="_blank">Oskar Kowalewski</a>
                 </div>
             </div>
         </div>
