@@ -8,8 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-**Welcome to my website!**
-
 I'm Hao Zhao, a PhD candidate in Finance at Durham University
 
 <ul style="list-style-type: circle;">
@@ -41,7 +39,7 @@ I will be on the academic job market in the *2025-2026* cycle
 ***Interests***
 
 <ul style="list-style-type: circle;">
-  <li>Corporate finance; Sustainable finance; Political economy; Entrepreneurial finance </li>
+  <li>Corporate finance; Sustainable finance; Energy transition; Political economy </li>
 </ul>
 
 {% comment %}
