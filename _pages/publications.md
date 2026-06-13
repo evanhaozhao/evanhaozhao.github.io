@@ -14,7 +14,7 @@ redirect_from:
 
 <div class="research-card row">
     <div class="paper-entry">
-        <div class="paper-title"><b>Burnout to Buildout: Brown Asset Exit and Green Transition Misallocation</b></div>
+        <div class="paper-title"><b>Burnout to Buildout: Coal Exit and the Geography of Transition Costs</b></div>
             <div class="paper-content">
             <div class="left-description">
                 <div class="paper-status">Job Market Paper</div>
@@ -26,7 +26,7 @@ redirect_from:
                 <div class="conference-description">
                 <span class="conf-label">Presentations:</span> Durham <span class="conf-date">(2026)</span>, CICF <span class="conf-date">(2026; scheduled)</span>, Exeter Sustainable Finance Conference <span class="conf-date">(2026; scheduled)</span>
                 </div>
-                <a href="http://dx.doi.org/10.2139/ssrn.6225898" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Mar_2026)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
+                <a href="http://dx.doi.org/10.2139/ssrn.6225898" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Jun_2026)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
                 <a href="/files/slides_burnout_to_buildout.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Feb_2026)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
             </div>
             <div class="right-image">
