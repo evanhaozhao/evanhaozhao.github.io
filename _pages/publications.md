@@ -24,7 +24,7 @@ redirect_from:
                     <li>Counterfactuals from a firm decision model: aligning policy with resource geography delivers more output with fewer projects</li>
                 </ul>
                 <div class="conference-description">
-                <span class="conf-label">Presentations:</span> Durham <span class="conf-date">(2026)</span>, CICF <span class="conf-date">(2026; scheduled)</span>, Exeter Sustainable Finance Conference <span class="conf-date">(2026; scheduled)</span>
+                <span class="conf-label">Presentations:</span> Durham <span class="conf-date">(2026)</span>, CICF <span class="conf-date">(2026)</span>, Exeter Sustainable Finance Conference <span class="conf-date">(2026)</span>
                 </div>
                 <a href="http://dx.doi.org/10.2139/ssrn.6225898" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Jun_2026)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
                 <a href="/files/slides_burnout_to_buildout.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Feb_2026)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
@@ -78,7 +78,7 @@ redirect_from:
                     <li>Findings suggest social media acts as a disciplining force that complements the STOCK Act of 2012</li>
                 </ul>
                 <div class="conference-description">
-                <span class="conf-label">Presentations:</span> CICF <span class="conf-date">(2026; scheduled)</span>
+                <span class="conf-label">Presentations:</span> CICF <span class="conf-date">(2026)</span>
                 </div>
             </div>
             <div class="right-image">
