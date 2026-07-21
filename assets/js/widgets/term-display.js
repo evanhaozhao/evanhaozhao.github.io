@@ -36,11 +36,6 @@ const terms = [
     end: moment("2023-09-24")
     },
     {
-    name: "Summer vacation",
-    start: moment("2023-06-24"),
-    end: moment("2023-09-24")
-    },
-    {
     name: "Induction Week",
     start: moment("2023-09-25"),
     end: moment("2023-10-01")
@@ -69,11 +64,6 @@ const terms = [
     name: "Easter Term",
     start: moment("2024-04-22"),
     end: moment("2024-06-21")
-    },
-    {
-    name: "Summer vacation",
-    start: moment("2024-06-22"),
-    end: moment("2024-09-29")
     },
     {
     name: "Summer vacation",
@@ -116,11 +106,6 @@ const terms = [
     end: moment("2025-09-28")
     },
     {
-    name: "Summer vacation",
-    start: moment("2025-06-28"),
-    end: moment("2025-09-28")
-    },
-    {
     name: "Induction Week",
     start: moment("2025-09-29"),
     end: moment("2025-10-05")
@@ -149,11 +134,6 @@ const terms = [
     name: "Easter Term",
     start: moment("2026-04-27"),
     end: moment("2026-06-26")
-    },
-    {
-    name: "Summer vacation",
-    start: moment("2026-06-27"),
-    end: moment("2026-09-27")
     },
     {
     name: "Summer vacation",

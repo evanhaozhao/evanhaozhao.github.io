@@ -21,11 +21,13 @@ author_profile: false
 ***
 ***Schedule***
 
+{% comment %}
 <p>Current term: <span id="current-term"></span></p>
 <p>Next term: <span id="next-term"></span></p>
+{% endcomment %}
 
 <p>Durham Finance Department activities: 
-  <a href="https://www.durham.ac.uk/business/about/departments/finance/seminars-and-events/seminars/#d.en.1033483" target="_blank">2025-26 Seminars</a>
+  <a href="https://www.durham.ac.uk/business/about/departments/finance/seminars-and-events/seminars/#d.en.1033483" target="_blank" rel="noopener">2025-26 Seminars</a>
 </p>
 
 <p><span id="progress-message"></span></p>
@@ -81,11 +83,11 @@ DH1 3LB
 
 <script src="/assets/js/widgets/progress-bar.js"></script>
 
-{% comment %} 
+{% comment %}
   (4) Academic term
-{% endcomment %}
 
 <script src="/assets/js/widgets/term-display.js"></script>
+{% endcomment %}
 
 <iframe id="analyticsmaps" src="//mapmyvisitors.com/map.js?d=48ATnsE_R4wJLZFk5SMPAiHU-Y1nUeXZJNI98xrtYcU&cl=ffffff&w=a" frameborder="0" scrolling="no" width="1" height="1"></iframe>
 

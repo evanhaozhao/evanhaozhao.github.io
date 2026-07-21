@@ -142,3 +142,32 @@
     color: #E1E2E3;
     font-size: 0;
 }
+/* Flat link for main-text places: white container, slate left edge, whisper
+   bottom border; hover shows only a soft bottom-right shade.
+   Font size inherits the surrounding text exactly
+   (the theme renders body text at 18px on >=768px, 16px below) */
+.fl {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  padding: 0.06em 0.55em;
+  background: #fff;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid rgba(90, 106, 115, 0.15);
+  border-left: 2px solid #5A6A73;
+  border-radius: 5px;
+  line-height: 1.25;
+  vertical-align: middle;
+  color: #5A6A73;
+  text-decoration: none !important;
+  transition: box-shadow 0.18s ease;
+}
+.fl:visited { color: #5A6A73; }
+.fl:hover {
+  box-shadow: 1.5px 2px 5px rgba(90, 106, 115, 0.12);
+}
+.fl:focus-visible {
+  outline: 2px solid #5A6A73;
+  outline-offset: 2px;
+}

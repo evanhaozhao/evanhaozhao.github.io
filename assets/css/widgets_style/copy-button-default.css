@@ -184,3 +184,35 @@ code {
   flex-direction: column;
   justify-content: center;
 }
+
+/* Flat link: white container, slate left edge, whisper bottom border;
+   hover shows only a soft bottom-right shade */
+.fl {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  margin: 0.12em 0.45em 0.12em 0;
+  padding: 0.06em 0.8em 0.06em 0.6em;
+  background: #fff;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid rgba(90, 106, 115, 0.15);
+  border-left: 2px solid #5A6A73;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #5A6A73;
+  text-decoration: none !important;
+  transition: box-shadow 0.18s ease;
+}
+.fl:visited { color: #5A6A73; }
+.fl:hover {
+  box-shadow: 1.5px 2px 5px rgba(90, 106, 115, 0.12);
+}
+.fl:focus-visible {
+  outline: 2px solid #5A6A73;
+  outline-offset: 2px;
+}
+.fl .v {
+  color: #9a9a9a;
+  overflow-wrap: anywhere;
+}

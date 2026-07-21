@@ -13,7 +13,6 @@ function updateClock() {
 function updateWorkingStatus() {
     var now = moment().tz('Europe/London');
     var ukHours = now.hour();
-    var ukMinutes = now.minute();
     var workingStatusElement = document.getElementById('workingstatus');
 
     if ((ukHours >= 9 && ukHours < 12) || (ukHours >= 15 && ukHours < 20)) {
@@ -26,7 +25,10 @@ function updateWorkingStatus() {
         workingStatusElement.className = 'limited';
         workingStatusElement.title = 'Away';
     }
-    updateClock();
     setTimeout(updateWorkingStatus, 1000);
 }
+
+/* updateClock() self-schedules; start it once here. Calling it inside
+   updateWorkingStatus() spawned an additional timer chain every second. */
+updateClock();
 updateWorkingStatus();

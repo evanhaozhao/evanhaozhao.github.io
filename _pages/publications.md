@@ -26,11 +26,11 @@ redirect_from:
                 <div class="conference-description">
                 <span class="conf-label">Presentations:</span> Durham <span class="conf-date">(2026)</span>, CICF <span class="conf-date">(2026)</span>, Exeter Sustainable Finance Conference <span class="conf-date">(2026)</span>
                 </div>
-                <a href="http://dx.doi.org/10.2139/ssrn.6225898" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Jun_2026)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
-                <a href="/files/slides_burnout_to_buildout.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Feb_2026)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
+                <a class="fl" href="http://dx.doi.org/10.2139/ssrn.6225898" target="_blank" rel="noopener">Paper <span class="v">(Jun 2026)</span></a>
+                <a class="fl" href="/files/slides_burnout_to_buildout.pdf" target="_blank" rel="noopener">Slides <span class="v">(Feb 2026)</span></a>
             </div>
             <div class="right-image">
-                <img src="/images/paper_fig/solar_panel1.jpg" alt="pv_construction">
+                <img src="/images/paper_fig/solar_panel1.jpg" alt="Solar panel construction">
             </div>
         </div>
     </div>
@@ -43,7 +43,7 @@ redirect_from:
             <div class="paper-content">
             <div class="left-description">
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a>, <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank">Felix Irresberger</a>, and <a>Yun Zhu</a>
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank" rel="noopener">Xian Gu</a>, <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank" rel="noopener">Felix Irresberger</a>, and <a>Yun Zhu</a>
                 </div>
                 <ul class="gray-list">
                     <li>Credit markets distinguish between physical forest shocks and regulation-driven transition risk</li>
@@ -53,11 +53,11 @@ redirect_from:
                 <div class="conference-description">
                 <span class="conf-label">Presentations:</span> Durham <span class="conf-date">(2025)</span>, CICF <span class="conf-date">(2025)</span>, GRASFI PhD Workshop <span class="conf-date">(2025 Edinburgh)</span>, FMA <span class="conf-date">(2025)</span>, FMA Europe <span class="conf-date">(2025)</span>, Conference on Contemporary Issues in Banking <span class="conf-date">(2025 St Andrews)</span>, Cardiff-Leeds Sustainable Finance Conference <span class="conf-date">(2026 Leeds)</span>, etc.
                 </div>
-                <a href="http://dx.doi.org/10.2139/ssrn.5303222" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Jan_2026)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
-                <a href="/files/cib2025.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Dec_2025)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
+                <a class="fl" href="http://dx.doi.org/10.2139/ssrn.5303222" target="_blank" rel="noopener">Paper <span class="v">(Jan 2026)</span></a>
+                <a class="fl" href="/files/cib2025.pdf" target="_blank" rel="noopener">Slides <span class="v">(Dec 2025)</span></a>
             </div>
             <div class="right-image">
-                <img src="/images/paper_fig/yield_spread_eudr.svg" alt="eudr_cutoff">
+                <img src="/images/paper_fig/yield_spread_eudr.svg" alt="Yield spread around the EUDR cutoff" loading="lazy" decoding="async">
             </div>
         </div>
     </div>
@@ -70,7 +70,7 @@ redirect_from:
             <div class="paper-content">
             <div class="left-description">
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> and <a href="https://www.business.uconn.edu/person/yiming-qian/" target="_blank">Yiming Qian</a>
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank" rel="noopener">Xian Gu</a> and <a href="https://www.business.uconn.edu/person/yiming-qian/" target="_blank" rel="noopener">Yiming Qian</a>
                 </div>
                 <ul class="gray-list">
                     <li>Comprehensive dataset of congressional trades constructed through structured scraping, OCR, LLMs, and manual collection</li>
@@ -82,7 +82,7 @@ redirect_from:
                 </div>
             </div>
             <div class="right-image">
-                <img src="/images/paper_fig/ptr_example.jpg" alt="ptr_example">
+                <img src="/images/paper_fig/ptr_example.jpg" alt="Example congressional periodic transaction report" loading="lazy" decoding="async">
             </div>
         </div>
     </div>
@@ -95,7 +95,7 @@ redirect_from:
             <div class="paper-content">
             <div class="left-description">
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a> and <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank">Felix Irresberger</a>
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank" rel="noopener">Xian Gu</a> and <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank" rel="noopener">Felix Irresberger</a>
                 </div>
                 <ul class="gray-list">
                     <li>Assessing firm-level biodiversity risk (ecosystem dependency & business condition) using call transcripts</li>
@@ -105,11 +105,11 @@ redirect_from:
                 <div class="conference-description">
                 <span class="conf-label">Presentations:</span> Boca-ECGI Corporate Finance <span class="conf-date">(2024)</span>, etc.
                 </div>
-                <a href="https://drive.google.com/file/d/1Ma-PHg50xAzk9hGaMa1wnvNQTgCmVyaO/view" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Paper_(Aug_2024)-white?style=flat-square&logo=googledocs&logoColor=white&labelColor=828F98"></a>
-                <a href="/files/boca_ecgi_2024_hao_zhao.pdf" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-Slides_(Dec_2024)-white?style=flat-square&logo=googleslides&logoColor=white&labelColor=828F98"></a>
+                <a class="fl" href="https://drive.google.com/file/d/1Ma-PHg50xAzk9hGaMa1wnvNQTgCmVyaO/view" target="_blank" rel="noopener">Paper <span class="v">(Aug 2024)</span></a>
+                <a class="fl" href="/files/boca_ecgi_2024_hao_zhao.pdf" target="_blank" rel="noopener">Slides <span class="v">(Dec 2024)</span></a>
             </div>
             <div class="right-image">
-                <img src="/images/paper_fig/spread_biod_int_commit.svg" alt="biodiversity_example">
+                <img src="/images/paper_fig/spread_biod_int_commit.svg" alt="Loan spreads by biodiversity risk and bank commitment" loading="lazy" decoding="async">
             </div>
         </div>
     </div>
@@ -126,7 +126,7 @@ redirect_from:
             <div class="left-description">
                 <div class="paper-status">Journal of Corporate Finance, 2026</div>
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a>, <a href="https://www.fordham.edu/gabelli-school-of-business/faculty/full-time-faculty/iftekhar-hasan/" target="_blank">Iftekhar Hasan</a>, and <a>Yun Zhu</a>
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank" rel="noopener">Xian Gu</a>, <a href="https://www.fordham.edu/gabelli-school-of-business/faculty/full-time-faculty/iftekhar-hasan/" target="_blank" rel="noopener">Iftekhar Hasan</a>, and <a>Yun Zhu</a>
                 </div>
                 <ul class="gray-list">
                     <li>Chairman–politician network built from biographical data, capturing the strength, rank, and duration of ties</li>
@@ -136,10 +136,10 @@ redirect_from:
                 <div class="conference-description">
                 <span class="conf-label">Presentations:</span> Midwest FA <span class="conf-date">(2023)</span>, FMA Europe <span class="conf-date">(2023)</span>, FMA <span class="conf-date">(2024)</span>, etc.
                 </div>
-                <a href="https://doi.org/10.1016/j.jcorpfin.2026.103007" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/-DOI:_10.1016/j.jcorpfin.2026.103007-white?style=flat-square&logo=googlechrome&logoColor=white&labelColor=828F98"></a>
+                <a class="fl" href="https://doi.org/10.1016/j.jcorpfin.2026.103007" target="_blank" rel="noopener">DOI: <span class="v">10.1016/j.jcorpfin.2026.103007</span></a>
             </div>
             <div class="right-image">
-                <img src="/images/paper_fig/plot_network_6819.svg" alt="network_demo">
+                <img src="/images/paper_fig/plot_network_6819.svg" alt="Chairman–politician network visualisation" loading="lazy" decoding="async">
             </div>
         </div>
     </div>
@@ -158,7 +158,7 @@ redirect_from:
             <div class="paper-content">
             <div class="left-description">
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a>, <a href="https://www.business.uconn.edu/person/yiming-qian/" target="_blank">Yiming Qian</a>
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank" rel="noopener">Xian Gu</a>, <a href="https://www.business.uconn.edu/person/yiming-qian/" target="_blank" rel="noopener">Yiming Qian</a>
                 </div>
             </div>
         </div>
@@ -172,7 +172,7 @@ redirect_from:
             <div class="paper-content">
             <div class="left-description">
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a>
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank" rel="noopener">Xian Gu</a>
                 </div>
             </div>
         </div>
@@ -186,7 +186,7 @@ redirect_from:
             <div class="paper-content">
             <div class="left-description">
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank">Xian Gu</a>, <a href="https://www.ieseg.fr/en/faculty-and-research/professor/?id=1740" target="_blank">Oskar Kowalewski</a>
+                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank" rel="noopener">Xian Gu</a>, <a href="https://www.ieseg.fr/en/faculty-and-research/professor/?id=1740" target="_blank" rel="noopener">Oskar Kowalewski</a>
                 </div>
             </div>
         </div>
@@ -195,31 +195,11 @@ redirect_from:
 
 {% endcomment %} 
 
-{% comment %} 
+{% comment %}
   Style: (a) a default color button
-{% endcomment %} 
-
-<link rel="stylesheet" type="text/css" href="/assets/css/widgets_style/copy-button-default.css">
-
-{% comment %} 
-  (1) Copy button
-{% endcomment %} 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
-
-<script src="/assets/js/widgets/copy-button-default.js"></script>
-
-{% comment %} 
-  Style: (a) general
-{% endcomment %} 
-
-<link rel="stylesheet" type="text/css" href="/assets/css/widgets_style/widgets.css">
-
-{% comment %} 
-  (1) A IOS feature switch
 {% endcomment %}
 
-<script src="/assets/js/widgets/switch.js"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/widgets_style/copy-button-default.css">
 
 <iframe id="analyticsmaps" src="//mapmyvisitors.com/map.js?d=Rx-yBS-RT3NQLbVFkdV-OuFH29hSDhGaNxERRWq7gfE&cl=ffffff&w=a" frameborder="0" scrolling="no" width="1" height="1"></iframe>
 
