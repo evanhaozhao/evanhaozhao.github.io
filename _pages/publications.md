@@ -42,6 +42,7 @@ redirect_from:
         <div class="paper-title"><b>Banking on Forest</b></div>
             <div class="paper-content">
             <div class="left-description">
+                <div class="paper-status">Revise and resubmit, Journal of Money, Credit and Banking</div>
                 <div class="paper-author">
                 with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank" rel="noopener">Xian Gu</a>, <a href="https://www.durham.ac.uk/business/our-people/felix-irresberger/" target="_blank" rel="noopener">Felix Irresberger</a>, and <a>Yun Zhu</a>
                 </div>
