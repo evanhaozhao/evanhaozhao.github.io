@@ -26,7 +26,7 @@ redirect_from:
                 <div class="conference-description">
                 <span class="conf-label">Presentations:</span> Durham <span class="conf-date">(2026)</span>, CICF <span class="conf-date">(2026)</span>, Exeter Sustainable Finance Conference <span class="conf-date">(2026)</span>
                 </div>
-                <a class="fl" href="http://dx.doi.org/10.2139/ssrn.6225898" target="_blank" rel="noopener">Paper <span class="v">(Jun 2026)</span></a>
+                <a class="fl" href="http://dx.doi.org/10.2139/ssrn.6225898" target="_blank" rel="noopener">Paper <span class="v">(Aug 2026)</span></a>
                 <a class="fl" href="/files/slides_burnout_to_buildout.pdf" target="_blank" rel="noopener">Slides <span class="v">(Feb 2026)</span></a>
             </div>
             <div class="right-image">
