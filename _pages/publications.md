@@ -24,9 +24,9 @@ redirect_from:
                     <li>Counterfactuals from a firm decision model: aligning policy with resource geography delivers more output with fewer projects</li>
                 </ul>
                 <div class="conference-description">
-                <span class="conf-label">Presentations:</span> Durham <span class="conf-date">(2026)</span>, CICF <span class="conf-date">(2026)</span>, Exeter Sustainable Finance Conference <span class="conf-date">(2026)</span>
+                <span class="conf-label">Presentations:</span> Durham <span class="conf-date">(2026)</span>, CICF <span class="conf-date">(2026)</span>, Exeter Sustainable Finance Conference <span class="conf-date">(2026)</span>, SFIC Annual Conference <span class="conf-date">(2026 Birmingham)</span>
                 </div>
-                <a class="fl" href="http://dx.doi.org/10.2139/ssrn.6225898" target="_blank" rel="noopener">Paper <span class="v">(Aug 2026)</span></a>
+                <a class="fl" href="http://dx.doi.org/10.2139/ssrn.6225898" target="_blank" rel="noopener">Paper <span class="v">(Sep 2026)</span></a>
                 <a class="fl" href="/files/slides_burnout_to_buildout.pdf" target="_blank" rel="noopener">Slides <span class="v">(Feb 2026)</span></a>
             </div>
             <div class="right-image">
@@ -127,7 +127,7 @@ redirect_from:
             <div class="left-description">
                 <div class="paper-status">Journal of Corporate Finance, 2026</div>
                 <div class="paper-author">
-                with <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank" rel="noopener">Xian Gu</a>, <a href="https://www.fordham.edu/gabelli-school-of-business/faculty/full-time-faculty/iftekhar-hasan/" target="_blank" rel="noopener">Iftekhar Hasan</a>, and <a>Yun Zhu</a>
+                with <a>Wei Chen</a>, <a href="https://www.durham.ac.uk/business/our-people/xian-gu/" target="_blank" rel="noopener">Xian Gu</a>, <a href="https://www.fordham.edu/gabelli-school-of-business/faculty/full-time-faculty/iftekhar-hasan/" target="_blank" rel="noopener">Iftekhar Hasan</a>, and <a>Yun Zhu</a>
                 </div>
                 <ul class="gray-list">
                     <li>Chairman–politician network built from biographical data, capturing the strength, rank, and duration of ties</li>

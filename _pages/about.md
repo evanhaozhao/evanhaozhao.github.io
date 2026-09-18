@@ -12,11 +12,10 @@ I'm Hao Zhao, a PhD candidate in Finance at Durham University
 
 <ul style="list-style-type: circle;">
   <li><a class="fl" href="/research/">Research</a></li>
+  <li>Academic job market: 2026–2027 cycle</li>
 </ul>
 
 {% comment %}
-
-- Academic job market: 2026–2027
 
 - <a href="/research/"><img alt="Research badge" src="https://img.shields.io/badge/-Research-FAFAFA?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=828F98"></a> <a href="/files/paper1.pdf" target="_blank" rel="noopener"><img alt="CV Badge" src="https://img.shields.io/badge/-CV-FAFAFA?style=for-the-badge&logo=googleforms&logoColor=white&labelColor=828F98"></a>
 
