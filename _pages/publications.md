@@ -90,6 +90,8 @@ redirect_from:
 </div>
 
 
+{% comment %}
+
 <div class="research-card row">
     <div class="paper-entry">
         <div class="paper-title"><b>Biodiversity Risk and Bank Lending</b></div>
@@ -115,6 +117,8 @@ redirect_from:
         </div>
     </div>
 </div>
+
+{% endcomment %}
 
 ***
 
