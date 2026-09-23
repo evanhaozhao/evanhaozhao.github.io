@@ -21,7 +21,7 @@ redirect_from:
                 <ul class="gray-list">
                     <li>Does exiting polluting assets necessarily deliver a green transition? I trace firm-level generation portfolios after a coal exit shock</li>
                     <li>Fossil substitution vs. green transition: mandates and incentives expand renewable investment, but can carry geographic costs</li>
-                    <li>Counterfactuals from a firm decision model: aligning policy with resource geography delivers more output with fewer projects</li>
+                    <li>Counterfactuals from a firm decision model: aligning policy with resource geography reduces these costs without increasing emissions</li>
                 </ul>
                 <div class="conference-description">
                 <span class="conf-label">Presentations:</span> Durham <span class="conf-date">(2026)</span>, CICF <span class="conf-date">(2026)</span>, Exeter Sustainable Finance Conference <span class="conf-date">(2026)</span>, SFIC Annual Conference <span class="conf-date">(2026 Birmingham)</span>
