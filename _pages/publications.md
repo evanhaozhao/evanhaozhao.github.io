@@ -14,7 +14,7 @@ redirect_from:
 
 <div class="research-card row">
     <div class="paper-entry">
-        <div class="paper-title"><b>Burnout to Buildout: Coal Exit and the Geography of Transition Costs</b></div>
+        <div class="paper-title"><b>Coal Exit and the Geography of Transition Costs</b></div>
             <div class="paper-content">
             <div class="left-description">
                 <div class="paper-status">Job Market Paper</div>
@@ -26,7 +26,7 @@ redirect_from:
                 <div class="conference-description">
                 <span class="conf-label">Presentations:</span> Durham <span class="conf-date">(2026)</span>, CICF <span class="conf-date">(2026)</span>, Exeter Sustainable Finance Conference <span class="conf-date">(2026)</span>, SFIC Annual Conference <span class="conf-date">(2026 Birmingham)</span>
                 </div>
-                <a class="fl" href="http://dx.doi.org/10.2139/ssrn.6225898" target="_blank" rel="noopener">Paper <span class="v">(Sep 2026)</span></a>
+                <a class="fl" href="http://dx.doi.org/10.2139/ssrn.6225898" target="_blank" rel="noopener">Paper <span class="v">(Oct 2026)</span></a>
                 <a class="fl" href="/files/slides_burnout_to_buildout.pdf" target="_blank" rel="noopener">Slides <span class="v">(Feb 2026)</span></a>
             </div>
             <div class="right-image">
@@ -67,7 +67,7 @@ redirect_from:
 
 <div class="research-card row">
     <div class="paper-entry">
-        <div class="paper-title"><b>Trading Under Scrutiny: Social Media Attention and Congressional Trading</b></div>
+        <div class="paper-title"><b>Social Media Attention and Congressional Trading</b></div>
             <div class="paper-content">
             <div class="left-description">
                 <div class="paper-author">
